@@ -1,0 +1,2 @@
+baseurl: /interaction-design-portfolio
+exclude: ['README.md', 'LICENSE']

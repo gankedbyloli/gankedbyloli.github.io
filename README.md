@@ -1,2 +1,2 @@
-# ux-portfolio
-A small website for ux-related portfolio
+# interaction-design-portfolio
+A small website for interaction-design-related portfolio.
