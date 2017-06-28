@@ -1,2 +1,6 @@
-baseurl: /interaction-design-portfolio
-exclude: ['README.md', 'LICENSE']
+name: Qihan Gregory Xu
+exclude: ["node_modules",
+    'gulpfile.js',
+    'package.json',
+    'README.md',
+    'LICENSE']
