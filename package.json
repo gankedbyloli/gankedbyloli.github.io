@@ -1,0 +1,30 @@
+{
+  "name": "interaction-design-portfolio",
+  "version": "1.0.0",
+  "description": "An interaction design portfolio by Qihan Gregory Xu",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gankedbyloli/interaction-design-portfolio.git"
+  },
+  "keywords": [
+    "jekyll"
+  ],
+  "author": "Qihan Gregory Xu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gankedbyloli/interaction-design-portfolio/issues"
+  },
+  "homepage": "https://github.com/gankedbyloli/interaction-design-portfolio#readme"
+}
