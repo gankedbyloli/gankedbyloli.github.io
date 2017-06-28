@@ -1,4 +1,5 @@
 name: Qihan Gregory Xu
+baseurl: /interaction-design-portfolio
 exclude: ["node_modules",
     'gulpfile.js',
     'package.json',
