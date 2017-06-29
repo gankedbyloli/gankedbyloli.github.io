@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -391,3 +393,30 @@ template {
  */
 [hidden] {
   display: none; }
+
+html,
+body {
+  min-height: 100vh; }
+
+body {
+  background: #000;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Montserrat', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
+
+h1 {
+  font-size: 96px; }
+
+h4 {
+  font-size: 18px;
+  letter-spacing: .5em; }
+
+p {
+  font-size: 24px;
+  font-family: 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: .05em;
+  color: #ccc; }
