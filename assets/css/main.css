@@ -394,21 +394,9 @@ template {
 [hidden] {
   display: none; }
 
-html,
-body {
-  min-height: 100vh; }
-
-body {
-  background: #111;
-  font-size: 16px;
-  line-height: 1.6;
-  font-family: 'Montserrat', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%; }
-
 h1 {
-  font-size: 96px; }
+  font-size: 96px;
+  line-height: 1.2; }
 
 h4 {
   font-size: 18px;
@@ -420,3 +408,44 @@ p {
   font-weight: 300;
   letter-spacing: .05em;
   color: #ccc; }
+
+html,
+body {
+  min-height: 100vh; }
+
+body {
+  background: #000;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Montserrat', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
+
+.intro {
+  background-image: url(/assets/img/intro-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding: 5em 8em; }
+
+.work {
+  background-image: url(/assets/img/work-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding: 5em 8em; }
+
+.branding {
+  background-image: url(/assets/img/branding-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding: 5em 8em; }
+
+.wrapper {
+  border: 1.2em solid #fff;
+  height: auto !important; }
