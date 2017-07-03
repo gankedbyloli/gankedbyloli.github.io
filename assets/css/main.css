@@ -396,7 +396,16 @@ template {
 
 h1 {
   font-size: 96px;
-  line-height: 1.2; }
+  line-height: 1.15; }
+
+h2 {
+  font-size: 48px;
+  line-height: 1.25; }
+
+h3 {
+  font-size: 22px;
+  line-height: 1.4;
+  letter-spacing: .5em; }
 
 h4 {
   font-size: 18px;
@@ -445,6 +454,12 @@ body {
   -webkit-background-size: cover;
           background-size: cover;
   padding: 5em 8em; }
+
+.outro {
+  padding: 5em 8em; }
+  .outro h3 {
+    color: #999;
+    text-align: center; }
 
 .wrapper {
   border: 1.2em solid #fff;
