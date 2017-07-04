@@ -394,29 +394,44 @@ template {
 [hidden] {
   display: none; }
 
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0; }
+
 h1 {
+  margin-bottom: .75em;
   font-size: 96px;
   line-height: 1.15; }
 
 h2 {
+  margin-bottom: 1.5em;
   font-size: 48px;
   line-height: 1.25; }
 
 h3 {
+  margin-bottom: 1.5em;
   font-size: 22px;
   line-height: 1.4;
   letter-spacing: .5em; }
 
 h4 {
+  margin-bottom: 1.5em;
   font-size: 18px;
   letter-spacing: .5em; }
 
 p {
+  margin: 0 0 32px 0;
   font-size: 24px;
   font-family: 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
   font-weight: 300;
   letter-spacing: .05em;
   color: #ccc; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
 
 html,
 body {
@@ -438,6 +453,14 @@ body {
   -webkit-background-size: cover;
           background-size: cover;
   padding: 5em 8em; }
+  .intro h4 {
+    padding-left: .25em; }
+  .intro p {
+    margin-bottom: 0;
+    padding-left: .2em; }
+
+.about {
+  padding: 5em 8em; }
 
 .work {
   background-image: url(/assets/img/work-bg.jpg);
@@ -458,6 +481,10 @@ body {
 .outro {
   padding: 5em 8em; }
   .outro h3 {
+    color: #fff;
+    text-align: center; }
+  .outro h4 {
+    margin-bottom: 0;
     color: #999;
     text-align: center; }
 
