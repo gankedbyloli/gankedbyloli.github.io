@@ -4,11 +4,20 @@
         repeat: no-repeat
         position: center top
         size: cover
-    padding: 5em 8em
 
-    h4
-        padding-left: .25em
+    h1
+        max-width: 1080px
+        margin-left: -.05em
+
+    h4.note
+        padding-left: 0em
+        color: $gray
 
     p
+        max-width: 720px
         margin-bottom: 0
-        padding-left: .2em
+
+@media (max-width: 85em)
+    .intro
+        h1
+            max-width: 800px
