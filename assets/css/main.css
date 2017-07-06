@@ -513,10 +513,10 @@ body {
   letter-spacing: .1em;
   display: block;
   color: #fff;
-  background: -webkit-gradient(linear, left top, right bottom, from(#ffdd0a), to(#E6B110));
-  background: -webkit-linear-gradient(top left, #ffdd0a, #E6B110);
-  background: -o-linear-gradient(top left, #ffdd0a, #E6B110);
-  background: linear-gradient(to bottom right, #ffdd0a, #E6B110);
+  background: -webkit-gradient(linear, left top, right bottom, from(#FFDC00), to(#E6B110));
+  background: -webkit-linear-gradient(top left, #FFDC00, #E6B110);
+  background: -o-linear-gradient(top left, #FFDC00, #E6B110);
+  background: linear-gradient(to bottom right, #FFDC00, #E6B110);
   text-align: center;
   padding: 0.5em 0;
   line-height: 1.25;
@@ -582,6 +582,22 @@ body {
   background-position: center top;
   -webkit-background-size: cover;
           background-size: cover; }
+  .work .flex {
+    display: block; }
+    .work .flex .col-1of2 h4 {
+      margin-bottom: 3.5em;
+      color: #ccc;
+      font-weight: 400;
+      letter-spacing: .2em; }
+
+@media (min-width: 85.375em) {
+  .work .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .work .col-1of2 h4 {
+    margin-bottom: 5em; } }
 
 .branding {
   background-image: url(/assets/img/branding-bg.jpg);
