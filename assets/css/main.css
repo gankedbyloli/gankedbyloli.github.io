@@ -605,6 +605,26 @@ body {
   background-position: center bottom;
   -webkit-background-size: cover;
           background-size: cover; }
+  .branding h2 {
+    margin-bottom: 0; }
+  .branding .sep {
+    margin-bottom: 5em; }
+  .branding .flex {
+    display: block; }
+    .branding .flex .col-1of2 h4 {
+      margin-bottom: 3.5em;
+      color: #ccc;
+      font-weight: 400;
+      letter-spacing: .2em; }
+
+@media (min-width: 85.375em) {
+  .branding .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .branding .col-1of2 h4 {
+    margin-bottom: 5em; } }
 
 .outro h3 {
   color: #fff;
