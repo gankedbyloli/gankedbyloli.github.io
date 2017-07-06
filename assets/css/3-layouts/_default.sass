@@ -11,4 +11,18 @@
 
 @media (min-width: 48em)
     .section-wrapper
-        padding: 8em 8em
+        padding: 10em 8em
+
+.col-1of2
+    width: 100%
+
+@media (min-width: 85.375em)
+    .col-1of2
+        &:first-child
+            width: 50%
+            max-width: 540px
+            padding-right: 90px
+        &:last-child
+            width: 50%
+            max-width: 540px
+            padding-left: 90px

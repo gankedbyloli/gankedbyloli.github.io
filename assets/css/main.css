@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -413,42 +413,52 @@ h1 {
     line-height: 1.15; } }
 
 h2 {
-  margin-bottom: 1.5em;
-  font-size: 48px;
+  margin-bottom: 1.0em;
+  font-size: 36px;
   line-height: 1.25; }
+
+@media (min-width: 30em) {
+  h2 {
+    margin-bottom: 1.25em;
+    font-size: 42px; } }
+
+@media (min-width: 48em) {
+  h2 {
+    margin-bottom: 1.5em;
+    font-size: 48px; } }
 
 h3 {
   margin-bottom: 1.5em;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 2;
-  letter-spacing: .5em; }
+  letter-spacing: .4em; }
 
 @media (min-width: 30em) {
   h3 {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.8; } }
 
 @media (min-width: 48em) {
   h3 {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.6; } }
 
 h4 {
   margin-bottom: 1.5em;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: .5em; }
 
 @media (min-width: 30em) {
   h4 {
-    font-size: 14px; } }
+    font-size: 16px; } }
 
 @media (min-width: 48em) {
   h4 {
-    font-size: 18px; } }
+    font-size: 20px; } }
 
 p {
   margin: 0 0 32px 0;
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
   font-weight: 300;
   letter-spacing: .05em;
@@ -456,11 +466,14 @@ p {
 
 @media (min-width: 30em) {
   p {
-    font-size: 22px; } }
+    font-size: 20px; } }
 
 @media (min-width: 48em) {
   p {
     font-size: 24px; } }
+
+a {
+  text-decoration: none; }
 
 em {
   font-style: italic; }
@@ -481,6 +494,46 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
+.sep {
+  height: 0;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-top: 4px solid #E6B110;
+  line-height: 1;
+  text-align: center;
+  width: 160px; }
+
+.cta {
+  max-width: 280px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  display: block;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ffdd0a), to(#E6B110));
+  background: -webkit-linear-gradient(top left, #ffdd0a, #E6B110);
+  background: -o-linear-gradient(top left, #ffdd0a, #E6B110);
+  background: linear-gradient(to bottom right, #ffdd0a, #E6B110);
+  text-align: center;
+  padding: 0.5em 0;
+  line-height: 1.25;
+  -webkit-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out; }
+
+@media (min-width: 30em) {
+  .cta {
+    max-width: 320px;
+    font-size: 24px; } }
+
+@media (min-width: 48em) {
+  .cta {
+    max-width: 360px;
+    font-size: 28px; } }
+
 .intro {
   background-image: url(/assets/img/intro-bg.jpg);
   background-repeat: no-repeat;
@@ -490,16 +543,38 @@ body {
   .intro h1 {
     max-width: 1080px;
     margin-left: -.05em; }
-  .intro h4.note {
-    padding-left: 0em;
-    color: #999; }
   .intro p {
-    max-width: 720px;
+    max-width: 700px;
     margin-bottom: 0; }
 
 @media (max-width: 85em) {
   .intro h1 {
     max-width: 800px; } }
+
+.about {
+  background-image: url(/assets/img/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .about .flex {
+    display: block; }
+    .about .flex .col-1of2 h4 {
+      margin-bottom: 3.5em;
+      color: #ccc;
+      font-weight: 400;
+      letter-spacing: .2em; }
+    .about .flex .col-1of2:first-child {
+      margin-bottom: 120px; }
+
+@media (min-width: 85.375em) {
+  .about .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .about .col-1of2 h4 {
+    margin-bottom: 5em; } }
 
 .work {
   background-image: url(/assets/img/work-bg.jpg);
@@ -537,4 +612,17 @@ body {
 
 @media (min-width: 48em) {
   .section-wrapper {
-    padding: 8em 8em; } }
+    padding: 10em 8em; } }
+
+.col-1of2 {
+  width: 100%; }
+
+@media (min-width: 85.375em) {
+  .col-1of2:first-child {
+    width: 50%;
+    max-width: 540px;
+    padding-right: 90px; }
+  .col-1of2:last-child {
+    width: 50%;
+    max-width: 540px;
+    padding-left: 90px; } }

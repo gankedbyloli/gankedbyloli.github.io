@@ -1,1 +1,28 @@
 .about
+    background:
+        image: url(/assets/img/about-bg.jpg)
+        repeat: no-repeat
+        position: center top
+        size: cover
+
+    .flex
+        display: block
+
+        .col-1of2
+            h4
+                margin-bottom: 3.5em
+                color: $silver
+                font-weight: 400
+                letter-spacing: .2em
+
+            &:first-child
+                margin-bottom: 120px
+
+@media (min-width: 85.375em)
+    .about
+        .flex
+            display: flex
+
+        .col-1of2
+            h4
+                margin-bottom: 5em
