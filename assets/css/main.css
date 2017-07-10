@@ -460,9 +460,8 @@ p {
   margin: 0 0 32px 0;
   font-size: 16px;
   font-family: 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
-  font-weight: 300;
-  letter-spacing: .05em;
-  color: #ccc; }
+  font-weight: 400;
+  letter-spacing: .05em; }
 
 @media (min-width: 30em) {
   p {
@@ -486,11 +485,10 @@ body {
   min-height: 100vh; }
 
 body {
-  background: #000;
+  background-color: #f3f3f3;
   font-size: 16px;
   line-height: 1.6;
   font-family: 'Montserrat', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
-  color: #fff;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
@@ -508,7 +506,7 @@ body {
 
 .cta {
   max-width: 280px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   letter-spacing: .1em;
   display: block;
@@ -532,12 +530,12 @@ body {
 @media (min-width: 30em) {
   .cta {
     max-width: 320px;
-    font-size: 24px; } }
+    font-size: 26px; } }
 
 @media (min-width: 48em) {
   .cta {
     max-width: 360px;
-    font-size: 28px; } }
+    font-size: 30px; } }
 
 .intro {
   background-image: url(/assets/img/intro-bg.jpg);
@@ -547,10 +545,14 @@ body {
           background-size: cover; }
   .intro h1 {
     max-width: 1080px;
-    margin-left: -.05em; }
+    margin-left: -.05em;
+    color: #fff; }
+  .intro h3, .intro h4 {
+    color: #fff; }
   .intro p {
     max-width: 700px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    color: #ccc; }
 
 @media (max-width: 85em) {
   .intro h1 {
@@ -564,11 +566,15 @@ body {
           background-size: cover; }
   .about .flex {
     display: block; }
+    .about .flex .col-1of2 h2 {
+      color: #fff; }
     .about .flex .col-1of2 h4 {
       margin-bottom: 3.5em;
       color: #ccc;
       font-weight: 400;
       letter-spacing: .2em; }
+    .about .flex .col-1of2 p {
+      color: #ccc; }
     .about .flex .col-1of2:first-child {
       margin-bottom: 120px; }
 
@@ -587,8 +593,12 @@ body {
   background-position: center top;
   -webkit-background-size: cover;
           background-size: cover; }
+  .work h2 {
+    color: #fff; }
   .work .flex {
     display: block; }
+    .work .flex .col-1of2 p {
+      color: #ccc; }
     .work .flex .col-1of2 h4 {
       margin-bottom: 3.5em;
       color: #ccc;
@@ -611,11 +621,14 @@ body {
   -webkit-background-size: cover;
           background-size: cover; }
   .branding h2 {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    color: #fff; }
   .branding .sep {
     margin-bottom: 5em; }
   .branding .flex {
     display: block; }
+    .branding .flex .col-1of2 p {
+      color: #ccc; }
     .branding .flex .col-1of2 h4 {
       margin-bottom: 3.5em;
       color: #ccc;
@@ -631,14 +644,15 @@ body {
   .branding .col-1of2 h4 {
     margin-bottom: 5em; } }
 
-.outro h3 {
-  color: #fff;
-  text-align: center; }
-
-.outro h4 {
-  margin-bottom: 0;
-  color: #999;
-  text-align: center; }
+.outro {
+  background-color: #000; }
+  .outro h3 {
+    color: #fff;
+    text-align: center; }
+  .outro h4 {
+    margin-bottom: 0;
+    color: #999;
+    text-align: center; }
 
 .wrapper {
   border: 1.2em solid #fff;
