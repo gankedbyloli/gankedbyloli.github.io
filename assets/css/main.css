@@ -558,33 +558,33 @@ body {
   .intro h1 {
     max-width: 800px; } }
 
-.about {
+.misc {
   background-image: url(/assets/img/about-bg.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   -webkit-background-size: cover;
           background-size: cover; }
-  .about .flex {
+  .misc .flex {
     display: block; }
-    .about .flex .col-1of2 h2 {
+    .misc .flex .col-1of2 h2 {
       color: #fff; }
-    .about .flex .col-1of2 h4 {
+    .misc .flex .col-1of2 h4 {
       margin-bottom: 3.5em;
       color: #ccc;
       font-weight: 400;
       letter-spacing: .2em; }
-    .about .flex .col-1of2 p {
+    .misc .flex .col-1of2 p {
       color: #ccc; }
-    .about .flex .col-1of2:first-child {
+    .misc .flex .col-1of2:first-child {
       margin-bottom: 120px; }
 
 @media (min-width: 85.375em) {
-  .about .flex {
+  .misc .flex {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-  .about .col-1of2 h4 {
+  .misc .col-1of2 h4 {
     margin-bottom: 5em; } }
 
 .work {
