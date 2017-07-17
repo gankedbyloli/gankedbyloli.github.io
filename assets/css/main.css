@@ -480,6 +480,10 @@ em {
 strong {
   font-weight: bold; }
 
+img {
+  width: 60%;
+  height: auto; }
+
 html,
 body {
   min-height: 100vh; }
@@ -571,7 +575,7 @@ body {
     .misc .flex .col-1of2 h4 {
       margin-bottom: 3.5em;
       color: #ccc;
-      font-weight: 400;
+      font-weight: 500;
       letter-spacing: .2em; }
     .misc .flex .col-1of2 p {
       color: #ccc; }
@@ -602,7 +606,7 @@ body {
     .work .flex .col-1of2 h4 {
       margin-bottom: 3.5em;
       color: #ccc;
-      font-weight: 400;
+      font-weight: 500;
       letter-spacing: .2em; }
 
 @media (min-width: 85.375em) {
@@ -632,7 +636,7 @@ body {
     .branding .flex .col-1of2 h4 {
       margin-bottom: 3.5em;
       color: #ccc;
-      font-weight: 400;
+      font-weight: 500;
       letter-spacing: .2em; }
 
 @media (min-width: 85.375em) {
