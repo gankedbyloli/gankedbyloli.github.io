@@ -681,8 +681,8 @@ body {
   color: #333; }
 
 @media (min-width: 30em) {
-  .journey h1 {
-    font-size: 48px;
+  .story h1 {
+    font-size: 64px;
     line-height: 1.25; } }
 
 @media (min-width: 48em) {
@@ -747,6 +747,8 @@ body {
 @media (min-width: 48em) {
   .level {
     padding: 60px 0 30px; }
+    .level:first-child {
+      padding-top: 0; }
     .level:last-child {
       padding-bottom: 90px; }
     .level .container {
