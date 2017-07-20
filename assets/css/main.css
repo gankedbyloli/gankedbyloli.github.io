@@ -482,6 +482,10 @@ em {
 strong {
   font-weight: bold; }
 
+ol, ul {
+  margin-left: 0;
+  margin-bottom: 32px; }
+
 img {
   width: 100%;
   height: auto; }
@@ -687,6 +691,43 @@ body {
 
 @media (min-width: 48em) {
   .story h1 {
+    font-size: 96px;
+    line-height: 1.15; } }
+
+.critique .hero {
+  background-image: url(/assets/img/zhihu-showcase.jpg);
+  background-repeat: no-repeat;
+  background-position: center 40%;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.critique h1 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.4; }
+
+.critique h2 {
+  margin: 0; }
+
+.critique p {
+  font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
+  font-size: 20px;
+  color: #333; }
+
+.critique li {
+  font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: .05em; }
+
+@media (min-width: 30em) {
+  .critique h1 {
+    font-size: 64px;
+    line-height: 1.25; } }
+
+@media (min-width: 48em) {
+  .critique h1 {
     font-size: 96px;
     line-height: 1.15; } }
 
