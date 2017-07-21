@@ -6,32 +6,47 @@
                 h1 A Product Critique on Zhihu App
         .level
             .container
-                p In this article I will give a product critique on Zhihu’s iOS app in terms of UX design: from abstract to concrete and from conception to completion.
-                h2 Introducing Zhihu
-                .sep
-                p When Zhihu was founded, it was our Chinese ‘Quora’, a place to share knowledge, experiences and thoughts with the world. Six years later, things have evolved. Zhihu is now a diverse community of interests where people are exchanging their ideas interactively. It actually becomes a social medium that connects people in multiple ways of knowledge sharing.
+                p In this article I will give a product critique on Zhihu’s iOS app in terms of UX design. I will explore the design decisions and propose corresponding solutions too.
+                h2 Introduction
+                .sep.taller
+                p When Zhihu was founded, it was our Chinese ‘Quora’, a place to share knowledge, experiences and thoughts with the world. Six years later, things have evolved. Zhihu is now a diverse community of interests. It actually becomes a social medium that connects people in multiple ways of knowledge sharing.
         .level
             .container
-                h2 Understanding Business Objectives and User Needs
-                .sep
-                p Over the years, the fundamental of Zhihu remains the same: creating, answering and organizing questions by users. On the premise that an authentic, efficient and knowledge-based community is established, Zhihu has derived higher business objectives:
+                h2 Business Objectives and User Needs
+                .sep.taller
+                p Over the years, the fundamental of Zhihu remains the same: asking and answering questions by users. On the premise that an authentic, efficient and knowledge-based community has been established, Zhihu derives higher business objectives:
                 ol
-                    li To reduce cost of knowledge acquisition, propagation and communication;
-                    li To explore and exploit various scenarios that meet user needs of knowledge;
-                    li To integrate advertisement into content and to make profit without damaging the community;
-                    li To transform itself into a platform that truly serves the knowledge market.
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span To reduce cost of knowledge acquisition, propagation and communication
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span To explore various scenarios that meet user needs of knowledge
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span To integrate advertisement into content without damaging the community
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span To transform itself into a platform that truly serves the knowledge market
                 p These objectives are associated with user needs:
                 ol
-                    li To search, navigate, and browse knowledge intuitively;
-                    li To enjoy pleasure of delivering, retrieving and exchanging knowledge;
-                    li To have maximized probability of getting high-quality recommendations;
-                    li To earn protection and reward by creating high-quality content;
-                    li To build more intimate and reliable connections among knowledge contributors and pursuers.
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span To search, navigate, and browse intuitively
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span To have maximized probability of getting high-quality recommendations
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span To earn protection and reward by contributing to knowledge market
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span To build more reliable and intimate connections with other knowledge contributors and pursuers
                 p These external user needs, along with the internal business objectives, have set the goals of Zhihu’s iOS app design. Now, let’s examine some particular content and functions in the existing app to see if all goals are well-achieved.
         .level
             .container
-                h2 Researching Home and Discover
-                .sep
+                h2 Home and Discover
+                .sep.taller
                 p One of the compelling features of Zhihu’s iOS app is fast and efficient knowledge retrieval. It uses ‘Home’ and ‘Discover’ to recommend what would most likely interest a user to browse—the feed. Sharing a card-based layout, ‘Home’ and ‘Discover’ are able to dynamically load feeds through infinite scrolling. The main difference lies within content. That is, ‘Home’ retrieves feeds from user’s network while ‘Discover’ introduces feeds from the most recent and popular Q&As in the community. Navigations are really simple in both pages: users browse the feeds from top to bottom. And they could easily learn more information by tapping different parts of a feed item.
                 p However, there are three problems and suggestions I would like to mention.
                 p 1. Structural design of the feed is monotonous, lacking a sense of depth and rhythm. 
@@ -45,8 +60,8 @@
                 p SOLUTION: Since the delete button is too small, I doubt anyone would frequently use it. And if the app provides feeds that always understand user needs, the action of removing a feed item is considered redundant. Therefore, by simply removing this button, the problems of inconsistency and poor interaction design are solved.
         .level
             .container
-                h2 Analyzing Market
-                .sep
+                h2 Market
+                .sep.taller
                 p ‘Market’ indicates Zhihu’s determination to provide high-quality knowledge services and establish a well-regulated knowledge market. It creates three new scenarios for knowledge sharing----Live, Bookstore and Pay to Ask. Zhihu Live, especially, is an innovative avenue for knowledge contributors interacting with their audience and getting rewarded for their effort.
                 p Beginning with a carousel of advertisements, ‘Market’ mainly consists of entries to three services mentioned above and featured items belonging to each one. The user experience is more interesting in this page. First, it adds horizontal swiping when scrolling from top to bottom. This would diversify interactions. Second, knowledge content is categorized accordingly. So it is easier for users to navigate through a hierarchical structure.
                 p However, there are still some issues to address.
@@ -61,8 +76,8 @@
                 p SOLUTION: A bold suggestion would be separating Live from the existing app and making it an independent app. The reason is that Live is such an innovative product that it incorporates the concept of sharing economy into knowledge market. It is a complete and competitive product in terms of content and function. The interaction within a Live, especially, is fun to use like a live chat app. To weigh the risks and benefits, I believe restricting ‘Live’ in ‘Market’ would not hugely solidify knowledge market but restrict the development of Zhihu Live to some extent.
         .level
             .container
-                h2 Comparing Asking and Answering Functions with Quora
-                .sep
+                h2 Asking and Answering
+                .sep.taller
                 p Asking and answering are basic functions of any Q&A websites including Zhihu and Quora. Compared to Quora, however, it seems that Zhihu has deliberately overshadowed these two functions on the mobile app. It is reasonable in some perspective since the system is at scale and editing text and image using a mobile phone could be frustrating. Even so, I feel like users deserve a better experience:
                 p 1. Design and interaction of question asking and answering are lackluster.
                 p For example, Zhihu opens only one entry point in the whole app for question asking and the subsequent procedure lacks guidance-users have no idea how many steps are away from posting a question successfully.
@@ -72,13 +87,13 @@
                 p SOLUTION: Bringing call-to-action buttons like ‘Next’ or ‘Publish’ to the natural area can prove beneficial from an experience standpoint. Zhihu could learn from Quora by placing the buttons right next to keyboards. This would facilitate the experience of asking a question.
         .level
             .container
-                h2 Examining Other Discrepancies
-                .sep
+                h2 Other Discrepancies
+                .sep.taller
                 p 1. Information pieces are accumulated with little sense of priority and hierarchy. Many pages are facing this common problem. Speaking of priority, the search page, in particular, presents search results with a confusing order----neither the answer with most upvotes nor the one with newest publishing date is necessarily top of the results. Users often scroll down to find the answer they needs. Speaking of hierarchy, the feeds, the lives, the books are all plainly added one by one. The browsing experience like tasting a hotchpotch, not awful but definitely not exciting.
                 p 2. There are some icon misuses. For example, the bubble icon at top-right is a wrong metaphor for private messages. It is intended for initiating a dialog not for receiving a message. It would be suitable to use an inbox icon instead. Another example is that the icon for sharing indicates writing an answer not sharing knowledge. Additionally, the Ask, Answer and Share use line icons which is inconsistent with other solid icons throughout the whole app. Lastly, the cross button for deleting feed and the dropdown button in a live are easy to mis-tap.
                 p 3. Loading patterns are inconsistent. The majority of loading animations use a spinner. However, there are three different styles of spinners. This inconsistency is likely to break the integrity of the whole app.
                 p 4. Advertisement and knowledge content are well-balanced throughout the app. In some sections, however, ads are a little overwhelming. Plus, I am not particularly in favour of the idea of carousel. I feel like it is a web thing rather than a component that fits into the iOS app design paradigm very well.
         .level
             .container
-                h2 Concluding and Reflecting 
+                h2 Reflection
                 
