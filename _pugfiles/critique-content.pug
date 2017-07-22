@@ -3,16 +3,18 @@
     .article-wrapper
         .level
             .container
-                h1 A Product Critique on Zhihu App
+                h1 
+                    span A Product Critique on Zhihu App 
+                    img(src="/assets/img/zhihu-logo.png")
         .level
             .container
                 p In this article I will give a product critique on Zhihu’s iOS app in terms of UX design. I will explore the design decisions and propose corresponding solutions too.
-                h2 Introduction
+                h2 INTRODUCTION
                 .sep.taller
                 p When Zhihu was founded, it was our Chinese ‘Quora’, a place to share knowledge, experiences and thoughts with the world. Six years later, things have evolved. Zhihu is now a diverse community of interests. It actually becomes a social medium that connects people in multiple ways of knowledge sharing.
         .level
             .container
-                h2 Business Objectives and User Needs
+                h2 BUSINESS OBJECTIVES AND USER NEEDS
                 .sep.taller
                 p Over the years, the fundamental of Zhihu remains the same: asking and answering questions by users. On the premise that an authentic, efficient and knowledge-based community has been established, Zhihu derives higher business objectives:
                 ol
@@ -45,11 +47,11 @@
                 p These external needs, along with the internal objectives, have set the goals of Zhihu’s iOS app design. Now, let’s examine some particular content and functions in the existing app to see if all goals are well-achieved.
         .level
             .container
-                h2 Home and Discover
+                h2 HOME AND DISCOVER
                 .sep.taller
                 p One of the compelling features of Zhihu’s iOS app is fast and efficient knowledge retrieval. It uses ‘Home’ and ‘Discover’ to recommend what would most likely interest a user to browse—the feed. 
-                p Sharing a card-based layout, ‘Home’ and ‘Discover’ are able to dynamically load feeds through infinite scrolling from top to bottom. The main difference lies within content. That is, ‘Home’ retrieves feeds from user’s network while ‘Discover’ introduces feeds from the most recent and popular Q&As in the community.
-                p Here are three problems and suggestions I would like to mention.
+                p Sharing a card-based layout, ‘Home’ and ‘Discover’ are able to dynamically load feeds through infinite scrolling from top to bottom. The main difference lies within content. That is, ‘Home’ introduces feeds from user’s network while ‘Discover’ collects feeds from trending answers on the website.
+                p Here are three problems I would like to mention.
                 h3 1. Structural design of the feed is monotonous, lacking a sense of depth and rhythm. 
                 p PROBLEM: Overall, Zhihu is conservative in displaying the feed. By conservative I mean, from top to bottom, information is added without any prioritization or classification. There is no evidence to suggest that feeds are chronologically ordered or visually categorized. Since users cannot tell the reason why one feed item is placed ahead of another, their scrolling experience becomes aimless. Take myself as an example, I have never browsed the feeds three screens away from the initial one because I assume I wouldn’t find anything more interesting for me. In short, without the sense of depth and rhythm, users tend to lose their interests quickly and stop browsing fairly soon.
                 p SOLUTION: With the card-based layout intact, rearranging the feed in a hierarchical and flexible way would provide a greater user experience. To add more depth, designers could organize the feeds into different categories with corresponding titles and color indications. To add more rhythm, they could tweak size, layout and interaction intermittently. For example, within a topic, the first feed could have a larger image and a special layout. This flexibility in design generally allows the feeds being more interesting to read.
@@ -61,7 +63,7 @@
                 p SOLUTION: Since the delete button is too small, I doubt anyone would frequently use it. And if the app provides feeds that always understand user needs, the action of removing a feed item is considered redundant. Therefore, by simply removing this button, the problems of inconsistency and poor interaction design are solved.
         .level
             .container
-                h2 Market
+                h2 MARKET
                 .sep.taller
                 p ‘Market’ indicates Zhihu’s determination to provide high-quality knowledge services and establish a well-regulated knowledge market. It creates three new scenarios for knowledge sharing----Live, Bookstore and Pay to Ask. Zhihu Live, especially, is an innovative avenue for knowledge contributors interacting with their audience and getting rewarded for their effort.
                 p Beginning with a carousel of advertisements, ‘Market’ mainly consists of entries to three services mentioned above and featured items belonging to each one. The user experience is more interesting in this page. First, it adds horizontal swiping when scrolling from top to bottom. This would diversify interactions. Second, knowledge content is categorized accordingly. So it is easier for users to navigate through a hierarchical structure.
@@ -77,7 +79,7 @@
                 p SOLUTION: A bold suggestion would be separating Live from the existing app and making it an independent app. The reason is that Live is such an innovative product that it incorporates the concept of sharing economy into knowledge market. It is a complete and competitive product in terms of content and function. The interaction within a Live, especially, is fun to use like a live chat app. To weigh the risks and benefits, I believe restricting ‘Live’ in ‘Market’ would not hugely solidify knowledge market but restrict the development of Zhihu Live to some extent.
         .level
             .container
-                h2 Asking and Answering
+                h2 ASKING AND ANSWERING
                 .sep.taller
                 p Asking and answering are basic functions of any Q&A websites including Zhihu and Quora. Compared to Quora, however, it seems that Zhihu has deliberately overshadowed these two functions on the mobile app. It is reasonable in some perspective since the system is at scale and editing text and image using a mobile phone could be frustrating. Even so, I feel like users deserve a better experience:
                 h3 1. Design and interaction of question asking and answering are lackluster.
@@ -88,7 +90,7 @@
                 p SOLUTION: Bringing call-to-action buttons like ‘Next’ or ‘Publish’ to the natural area can prove beneficial from an experience standpoint. Zhihu could learn from Quora by placing the buttons right next to keyboards. This would facilitate the experience of asking a question.
         .level
             .container
-                h2 Other Discrepancies
+                h2 OTHER DISCREPANCIES
                 .sep.taller
                 h3 1. Information pieces are accumulated with little sense of priority and hierarchy.
                 p Many pages are facing this common problem. Speaking of priority, the search page, in particular, presents search results with a confusing order----neither the answer with most upvotes nor the one with newest publishing date is necessarily top of the results. Users often scroll down to find the answer they needs. Speaking of hierarchy, the feeds, the lives, the books are all plainly added one by one. The browsing experience like tasting a hotchpotch, not awful but definitely not exciting.
@@ -100,5 +102,6 @@
                 p Plus, I am not particularly in favour of the idea of carousel. I feel like it is a web thing rather than a component that fits into the iOS app design paradigm very well.
         .level
             .container
-                h2 Reflection
+                h2 REFLECTION
+                .sep
                 
