@@ -11,12 +11,14 @@
                 p In this article I will give a product critique on Zhihu’s iOS app in terms of UX design. I will explore the design decisions and propose corresponding solutions too.
                 h2 INTRODUCTION
                 .sep.taller
-                p When Zhihu was founded, it was our Chinese ‘Quora’, a place to share knowledge, experiences and thoughts with the world. Six years later, things have evolved. Zhihu is now a diverse community of interests. It actually becomes a social medium that connects people in multiple ways of knowledge sharing.
+                p When Zhihu was founded, it was our Chinese 'Quora', a place to share knowledge, experiences and thoughts with the world. Six years later, things have evolved. Zhihu is now a diverse community of interests. It actually becomes a social medium that connects people in multiple ways of knowledge sharing.
         .level
             .container
                 h2 BUSINESS OBJECTIVES AND USER NEEDS
                 .sep.taller
-                p Over the years, the fundamental of Zhihu remains the same: asking and answering questions by users. On the premise that an authentic, efficient and knowledge-based community has been established, Zhihu derives higher business objectives:
+                p Over the years, the fundamental of Zhihu remains the same: asking and answering questions by users.
+                img(src="/assets/img/intro.png")
+                p On the premise that an authentic, efficient and knowledge-based community has been established, Zhihu derives higher business objectives:
                 ol
                     li
                         i.icon.icon-li.ion-chevron-right
@@ -47,10 +49,10 @@
                 p These external needs, along with the internal objectives, have set the goals of Zhihu’s iOS app design. Now, let’s examine some particular content and functions in the existing app to see if all goals are well-achieved.
         .level
             .container
-                h2 HOME AND DISCOVER
+                h2 HOME FEED AND DISCOVER FEED
                 .sep.taller
-                p One of the compelling features of Zhihu’s iOS app is fast and efficient knowledge retrieval. It uses ‘Home’ and ‘Discover’ to recommend what would most likely interest a user to browse—the feed. 
-                p Sharing a card-based layout, ‘Home’ and ‘Discover’ are able to dynamically load feeds through infinite scrolling from top to bottom. The main difference lies within content. That is, ‘Home’ introduces feeds from user’s network while ‘Discover’ collects feeds from trending answers on the website.
+                p One of the compelling features of Zhihu’s iOS app is fast and efficient knowledge retrieval. It uses Home and Discover to recommend what would most likely interest a user to browse—the feed. 
+                p Sharing a card-based layout, Home and Discover are able to dynamically load feeds through infinite scrolling from top to bottom. The main difference lies within content. That is, Home introduces feeds from user’s network while Discover collects feeds from trending answers on the website.
                 p Here are three problems I would like to mention.
                 
                 h3 1. Structural design of the feed is monotonous, lacking a sense of depth and rhythm. 
@@ -59,12 +61,14 @@
                 p Overall, Zhihu is conservative in displaying the feed. By conservative I mean, from top to bottom, information is added with little prioritization or classification. There is no evidence to suggest that feeds are chronologically ordered or visually categorized. Since users cannot tell the reason why one feed item is placed ahead of another, their scrolling experience becomes aimless. Take myself as an example, I have never browsed the feeds three screens away from the initial one because I assume I wouldn’t find anything more interesting for me. In short, without the sense of depth and rhythm, users tend to lose their interests quickly and stop browsing fairly soon.
                 h4 SOLUTION
                 p With the card-based layout intact, rearranging the feed in a hierarchical and flexible way would provide a greater user experience. To add more depth, designers could organize the feeds into different categories with corresponding titles and color indications. To add more rhythm, they could tweak size, layout and interaction intermittently. For example, within a topic, the first feed could have a larger image and a special layout. This flexibility in design generally allows the feeds being more interesting to read.
-                h3 2. Ambiguity on differences between feeds from ‘Home’ and from ‘Discover’ brings about confusion.
+                h3 2. Ambiguity on differences between feeds from Home and from Discover brings about confusion.
+                img(src="/assets/img/home-discover-amb.png")
                 h4 PROBLEM
-                p As mentioned above, ‘Home’ provides feeds related to current user’s followings while ‘Discover’ provides feeds that are recently most popular in community. However, feeds from ‘Discover’ fail to develop their own characteristics in terms of content and appearance. ‘Discover’, therefore, does not create a clear personality to distinguish itself from ‘Home’. One would hardly turn to ‘Discover’ to discover new things in if he has been discovering new things in ‘Home’. In this case, we could imagine that much less traffic would be led to ‘Discover’ since a user cannot tell the differences between what he reads in ‘Home’ and in ‘Discover’.
+                p As mentioned above, Home provides feeds related to current user’s followings while Discover provides feeds that are recently most popular in community. However, feeds from Discover fail to develop their own characteristics in terms of content and appearance. Discover, therefore, does not create a clear personality to distinguish itself from Home. One would hardly turn to Discover to "discover" new things in if he has been "discovering" new things in Home. In this case, we could imagine that much less traffic would be led to Discover since a user cannot tell the differences between what he reads in Home and in Discover.
                 h4 SOLUTION
                 p Visually, adding more distinct category titles and applying different color schemes are alternatives. And from a content-driven perspective, ‘Discover’ should persistently provide Q&As that are not only interesting but also different from those in ‘Home’. The key is to let a user discover knowledge that he has never realized before. Another possible solution would be switching the content in ‘Home’ and ‘Discover’ and renaming the ‘Discover’ to ‘Subscribe’ or ‘Broadcast’ in the main navigation.
                 h3 3. Interactions of deleting feed items are inconsistent.
+                img(src="/assets/img/home-feed-delete.png")
                 h4 PROBLEM
                 p The first inconsistency lies across sections. Notice that cross button at the top right corner of a feed item in ‘Home’? It does not appear a similar layout in ‘Discover’. More importantly, the replacing card once tapping the cross button uses an inconsistent visual design with borders and rounded corners. And it provides no confirm button and would never disappear unless one of the tags is chosen.
                 h4 SOLUTION
