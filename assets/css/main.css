@@ -716,6 +716,9 @@ body {
   -webkit-background-size: cover;
           background-size: cover; }
 
+.critique img {
+  margin-bottom: 1.5em; }
+
 .critique h1 {
   margin: 0;
   font-size: 36px;
@@ -723,17 +726,22 @@ body {
   .critique h1 img {
     width: 1em;
     height: 1em;
-    vertical-align: -.2em; }
+    vertical-align: -.2em;
+    margin-bottom: 0; }
 
 .critique h2 {
   margin: 0;
   font-size: 30px; }
 
 .critique h3 {
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
   font-size: 24px;
   line-height: 1.8;
   letter-spacing: .02em; }
+
+.critique h4 {
+  margin-bottom: 1em;
+  letter-spacing: .3em; }
 
 .critique p {
   font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
