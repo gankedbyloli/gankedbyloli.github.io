@@ -564,7 +564,7 @@ body {
     font-size: 30px; } }
 
 .intro {
-  background-image: url(/assets/img/intro-bg.jpg);
+  background-image: url(/interaction-design-portfolio/assets/img/intro-bg.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   -webkit-background-size: cover;
@@ -585,7 +585,7 @@ body {
     max-width: 800px; } }
 
 .misc {
-  background-image: url(/assets/img/about-bg.jpg);
+  background-image: url(/interaction-design-portfolio/assets/img/about-bg.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   -webkit-background-size: cover;
@@ -614,7 +614,7 @@ body {
     margin-bottom: 5em; } }
 
 .work {
-  background-image: url(/assets/img/work-bg.jpg);
+  background-image: url(/interaction-design-portfolio/assets/img/work-bg.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   -webkit-background-size: cover;
@@ -641,7 +641,7 @@ body {
     margin-bottom: 5em; } }
 
 .branding {
-  background-image: url(/assets/img/branding-bg.jpg);
+  background-image: url(/interaction-design-portfolio/assets/img/branding-bg.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   -webkit-background-size: cover;
@@ -681,7 +681,7 @@ body {
     text-align: center; }
 
 .story .hero {
-  background-image: url(/assets/img/dreamer.jpg);
+  background-image: url(/interaction-design-portfolio/assets/img/dreamer.jpg);
   background-repeat: no-repeat;
   background-position: 30% 20%;
   -webkit-background-size: cover;
@@ -712,7 +712,7 @@ body {
     line-height: 1.15; } }
 
 .critique .hero {
-  background-image: url(/assets/img/zhihu-showcase.jpg);
+  background-image: url(/interaction-design-portfolio/assets/img/zhihu-showcase.jpg);
   background-repeat: no-repeat;
   background-position: center 40%;
   -webkit-background-size: cover;
