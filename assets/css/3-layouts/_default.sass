@@ -62,32 +62,43 @@
             padding-left: 90px
 
 .level
-    padding: 20px 10px
+    padding: 24px 20px
     &:last-child
         padding-bottom: 40px
     .container
         p
             &:last-child
                 margin-bottom: 0
-.level.level--oyster-pink
-    background-color: #EDD9CF
-.level.level--humming-bird
-    background-color: #E2F0FB
 
 @media (min-width: 48em)
     .level
-        padding: 60px 0 30px
+        padding: 48px 80px 30px
         &:first-child
             padding-top: 0
         &:last-child
-            padding-bottom: 90px
+            padding-bottom: 75px
         .container
             position: relative
             margin: 0 auto
             max-width: 100%
             width: 996px
             p, ol, ul
+                width: 85%
+
+@media (min-width: 64em)
+    .level
+        padding: 60px 0 30px
+        &:last-child
+            padding-bottom: 90px
+        .container
+            p, ol, ul
                 width: 66.6666666666667%
+
+.level.level--oyster-pink
+    background-color: #EDD9CF
+
+.level.level--humming-bird
+    background-color: #E2F0FB
 
 .hero
     height: 450px
