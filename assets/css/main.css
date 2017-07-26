@@ -569,10 +569,10 @@ body {
 
 .highlight {
   position: relative;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #f7f7b2));
-  background-image: -webkit-linear-gradient(left, transparent 50%, #f7f7b2 50%);
-  background-image: -o-linear-gradient(left, transparent 50%, #f7f7b2 50%);
-  background-image: linear-gradient(to right, transparent 50%, #f7f7b2 50%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #f3f383));
+  background-image: -webkit-linear-gradient(left, transparent 50%, #f3f383 50%);
+  background-image: -o-linear-gradient(left, transparent 50%, #f3f383 50%);
+  background-image: linear-gradient(to right, transparent 50%, #f3f383 50%);
   -webkit-background-size: 200% 100%;
           background-size: 200% 100%;
   -webkit-transition: all 0.6s ease-out;
@@ -699,9 +699,9 @@ body {
     text-align: center; }
 
 .story .hero {
-  background-image: url(/assets/img/dreamer.jpg);
+  background-image: url(/assets/img/bio-img-1.jpg);
   background-repeat: no-repeat;
-  background-position: 30% 20%;
+  background-position: center 70%;
   -webkit-background-size: cover;
           background-size: cover; }
 
@@ -716,7 +716,7 @@ body {
 .story p {
   font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
   font-size: 20px;
-  color: #333;
+  color: #000;
   line-height: 1.8; }
 
 @media (min-width: 30em) {
@@ -765,7 +765,7 @@ body {
   margin: 0 0 24px 0;
   font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
   font-size: 16px;
-  color: #333;
+  color: #000;
   line-height: 1.8; }
 
 .critique li {
