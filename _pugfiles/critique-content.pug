@@ -16,7 +16,10 @@
                 img(src="/assets/img/intro.png")     
         .level
             .container           
-                p When Zhihu was founded, it was our Chinese 'Quora', a place to share knowledge, experiences and thoughts with the world. Six years later, things have evolved. Zhihu is now a diverse community of interests. It actually becomes a social medium that connects people in multiple ways of knowledge sharing.
+                p 
+                    | When Zhihu was founded, it was our Chinese 'Quora', a place to share knowledge, experiences and thoughts with the world. Six years later, things have evolved. Zhihu is now a diverse community of interests. It actually becomes 
+                    span.highlight a social medium that connects people in multiple ways of knowledge sharing
+                    | .
         .level
             .container
                 h2 BUSINESS OBJECTIVES AND USER NEEDS
@@ -54,8 +57,13 @@
             .container
                 h2 HOME AND DISCOVER FEED
                 .sep.taller
-                p One of the compelling features of Zhihu’s iOS app is fast and efficient knowledge retrieval. It uses Home and Discover to recommend what would most likely interest a user to browse—the feed. 
-                p Sharing a card-based layout, Home and Discover are able to dynamically load feeds through infinite scrolling from top to bottom. The main difference lies within content. That is, Home introduces feeds from user’s network while Discover collects feeds from trending answers on the website.
+                p 
+                    | One of the compelling features of Zhihu’s iOS app is 
+                    span.highlight fast and efficient knowledge retrieval
+                    | . It uses Home and Discover to recommend what would most likely interest a user to browse—the feed. 
+                p 
+                    | Sharing a card-based layout, Home and Discover are able to dynamically load feeds through infinite scrolling from top to bottom. The main difference lies within content. That is, 
+                    span.highlight Home introduces feeds from user’s network while Discover collects feeds from trending answers on the website.
                 p Here are three problems I would like to mention.
                 
                 h3 1. Structural design of the feed is monotonous, lacking a sense of depth and rhythm. 
@@ -67,7 +75,10 @@
                 h4 PROBLEM
                 p Overall, Zhihu is conservative in displaying the feed. By conservative I mean information is added with little prioritization or classification. There is no evidence to suggest that feeds are chronologically ordered or visually categorized. Since users cannot tell the reason why one feed item is placed ahead of another, their scrolling experience becomes aimless. Take myself as an example, I have never browsed the feeds three screens away from the initial one because I assume I wouldn’t find anything more interesting for me. So with current structure, users tend to lose their interests quickly and stop browsing fairly soon.
                 h4 SOLUTION
-                p With the card-based layout intact, rearranging the feed in a hierarchical and flexible way would provide a greater user experience. To add more depth, designers could organize the feeds into different categories with corresponding titles and color indications. To add more rhythm, they could tweak size, layout and interaction intermittently. For example, within a topic, the first feed could have a larger image and a special layout. This flexibility in design generally allows the feeds being more interesting to read.
+                p
+                    | With the card-based layout intact, 
+                    span.highlight rearranging the feed in a hierarchical and flexible way
+                    |  would provide a greater user experience. To add more depth, designers could organize the feeds into different categories with corresponding titles and color indications. To add more rhythm, they could tweak size, layout and interaction intermittently. For example, within a topic, the first feed could have a larger image and a special layout. This flexibility in design generally allows the feeds being more interesting to read.
                 h3 2. Differences between feeds from Home and from Discover bring about confusion.
         .level.level--humming-bird
             .container        
@@ -75,10 +86,19 @@
         .level
             .container
                 h4 PROBLEM
-                p As mentioned above, Home provides feeds related to current user’s followings while Discover provides feeds that are recently most popular in community. However, feeds from both fail to develop their own characteristics in terms of appearance and functionality: they use similar layouts and duplicated interactions. Therefore, one would hardly turn to Discover to "discover" new things if he has been "discovering" new things in Home. In this case, we could imagine that much less traffic would be led to Discover.
+                p    
+                    | As mentioned above, Home provides feeds related to current user’s followings while Discover provides feeds that are recently most popular in community. 
+                    span.highlight However, feeds from both fail to develop their own characteristics in terms of appearance and functionality: they use similar layouts and duplicated interactions.
+                    |  Therefore, one would hardly turn to Discover to "discover" new things if he has been "discovering" new things in Home. In this case, we could imagine that much less traffic would be led to Discover.
                 h4 SOLUTION
-                p Home and Discover must distinguish their personalities from each other. Visually, adding distinct category titles and applying corresponding color schemes are alternatives. From a content-driven perspective, Discover feed should persistently provide knowledge that is not only interesting but also speical. The key is to let a user discover knowledge that he has never realized before.
-                p Another possible solution would be refactoring IA. For example, we could removing the search bar from Home and replacing the compass icon with a search icon for Discover And we could add top navigations like 'Subscribe' or 'Broadcast' to indicate different categories of the feed sources. It would require further thinking but would ease current ambiguity. 
+                p
+                    | Home and Discover must distinguish their personalities from each other. Visually, 
+                    span.highlight adding distinct category titles and applying corresponding color schemes are alternatives
+                    | . From a content-driven perspective, Discover feed should persistently provide knowledge that is not only interesting but also speical. The key is to let a user discover knowledge that he has never realized before.
+                p
+                    | Another possible solution would be 
+                    span.highlight refactoring IA
+                    | . For example, we could removing the search bar from Home and replacing the compass icon with a search icon for Discover. And we could add top navigations like 'Subscribe' or 'Broadcast' to indicate different categories of the feed sources. It would require further thinking but would ease current ambiguity. 
                 h3 3. Interactions of removing feed are inconsistent.
         .level.level--humming-bird
             .container
