@@ -722,12 +722,12 @@ body {
 @media (min-width: 30em) {
   .story h1 {
     font-size: 64px;
-    line-height: 1.25; } }
+    line-height: 1.375; } }
 
 @media (min-width: 48em) {
   .story h1 {
     font-size: 96px;
-    line-height: 1.15; } }
+    line-height: 1.35; } }
 
 .critique .hero {
   background-image: url(/assets/img/zhihu-showcase.jpg);
@@ -783,7 +783,7 @@ body {
 @media (min-width: 30em) {
   .critique h1 {
     font-size: 64px;
-    line-height: 1.25; }
+    line-height: 1.375; }
   .critique h2 {
     font-size: 36px; }
   .critique h3 {
@@ -799,7 +799,7 @@ body {
   .critique h1 {
     margin: 0 0 90px 0;
     font-size: 80px;
-    line-height: 1.15; }
+    line-height: 1.35; }
   .critique h2 {
     font-size: 48px; }
   .critique h3 {
@@ -818,6 +818,97 @@ body {
 
 @media (min-width: 64em) {
   .critique h1 {
+    font-size: 96px; } }
+
+.startup .hero {
+  background-image: url(/assets/img/startup-showcase.jpg);
+  background-repeat: no-repeat;
+  background-position: 35% center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.startup h1 {
+  margin: 0 0 60px 0;
+  font-size: 36px;
+  line-height: 1.4; }
+  .startup h1 img {
+    width: 1em;
+    height: 1em;
+    vertical-align: -.2em;
+    margin-bottom: 0; }
+
+.startup h2 {
+  margin: 0;
+  font-size: 30px; }
+
+.startup h3 {
+  margin-bottom: .625em;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: .02em; }
+
+.startup h4 {
+  margin-bottom: .5em;
+  font-size: 20px;
+  letter-spacing: .3em; }
+
+.startup p {
+  margin: 0 0 24px 0;
+  font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.8; }
+
+.startup li {
+  font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: .05em;
+  line-height: 1.8;
+  margin-bottom: 12px; }
+
+.startup .level:first-child {
+  padding-bottom: 0; }
+
+@media (min-width: 30em) {
+  .startup h1 {
+    font-size: 64px;
+    line-height: 1.375; }
+  .startup h2 {
+    font-size: 36px; }
+  .startup h3 {
+    font-size: 28px; }
+  .startup h4 {
+    margin-bottom: .75em; }
+  .startup p {
+    font-size: 18px; }
+  .startup li {
+    font-size: 18px; } }
+
+@media (min-width: 48em) {
+  .startup h1 {
+    margin: 0 0 90px 0;
+    font-size: 80px;
+    line-height: 1.35; }
+  .startup h2 {
+    font-size: 48px; }
+  .startup h3 {
+    margin-bottom: 1.25em;
+    font-size: 32px;
+    line-height: 1.8; }
+  .startup h4 {
+    margin-bottom: 1em; }
+  .startup p {
+    margin: 0 0 32px 0;
+    font-size: 20px; }
+  .startup li {
+    font-size: 20px; }
+  .startup img {
+    margin-bottom: 1.25em; } }
+
+@media (min-width: 64em) {
+  .startup h1 {
     font-size: 96px; } }
 
 .wrapper {
