@@ -55,3 +55,64 @@
                     span.highlight I wanted to deliver a minimum viable product as soon as possible.
                     |  I also wanted to provide a flexible structure that could scale naturally as the website grows. So I started with architecture and decomposed it into modules.
                 p Next, I will select three representative modules and go through their design processes and implementation results.
+        .level
+            .container
+                h2 START A 3D PRINT
+                .sep.taller
+                h3 The Problem
+                p
+                    | 3D printing features rapid prototyping and product customization. It enables consumer products to be made on­-demand, eliminating the restriction to craftsmanship and manufacture, as well as reducing the waste from overproduction and overpricing. So here comes the problem—
+                    span.highlight how can I get customers onboard and fully deliver such quality of 3D printing to them?
+                h3 The Analysis
+                p
+                    | To introduce complex technology home, Tran3D must provide customers with an easy and fast channel to getting their hands on real 3D printed products. 
+                    span.highlight The main idea was to build a module that helps users start a 3D print and guides them quickly through a customization workflow before they reach the shopping cart.
+                    |  I called it "Start a 3D Print" and then identified some core design principles:
+                ul
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span Prominent call-to-actions—Highlighted elements draw attentions and trigger interests. 
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span Refined steps—Tasks that are easier to do are a better starting point for people with low motivation (see BJ Fogg Behavior Model).
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span Limited choices—It’s often easier to make a decision when presented with only a few options.
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span Hidden expert-level interfaces and terminologies—Expert users are only the minority.
+                p
+                    | Overall, I wanted to make this module accessible and easy to customers and boost user engagement. The customization workflow of 3D printing should be 
+                    span.highlight lucid
+                    | , 
+                    span.highlight fast
+                    | , 
+                    span.highlight efficient
+                    | , and 
+                    span.highlight interesting
+                    | .
+                h3 The Exploration
+                p 
+                    | Based on the analysis, I started my exploration by scoping the workflow into three phases: 
+                    span.highlight Upload Your Models
+                    | , 
+                    span.highlight Select a Material
+                    | , and 
+                    span.highlight Choose a 3D Printing Service
+                    | . In this way, a complex and tedious process was effectively decomposed into parts whose tasks are easier to understand and goals are clearer to achieve.
+                p I then started to play with a few key design concepts by creating mid-fidelity wireframes. Those concepts were:
+                ul
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span Create visually striking buttons that compel users to click. For example, 'Start a 3D Print' button at the top navigation draws attentions and gives everybody a direct access to getting started. Besides, 'Next' buttons between steps provide natural leads and transitions, which help users move forward.
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span Integrate all three phases in one page for an unbreakable experience. This integrity keeps data consistent and interaction coherent. And if you accidentally do something that doesn’t produce the results you were looking for, you could scroll backward for any small corrections without repeating the whole process.
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span Unlock the next phase until the current one is completed. Loading the customization workflow once for all adds unnecessary choices on the screen, which could heavily distract users from focusing on the current step. On the contrary, loading step by step provides better guidance and creates more interesting interactions to the system. 
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span Prioritize imperative parameters, use straightforward wording and hide expert-level content. Complex interfaces and terminologies are not only overwhelming for beginners, but could also be difficult to use for experts in certain cases. Hiding some of the unimportant terminologies like 'Infill Ratio' or '3D Printing Technology' into advanced tabs could be a choice.
+                h3 The Flow
+                p After unifying data structure with the team, I finalized the flow as indicated below. It creates a clear sense of progress and reduces the amount of interactions to minimum. Useful images and friendly language are added throughout while complex interfaces and terminologies are circumvented so that most even non-expert users can understand how things work without any direct explanation. It also has animations and transitions, adding a little bit of fun. I am optimistic that new users will progress through all three phases without friction, leading to successful customizations of their 3D printable products.
