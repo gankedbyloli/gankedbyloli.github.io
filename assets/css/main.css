@@ -1015,7 +1015,7 @@ body {
       position: relative;
       margin: 0 auto;
       max-width: 100%;
-      width: 996px; }
+      width: 768px; }
       .level .container p, .level .container ol, .level .container ul {
         width: 85%; } }
 
@@ -1026,6 +1026,10 @@ body {
       padding-bottom: 90px; }
     .level .container p, .level .container ol, .level .container ul {
       width: 66.6666666666667%; } }
+
+@media (min-width: 75em) {
+  .level .container {
+    width: 996px; } }
 
 .level.level--oyster-pink {
   background-color: #EDD9CF; }
