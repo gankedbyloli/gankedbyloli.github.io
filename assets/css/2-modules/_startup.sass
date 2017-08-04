@@ -48,8 +48,36 @@
         margin-bottom: 12px
 
     .level
+        .container
+
+            .board
+                margin: 36px 0 36px
+                padding: 36px 36px 60px
+                background-color: #CBE3F7
+                h3
+                    color: $mine
+                    line-height: 1.2
+                h4
+                    margin-bottom: .4em
+                    color: $gray
+                    letter-spacing: .08em
+                p
+                    width: 100%
+
+            .flex
+                display: block
+                ul, ol
+                    padding: 24px 8px
+                    background-color: #F2EEEB
+                .illustration
+                    background-color: #CBE3F7
+
         &:first-child
             padding-bottom: 0
+        &:nth-child(3)
+            padding-bottom: 0
+            img
+                margin-bottom: 0
 
 @media (min-width: 30em)
     .startup
@@ -92,3 +120,15 @@
     .startup
         h1
             font-size: 96px
+        .level
+            .container
+                .flex
+                    display: flex
+                    ul, ol
+                        width: 50%
+                        margin-top: 0
+                        padding: 36px 32px
+                    .illustration
+                        width: 50%
+                        margin: 0 0 32px
+                        padding: 36px

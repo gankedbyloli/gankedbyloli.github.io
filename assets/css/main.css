@@ -868,8 +868,35 @@ body {
   line-height: 1.8;
   margin-bottom: 12px; }
 
+.startup .level .container .board {
+  margin: 36px 0 36px;
+  padding: 36px 36px 60px;
+  background-color: #CBE3F7; }
+  .startup .level .container .board h3 {
+    color: #333;
+    line-height: 1.2; }
+  .startup .level .container .board h4 {
+    margin-bottom: .4em;
+    color: #999;
+    letter-spacing: .08em; }
+  .startup .level .container .board p {
+    width: 100%; }
+
+.startup .level .container .flex {
+  display: block; }
+  .startup .level .container .flex ul, .startup .level .container .flex ol {
+    padding: 24px 8px;
+    background-color: #F2EEEB; }
+  .startup .level .container .flex .illustration {
+    background-color: #CBE3F7; }
+
 .startup .level:first-child {
   padding-bottom: 0; }
+
+.startup .level:nth-child(3) {
+  padding-bottom: 0; }
+  .startup .level:nth-child(3) img {
+    margin-bottom: 0; }
 
 @media (min-width: 30em) {
   .startup h1 {
@@ -908,7 +935,20 @@ body {
 
 @media (min-width: 64em) {
   .startup h1 {
-    font-size: 96px; } }
+    font-size: 96px; }
+  .startup .level .container .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .startup .level .container .flex ul, .startup .level .container .flex ol {
+      width: 50%;
+      margin-top: 0;
+      padding: 36px 32px; }
+    .startup .level .container .flex .illustration {
+      width: 50%;
+      margin: 0 0 32px;
+      padding: 36px; } }
 
 .wrapper {
   border: 1.2em solid #fff;
@@ -992,6 +1032,9 @@ body {
 
 .level.level--humming-bird {
   background-color: #E2F0FB; }
+
+.level.level--tropical-blue {
+  background-color: #CBE3F7; }
 
 .hero {
   height: 450px; }

@@ -3,61 +3,83 @@
     .article-wrapper
         .level
             .container
-                h1 Tran3D: First Class in UX Design
-                p Last year, I have been working on a startup project—Tran3D. In this article, I would like to share with you some of my design processes from strategy to interface.
+                h1 Tran3D: First Class
+                p Last year, I have been working on a startup project—Tran3D. In this article, I would like to share with you some of my designs from strategy to interface.
         .level
             .container
                 h2 OVERVIEW
-                .sep.taller
+                .sep
+        .level.level--tropical-blue
+            .container        
+                img(src="/assets/img/startup-showcase.png")
+        .level
+            .container
                 h3 About the project
                 p
                     | Tran3D is 
-                    span.highlight an online 3D printing service platform where distributed 3D printing resources are gathered, shared, and applied
-                    | .
+                    span.highlight an online 3D printing service platform
+                    |  where distributed 3D printing resources are gathered, shared, and applied.
+        
                 h3 How it works
                 p 
                     | Tran3D runs a C2C business model. It facilitates transactions between 
                     span.highlight 3D printer owners and people who want to make 3D prints
                     | . Service bureaus can join the platform to offer 3D printing services while customers can select one of the best solutions we recommend to get their customized 3D models printed.
-                img(src="/assets/img/startup-showcase.jpg")
                 h3 My roles
                 p 
                     | Being one of the co-founders, I led the 
                     span.highlight UI/UX design and front-end development
                     |  from start to finish last year. 
                 p As a designer in particular, I worked on
-                ul
-                    li
-                        i.icon.icon-li.ion-chevron-right
-                        span User research
-                    li
-                        i.icon.icon-li.ion-chevron-right
-                        span Sketches and wireframes
-                    li
-                        i.icon.icon-li.ion-chevron-right
-                        span Visual and interaction design
+                .flex
+                    ul
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span User research
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Sketches and wireframes
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Visual and interaction design
+                p Then I turned the design into product with code. 
                 h3 How I started
-                p
-                    | I started with user research. By working closely with my partners and interviewing our potential customers, I made a 
-                    span.highlight creative brief
-                    |  and planned out our general 
+                p Working closely with my partners, I first made a Q&A sheet that depicts our potential users.
+                .board
+                    h3 User Brief
+                    h4 Who are the target audiences?
+                    p Modern people who enjoy customizing things or transforming ideas into reality using technology.
+                    h4 What are the audience types and their differences?
+                    p 
+                        | There are basically three types. 1. 
+                        b Common individuals
+                        | —people who need 3D printed products, but without 3D printers; 2. 
+                        b Designers
+                        | —people who are capable of producing high-quality 3D models consistently; 3. 
+                        b Manufacturers
+                        | —people who own 3D printers, can either be individuals or companies.
+                    h4 Where can audiences be found?
+                    p Most likely, they can be found in universities or in manufactural industry. They might also have active accounts in 3D forums.
+                    h4 What personality does Tran3D want to project to the audience?
+                    p Simple, rapid, technological, playful and high quality.
+                p Based on the user brief, I interviewed 50 people via questionnaires and finally planned out our 
                     span.highlight design goals
                     | .
-                ul
-                    li
-                        i.icon.icon-li.ion-chevron-right
-                        span To facilitate a more intuitive and seamless experience when it comes to customizing 3D printing products
-                    li
-                        i.icon.icon-li.ion-chevron-right
-                        span To design a more personable and engaging user interface
-                p 
-                    | At the early stage of a startup company, I wanted to deliver a 
-                    span.highlight minimum viable product
-                    |  as soon as possible. I also wanted to provide a flexible structure that could scale naturally as the website grows. So I drafted the architecture, decomposed the platform into modules.
+                .flex
+                    ul
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span To facilitate an intuitive and seamless experience when it comes to customizing 3D printing products
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span To design a personable and engaging user interface
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span To create convenient and powerful functionalities that manage services and transactions
                 p 
                     | Next, I will choose 
-                    span.highlight three representative modules
-                    |  and go through their design processes and implementation results.
+                    span.highlight three representatives
+                    |  that best accomplished our design goals. And I will talk about their design processes and implementation results.
         .level
             .container
                 h2 START A 3D PRINT
@@ -70,7 +92,7 @@
                 p
                     | To introduce complex technology home, Tran3D must provide customers with an easy and fast channel to getting their hands on real 3D printed products. 
                     span.highlight The main idea was to build a module that helps users start a 3D print and guides them quickly through a customization workflow before they reach the shopping cart.
-                    |  I called it "Start a 3D Print" and then identified some core principles:
+                    |  I called it "Start a 3D Print" and identified some core principles:
                 ul
                     li
                         i.icon.icon-li.ion-chevron-right
@@ -83,9 +105,9 @@
                         span Limited choices—It’s often easier to make a decision when presented with only a few options.
                     li
                         i.icon.icon-li.ion-chevron-right
-                        span Hidden expert-level interfaces and terminologies—Expert users are only the minority.
+                        span Hidden expert-level interfaces and terminologies—Expert users are the minority.
                 p
-                    | Overall, I wanted to make this module accessible and easy to customers and boost user engagement. The customization workflow of 3D printing should be 
+                    | Overall, I wanted to make this module accessible and easy to customers and boost user engagement. The customization workflow of 3D print should be 
                     span.highlight lucid
                     | , 
                     span.highlight fast
