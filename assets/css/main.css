@@ -868,6 +868,18 @@ body {
   line-height: 1.8;
   margin-bottom: 12px; }
 
+.startup .level .container .img--title {
+  display: block;
+  margin-bottom: 0;
+  -webkit-box-shadow: 2px 2px 5px 1px #ccc;
+          box-shadow: 2px 2px 5px 1px #ccc; }
+
+.startup .level .container .img--result {
+  display: block;
+  margin-bottom: 32px;
+  -webkit-box-shadow: 2px 2px 5px 1px #ccc;
+          box-shadow: 2px 2px 5px 1px #ccc; }
+
 .startup .level .container .board {
   margin: 36px 0 36px;
   padding: 36px 36px 60px;
@@ -885,10 +897,14 @@ body {
 .startup .level .container .flex {
   display: block; }
   .startup .level .container .flex ul, .startup .level .container .flex ol {
-    padding: 24px 8px;
+    padding: 24px;
     background-color: #F2EEEB; }
   .startup .level .container .flex .illustration {
-    background-color: #CBE3F7; }
+    margin-bottom: 32px;
+    padding: 24px;
+    background-color: #FFF; }
+    .startup .level .container .flex .illustration img {
+      margin-bottom: 0; }
 
 .startup .level:first-child {
   padding-bottom: 0; }
@@ -931,24 +947,34 @@ body {
   .startup li {
     font-size: 20px; }
   .startup img {
-    margin-bottom: 1.25em; } }
+    margin-bottom: 1.25em; }
+  .startup .level .container .img--result {
+    margin-bottom: 60px; }
+  .startup .level .container .flex .illustration {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 85%; } }
 
 @media (min-width: 64em) {
   .startup h1 {
-    font-size: 96px; }
+    font-size: 96px; } }
+
+@media (min-width: 75em) {
   .startup .level .container .flex {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
     .startup .level .container .flex ul, .startup .level .container .flex ol {
-      width: 50%;
+      max-width: 50%;
       margin-top: 0;
       padding: 36px 32px; }
     .startup .level .container .flex .illustration {
-      width: 50%;
+      max-width: 50%;
       margin: 0 0 32px;
-      padding: 36px; } }
+      padding: 36px 32px; }
+  .startup .level .container .flex.wider ul, .startup .level .container .flex.wider ol {
+    max-width: 66.66666666666667%; } }
 
 .wrapper {
   border: 1.2em solid #fff;
@@ -1039,6 +1065,9 @@ body {
 
 .level.level--tropical-blue {
   background-color: #CBE3F7; }
+
+.level.level--swans-down {
+  background-color: #DAEFE4; }
 
 .hero {
   height: 450px; }

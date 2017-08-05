@@ -50,6 +50,16 @@
     .level
         .container
 
+            .img--title
+                display: block
+                margin-bottom: 0
+                box-shadow: 2px 2px 5px 1px $silver
+
+            .img--result
+                display: block
+                margin-bottom: 32px
+                box-shadow: 2px 2px 5px 1px $silver
+
             .board
                 margin: 36px 0 36px
                 padding: 36px 36px 60px
@@ -67,10 +77,14 @@
             .flex
                 display: block
                 ul, ol
-                    padding: 24px 8px
+                    padding: 24px
                     background-color: #F2EEEB
                 .illustration
-                    background-color: #CBE3F7
+                    margin-bottom: 32px
+                    padding: 24px
+                    background-color: #FFF
+                    img
+                        margin-bottom: 0
 
         &:first-child
             padding-bottom: 0
@@ -116,19 +130,34 @@
         img
             margin-bottom: 1.25em
 
+        .level
+            .container
+                .img--result
+                    margin-bottom: 60px
+                .flex
+                    .illustration
+                        box-sizing: border-box
+                        width: 85%
+
 @media (min-width: 64em)
     .startup
         h1
             font-size: 96px
+
+@media (min-width: 75em)
+    .startup
         .level
             .container
                 .flex
                     display: flex
                     ul, ol
-                        width: 50%
+                        max-width: 50%
                         margin-top: 0
                         padding: 36px 32px
                     .illustration
-                        width: 50%
+                        max-width: 50%
                         margin: 0 0 32px
-                        padding: 36px
+                        padding: 36px 32px
+                .flex.wider
+                    ul, ol
+                        max-width: 66.66666666666667%

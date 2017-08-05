@@ -10,7 +10,7 @@
                 h2 OVERVIEW
                 .sep
         .level.level--tropical-blue
-            .container        
+            .container
                 img(src="/assets/img/startup-showcase.png")
         .level
             .container
@@ -31,7 +31,7 @@
                     span.highlight UI/UX design and front-end development
                     |  from start to finish last year. 
                 p As a designer in particular, I worked on
-                .flex
+                .flex.wider
                     ul
                         li
                             i.icon.icon-li.ion-chevron-right
@@ -65,7 +65,7 @@
                 p Based on the user brief, I interviewed 50 people via questionnaires and finally planned out our 
                     span.highlight design goals
                     | .
-                .flex
+                .flex.wider
                     ul
                         li
                             i.icon.icon-li.ion-chevron-right
@@ -85,29 +85,33 @@
                 h2 START A 3D PRINT
                 .sep.taller
                 h3 The Problem
+                p 3D printing features rapid prototyping and product customization. It enables consumer products to be made on­-demand, eliminating the restriction to craftsmanship and manufacture, as well as reducing the waste from overproduction and overpricing.
                 p
-                    | 3D printing features rapid prototyping and product customization. It enables consumer products to be made on­-demand, eliminating the restriction to craftsmanship and manufacture, as well as reducing the waste from overproduction and overpricing. So here comes the problem—
+                    | So here comes the problem—
                     span.highlight how can I get customers onboard and fully deliver such quality of 3D printing to them?
                 h3 The Analysis
                 p
                     | To introduce complex technology home, Tran3D must provide customers with an easy and fast channel to getting their hands on real 3D printed products. 
                     span.highlight The main idea was to build a module that helps users start a 3D print and guides them quickly through a customization workflow before they reach the shopping cart.
-                    |  I called it "Start a 3D Print" and identified some core principles:
-                ul
-                    li
-                        i.icon.icon-li.ion-chevron-right
-                        span Prominent call-to-actions—Highlighted elements draw attentions and trigger interests. 
-                    li
-                        i.icon.icon-li.ion-chevron-right
-                        span Refined steps—Tasks that are easier to do are a better starting point for people with low motivation (see BJ Fogg Behavior Model).
-                    li
-                        i.icon.icon-li.ion-chevron-right
-                        span Limited choices—It’s often easier to make a decision when presented with only a few options.
-                    li
-                        i.icon.icon-li.ion-chevron-right
-                        span Hidden expert-level interfaces and terminologies—Expert users are the minority.
+                    |  I called it "Start a 3D Print". Some core principles were identified:
+                .flex
+                    ul
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Prominent elements—CTAs draw attentions and trigger interests. 
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Easy start—Tasks that are easier to do are a better starting point for people with low motivation (see BJ Fogg Behavior Model).
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Limited choices—It’s often easier to make a decision when presented with only a few options.
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Hidden expert-level interfaces and terminologies—Expert users are the minority.
+                    .illustration
+                        img(src="assets/img/bj-model.png")
                 p
-                    | Overall, I wanted to make this module accessible and easy to customers and boost user engagement. The customization workflow of 3D print should be 
+                    | Overall, I wanted to make this module accessible and easy to users and boost their engagement. The customization workflow of 3D print should be 
                     span.highlight lucid
                     | , 
                     span.highlight fast
@@ -125,27 +129,44 @@
                     | , and 
                     span.highlight Choose a 3D Printing Service
                     | . In this way, a complex and tedious process was effectively decomposed into parts whose tasks are easier to understand and goals are clearer to achieve.
+        .level.level--swans-down
+            .container
+                img(src="assets/img/customize-process.svg")
+        .level
+            .container
                 p I then started to play with a few key design concepts by creating mid-fidelity wireframes. Those concepts were:
-                ul
-                    li
-                        i.icon.icon-li.ion-chevron-right
-                        span Create visually striking buttons that compel users to click. For example, 'Start a 3D Print' button at the top navigation draws attentions and gives everybody a direct access to getting started. Besides, 'Next' buttons between steps provide natural leads and transitions, which help users move forward.
-                    li
-                        i.icon.icon-li.ion-chevron-right
-                        span Integrate all three phases in one page for an unbreakable experience. This integrity keeps data consistent and interaction coherent. And if you accidentally do something that doesn’t produce the results you were looking for, you could scroll backward for any small corrections without repeating the whole process.
-                    li
-                        i.icon.icon-li.ion-chevron-right
-                        span Unlock the next phase until the current one is completed. Loading the customization workflow once for all adds unnecessary choices on the screen, which could heavily distract users from focusing on the current step. On the contrary, loading step by step provides better guidance and creates more interesting interactions to the system. 
-                    li
-                        i.icon.icon-li.ion-chevron-right
-                        span Prioritize imperative parameters, use straightforward wording and hide expert-level content. Complex interfaces and terminologies are not only overwhelming for beginners, but could also be difficult to use for experts in certain cases. Hiding some of the unimportant terminologies like 'Infill Ratio' or '3D Printing Technology' into advanced tabs could be a choice.
+                .flex.wider
+                    ul
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Create visually striking call-to-actions that compel users to click.
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Start from the task that is easiest and most requisite.
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Unlock the next phase until the current one is completed, bringing fewer choices for users.
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Prioritize imperative parameters, use straightforward wording and hide expert-level content. Complex interfaces and terminologies are not only overwhelming for beginners, but could also be difficult to use for experts in certain cases.
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Integrate all three phases in one page for an unbreakable experience. This integrity keeps data consistent and interaction coherent.
+        .level.level--swans-down
+            .container
+                img(src="assets/img/start-a-3d-print.png")
+        .level
+            .container
                 h3 The Result
-                p 
-                    | After unifying data structure with the team, I finalized the flow as indicated below. It creates 
+                p After unifying data structure with the team, I finalized the flow as indicated below.
+                img(src="assets/img/browser-title.png").img--title
+                img(src="assets/img/workflow.gif").img--result
+                p
+                    | It creates 
                     span.highlight a clear sense of assistance
                     |  and 
                     span.highlight reduces the unnecessity
-                    |  to minimum so that most non-expert users can understand how things work without any direct explanation. Useful images and friendly language are added throughout. It also has animations and transitions, which adds a bit of fun. I am optimistic that users will get onboard and progress through all three phases without friction, leading to successful customizations of their 3D printable products.
+                    |  to minimum so that non-expert users can understand how things work without any direct explanation. Useful images and friendly language are added throughout. It also has animations and transitions, which adds a bit of fun. I am optimistic that users will get onboard and progress through all three phases without friction, leading to successful customizations of their 3D printable products.
         .level
             .container
                 h2 DISCOVER A USER
