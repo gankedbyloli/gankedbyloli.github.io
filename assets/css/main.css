@@ -871,14 +871,14 @@ body {
 .startup .level .container .img--title {
   display: block;
   margin-bottom: 0;
-  -webkit-box-shadow: 2px 2px 5px 1px #ccc;
-          box-shadow: 2px 2px 5px 1px #ccc; }
+  -webkit-box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1); }
 
 .startup .level .container .img--result {
   display: block;
   margin-bottom: 32px;
-  -webkit-box-shadow: 2px 2px 5px 1px #ccc;
-          box-shadow: 2px 2px 5px 1px #ccc; }
+  -webkit-box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1); }
 
 .startup .level .container .board {
   margin: 36px 0 36px;
