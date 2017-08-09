@@ -847,6 +847,9 @@ body {
   line-height: 1.6;
   letter-spacing: .02em; }
 
+.startup h3.smaller {
+  font-size: 22px; }
+
 .startup h4 {
   margin-bottom: .5em;
   font-size: 20px;
@@ -922,6 +925,8 @@ body {
     font-size: 36px; }
   .startup h3 {
     font-size: 28px; }
+  .startup h3.smaller {
+    font-size: 24px; }
   .startup h4 {
     margin-bottom: .75em; }
   .startup p {
@@ -939,6 +944,9 @@ body {
   .startup h3 {
     font-size: 32px;
     line-height: 1.8; }
+  .startup h3.smaller {
+    font-size: 28px;
+    line-height: 1.6; }
   .startup h4 {
     margin-bottom: 1em; }
   .startup p {

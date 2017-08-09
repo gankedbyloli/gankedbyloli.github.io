@@ -258,10 +258,9 @@
                     span.highlight kept the character active
                     |  in social network.
                 h3 The Result
-                p The following images indicate pages of common user's profile, designer's profile, shop's home, user's home and user settings, respectively.
+                p The following images indicate pages of common user's profile, designer's profile, user's home and user settings, respectively.
                 img(src="assets/img/home.png").img--result
                 img(src="assets/img/designer.png").img--result
-                img(src="assets/img/shop.png").img--result
                 img(src="assets/img/feed.png").img--result
                 img(src="assets/img/setting.png").img--result
         .level
@@ -270,7 +269,7 @@
                 .sep.taller
                 h3 The Problem
                 p 
-                    | Tran3D manages and schedules 3D printing services based on 
+                    | Tran3D schedules 3D printing services based on 
                     span.highlight data and facts
                     | . It is important for manufacturers to provide authentic and intriguing data. This is a non-trivial work however: 
                 .flex.wider
@@ -343,23 +342,23 @@
                                 |—Data that is incorrect or outdated can be removed or modified.
                 h3 The Exploration
                 p During the design process, I tried to deliver the ideas above. Here, I will illustrate one by one:
-                h3 1. Divide concepts into hierarchy.
+                h3.smaller 1. Divide concepts into hierarchy.
                 p A manufacturer may lack motivation to publish all service data in a single upload. So I divided the whole process and organized them into levels. From the comprehensive concept of shop to specific objects like printer and material, the hierarchical design would very much facilitate user flows.
         .level.level--swans-down
             .container
                 img(src="assets/img/printer-management.png")
         .level
             .container
-                h3 2. Unify layouts and interactions.
+                h3.smaller 2. Unify layouts and interactions.
                 p
                     | I chose to use a page component that had consistently shown up in Tran3D—
                     span.highlight the modal
                     | . This was because I did not want to overwhelm the user with an unfamiliar UI. A modal also made manufacturers concentrated on what they were doing. Within a modal, data uploading was splitted into steps and there was a top navigation bar indicating the progress. 
-                h3 3. Include data that helps SEO and discoverability.
+                h3.smaller 3. Include data that helps SEO and discoverability.
                 p
                     span.highlight Titles, descriptions, tags, photos and categories
                     |  are properties for manufacturers to better describe their services. These features can be descriptive and educational to someone outside of their niches. Complete data speaks aloud for the services.
-                h3 4. Utilize shapes and colors.
+                h3.smaller 4. Utilize shapes and colors.
                 p Making a pricing strategy is one of the most challenging problems in respect of interaction design—Strategies in 3D print industry involve a variety of factors, not only the physical properties but also labouring influences. 
                 p
                     | A common mathematical model is 
@@ -374,7 +373,7 @@
                 img(src="assets/img/formula.svg")
         .level
             .container
-                h3 5. Add flexibility to the system.
+                h3.smaller 5. Add flexibility to the system.
                 p
                     | The module must be adaptive to users with different backgrounds. Consider a user with non-expert background. He might need 
                     span.highlight notes
@@ -385,12 +384,12 @@
                     |  for complicated data. On the contrary, an expert might need more specifications and details. And he wants to enable more terms in the polynomial to 
                     span.highlight better control
                     |  his pricing strategy.
-                h3 6. Preview simulated results.
+                h3.smaller 6. Preview simulated results.
                 p
                     | Manufacturers will get a 
                     span.highlight live preview
                     |  of what the price would be after proposing a pricing strategy. The result is calculated by applying the pricing strategy to a test case we provided. It even gives an instant feedback as the user make any adjustments to the linear polynomial. This functionality aims for manufacturers who want to find a suitable pricing strategy. It also makes them feel powerful so that they can trust our system.
-                h3 7. Provide CRUD operations.
+                h3.smaller 7. Provide CRUD operations.
                 p 
                     | Besides basic creating and reading, service data like printers, materials and even pricing strategies are 
                     span.highlight revisable
@@ -401,4 +400,10 @@
         .level
             .container
                 h3 The Result
+                p From the shop's public page to a modal that creates material and pricing strategies, I am satisfied that my design goals are accomplished across different pages. The design is simple yet powerful, not only providing intuitive interfaces but also tailoring to different user needs. Meanwhile, a lot of common elements are reused, contributing to the system consistency.
+                img(src="assets/img/browser-title.png").img--title
+                img(src="assets/img/services.gif").img--result
+                img(src="assets/img/shop.png").img--result
+                img(src="assets/img/printer.png").img--result
+                img(src="assets/img/strategy.png").img--result
                 
