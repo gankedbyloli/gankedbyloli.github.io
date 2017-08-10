@@ -984,6 +984,170 @@ body {
   .startup .level .container .flex.wider ul, .startup .level .container .flex.wider ol {
     max-width: 66.66666666666667%; } }
 
+.denture .hero {
+  background-image: url(/assets/img/denture-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.denture h1 {
+  margin: 0 0 60px 0;
+  font-size: 36px;
+  line-height: 1.4; }
+  .denture h1 img {
+    width: 1em;
+    height: 1em;
+    vertical-align: -.2em;
+    margin-bottom: 0; }
+
+.denture h2 {
+  margin: 0;
+  font-size: 30px; }
+
+.denture h3 {
+  margin-bottom: .625em;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: .02em; }
+
+.denture h3.smaller {
+  font-size: 22px; }
+
+.denture h4 {
+  margin-bottom: .5em;
+  font-size: 20px;
+  letter-spacing: .3em; }
+
+.denture p {
+  margin: 0 0 24px 0;
+  font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.8; }
+
+.denture li {
+  font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: .05em;
+  line-height: 1.8;
+  margin-bottom: 12px; }
+
+.denture .level .container .img--title {
+  display: block;
+  margin-bottom: 0;
+  -webkit-box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1); }
+
+.denture .level .container .img--result {
+  display: block;
+  margin-bottom: 32px;
+  -webkit-box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1); }
+
+.denture .level .container .board {
+  margin: 36px 0 36px;
+  padding: 36px 36px 60px;
+  background-color: #CBE3F7; }
+  .denture .level .container .board h3 {
+    color: #333;
+    line-height: 1.2; }
+  .denture .level .container .board h4 {
+    margin-bottom: .4em;
+    color: #999;
+    letter-spacing: .08em; }
+  .denture .level .container .board p {
+    width: 100%; }
+
+.denture .level .container .flex {
+  display: block; }
+  .denture .level .container .flex ul, .denture .level .container .flex ol {
+    padding: 24px;
+    background-color: #F2EEEB; }
+  .denture .level .container .flex .illustration {
+    margin-bottom: 32px;
+    padding: 24px;
+    background-color: #FFF; }
+    .denture .level .container .flex .illustration img {
+      margin-bottom: 0; }
+
+.denture .level:first-child {
+  padding-bottom: 0; }
+
+.denture .level:nth-child(3) {
+  padding-bottom: 0; }
+  .denture .level:nth-child(3) img {
+    margin-bottom: 0; }
+
+@media (min-width: 30em) {
+  .denture h1 {
+    font-size: 64px;
+    line-height: 1.375; }
+  .denture h2 {
+    font-size: 36px; }
+  .denture h3 {
+    font-size: 28px; }
+  .denture h3.smaller {
+    font-size: 24px; }
+  .denture h4 {
+    margin-bottom: .75em; }
+  .denture p {
+    font-size: 18px; }
+  .denture li {
+    font-size: 18px; } }
+
+@media (min-width: 48em) {
+  .denture h1 {
+    margin: 0 0 90px 0;
+    font-size: 80px;
+    line-height: 1.35; }
+  .denture h2 {
+    font-size: 48px; }
+  .denture h3 {
+    font-size: 32px;
+    line-height: 1.8; }
+  .denture h3.smaller {
+    font-size: 28px;
+    line-height: 1.6; }
+  .denture h4 {
+    margin-bottom: 1em; }
+  .denture p {
+    margin: 0 0 32px 0;
+    font-size: 20px; }
+  .denture li {
+    font-size: 20px; }
+  .denture img {
+    margin-bottom: 1.25em; }
+  .denture .level .container .img--result {
+    margin-bottom: 60px; }
+  .denture .level .container .flex .illustration {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 85%; } }
+
+@media (min-width: 64em) {
+  .denture h1 {
+    font-size: 96px; } }
+
+@media (min-width: 75em) {
+  .denture .level .container .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .denture .level .container .flex ul, .denture .level .container .flex ol {
+      max-width: 50%;
+      margin-top: 0;
+      padding: 36px 32px; }
+    .denture .level .container .flex .illustration {
+      max-width: 50%;
+      margin: 0 0 32px;
+      padding: 36px 32px; }
+  .denture .level .container .flex.wider ul, .denture .level .container .flex.wider ol {
+    max-width: 66.66666666666667%; } }
+
 .wrapper {
   border: 1.2em solid #fff;
   height: auto !important; }
