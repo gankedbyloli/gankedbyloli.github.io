@@ -582,7 +582,7 @@ body {
     background-position: -100% 0px; }
 
 .intro {
-  background-image: url(/assets/img/intro-bg.jpg);
+  background-image: url(/interaction-design-portfolio/assets/img/intro-bg.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   -webkit-background-size: cover;
@@ -603,7 +603,7 @@ body {
     max-width: 800px; } }
 
 .misc {
-  background-image: url(/assets/img/about-bg.jpg);
+  background-image: url(/interaction-design-portfolio/assets/img/about-bg.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   -webkit-background-size: cover;
@@ -632,7 +632,7 @@ body {
     margin-bottom: 5em; } }
 
 .work {
-  background-image: url(/assets/img/work-bg.jpg);
+  background-image: url(/interaction-design-portfolio/assets/img/work-bg.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   -webkit-background-size: cover;
@@ -659,7 +659,7 @@ body {
     margin-bottom: 5em; } }
 
 .branding {
-  background-image: url(/assets/img/branding-bg.jpg);
+  background-image: url(/interaction-design-portfolio/assets/img/branding-bg.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   -webkit-background-size: cover;
@@ -699,7 +699,7 @@ body {
     text-align: center; }
 
 .story .hero {
-  background-image: url(/assets/img/bio-img-1.jpg);
+  background-image: url(/interaction-design-portfolio/assets/img/bio-img-1.jpg);
   background-repeat: no-repeat;
   background-position: center 70%;
   -webkit-background-size: cover;
@@ -730,7 +730,7 @@ body {
     line-height: 1.35; } }
 
 .critique .hero {
-  background-image: url(/assets/img/zhihu-showcase.jpg);
+  background-image: url(/interaction-design-portfolio/assets/img/zhihu-showcase.jpg);
   background-repeat: no-repeat;
   background-position: center 40%;
   -webkit-background-size: cover;
@@ -821,7 +821,7 @@ body {
     font-size: 96px; } }
 
 .startup .hero {
-  background-image: url(/assets/img/startup-banner.jpg);
+  background-image: url(/interaction-design-portfolio/assets/img/startup-banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -985,7 +985,7 @@ body {
     max-width: 66.66666666666667%; } }
 
 .denture .hero {
-  background-image: url(/assets/img/denture-banner.jpg);
+  background-image: url(/interaction-design-portfolio/assets/img/denture-banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
