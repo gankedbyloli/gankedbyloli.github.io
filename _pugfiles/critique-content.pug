@@ -5,18 +5,21 @@
             .container
                 h1 
                     span A Product Critique on Zhihu App 
-                    img(src="/interaction-design-portfolio/assets/img/zhihu-logo.png")
-                p In this article I will give a product critique on Zhihu’s iOS app in terms of UX design. I will explore the design decisions and propose corresponding solutions too.
+                    img(src="/assets/img/zhihu-logo.png")
+                p In this article I will give a product critique on Zhihu’s iOS app in terms of UX design. I will explore the design decisions and propose the corresponding solutions too.
         .level
             .container
                 h2 INTRODUCTION
                 .sep
         .level.level--oyster-pink
             .container        
-                img(src="/interaction-design-portfolio/assets/img/intro.png")     
+                img(src="/assets/img/intro.png")
         .level
-            .container           
-                p When Zhihu was founded, it was our Chinese 'Quora', a place to share knowledge, experiences and thoughts with the world. Six years later, things have evolved. Zhihu is now a diverse community of interests. It actually becomes a social medium that connects people in multiple ways of knowledge sharing.
+            .container
+                p 
+                    | When Zhihu was founded, it was our Chinese 'Quora', a place to share knowledge, experiences and thoughts with the world. Six years later, things have evolved. Zhihu is now a diverse community of interests. It actually becomes 
+                    span.highlight a social medium that connects people in multiple ways of knowledge sharing
+                    | .
         .level
             .container
                 h2 BUSINESS OBJECTIVES AND USER NEEDS
@@ -54,35 +57,52 @@
             .container
                 h2 HOME AND DISCOVER FEED
                 .sep.taller
-                p One of the compelling features of Zhihu’s iOS app is fast and efficient knowledge retrieval. It uses Home and Discover to recommend what would most likely interest a user to browse—the feed. 
-                p Sharing a card-based layout, Home and Discover are able to dynamically load feeds through infinite scrolling from top to bottom. The main difference lies within content. That is, Home introduces feeds from user’s network while Discover collects feeds from trending answers on the website.
+                p 
+                    | One of the compelling features of Zhihu’s iOS app is 
+                    span.highlight fast and efficient knowledge retrieval
+                    | . It uses Home and Discover to recommend what would most likely interest a user to browse—the feed. 
+                p 
+                    | Sharing a card-based layout, Home and Discover are able to dynamically load feeds through infinite scrolling from top to bottom. The main difference lies within content. That is, 
+                    span.highlight Home introduces feeds from user’s network while Discover collects feeds from trending answers on the website.
                 p Here are three problems I would like to mention.
                 
                 h3 1. Structural design of the feed is monotonous, lacking a sense of depth and rhythm. 
         .level.level--humming-bird
             .container
-                img(src="/interaction-design-portfolio/assets/img/home-discover-1.png")
+                img(src="/assets/img/home-discover-1.png")
         .level
             .container
                 h4 PROBLEM
                 p Overall, Zhihu is conservative in displaying the feed. By conservative I mean information is added with little prioritization or classification. There is no evidence to suggest that feeds are chronologically ordered or visually categorized. Since users cannot tell the reason why one feed item is placed ahead of another, their scrolling experience becomes aimless. Take myself as an example, I have never browsed the feeds three screens away from the initial one because I assume I wouldn’t find anything more interesting for me. So with current structure, users tend to lose their interests quickly and stop browsing fairly soon.
                 h4 SOLUTION
-                p With the card-based layout intact, rearranging the feed in a hierarchical and flexible way would provide a greater user experience. To add more depth, designers could organize the feeds into different categories with corresponding titles and color indications. To add more rhythm, they could tweak size, layout and interaction intermittently. For example, within a topic, the first feed could have a larger image and a special layout. This flexibility in design generally allows the feeds being more interesting to read.
+                p
+                    | With the card-based layout intact, 
+                    span.highlight rearranging the feed in a hierarchical and flexible way
+                    |  would provide a greater user experience. To add more depth, designers could organize the feeds into different categories with corresponding titles and color indications. To add more rhythm, they could tweak size, layout and interaction intermittently. For example, within a topic, the first feed could have a larger image and a special layout. This flexibility in design generally allows the feeds being more interesting to read.
                 h3 2. Differences between feeds from Home and from Discover bring about confusion.
         .level.level--humming-bird
             .container        
-                img(src="/interaction-design-portfolio/assets/img/home-discover-2.png")
+                img(src="/assets/img/home-discover-2.png")
         .level
             .container
                 h4 PROBLEM
-                p As mentioned above, Home provides feeds related to current user’s followings while Discover provides feeds that are recently most popular in community. However, feeds from both fail to develop their own characteristics in terms of appearance and functionality: they use similar layouts and duplicated interactions. Therefore, one would hardly turn to Discover to "discover" new things if he has been "discovering" new things in Home. In this case, we could imagine that much less traffic would be led to Discover.
+                p    
+                    | As mentioned above, Home provides feeds related to current user’s followings while Discover provides feeds that are recently most popular in community. 
+                    span.highlight However, feeds from both fail to develop their own characteristics in terms of appearance and functionality: they use similar layouts and duplicated interactions.
+                    |  Therefore, one would hardly turn to Discover to "discover" new things if he has been "discovering" new things in Home. In this case, we could imagine that much less traffic would be led to Discover.
                 h4 SOLUTION
-                p Home and Discover must distinguish their personalities from each other. Visually, adding distinct category titles and applying corresponding color schemes are alternatives. From a content-driven perspective, Discover feed should persistently provide knowledge that is not only interesting but also speical. The key is to let a user discover knowledge that he has never realized before.
-                p Another possible solution would be refactoring IA. For example, we could removing the search bar from Home and replacing the compass icon with a search icon for Discover And we could add top navigations like 'Subscribe' or 'Broadcast' to indicate different categories of the feed sources. It would require further thinking but would ease current ambiguity. 
+                p
+                    | Home and Discover must distinguish their personalities from each other. Visually, 
+                    span.highlight adding distinct category titles and applying corresponding color schemes are alternatives
+                    | . From a content-driven perspective, Discover feed should persistently provide knowledge that is not only interesting but also speical. The key is to let a user discover knowledge that he has never realized before.
+                p
+                    | Another possible solution would be 
+                    span.highlight refactoring IA
+                    | . For example, we could removing the search bar from Home and replacing the compass icon with a search icon for Discover. And we could add top navigations like 'Subscribe' or 'Broadcast' to indicate different categories of the feed sources. It would require further thinking but would ease current ambiguity. 
                 h3 3. Interactions of removing feed are inconsistent.
         .level.level--humming-bird
             .container
-                img(src="/interaction-design-portfolio/assets/img/home-discover-3.png")
+                img(src="/assets/img/home-discover-3.png")
         .level
             .container
                 h4 PROBLEM
@@ -93,68 +113,142 @@
             .container
                 h2 KNOWLEDGE MARKET
                 .sep.taller
-                p Market indicates Zhihu’s determination to provide high-quality knowledge services and establish a well-regulated knowledge market. It creates three new scenarios for knowledge sharing—Live, Bookstore and Pay to Ask. Zhihu Live, especially, is an innovative avenue for knowledge contributors interacting with the audience and getting rewarded for their effort.
+                p
+                    | Market indicates Zhihu’s determination to provide high-quality knowledge services and establish a well-regulated knowledge market. It creates 
+                    span.highlight three new scenarios for knowledge sharing—Live, Bookstore and Pay to Ask
+                    | . Zhihu Live, especially, is an innovative avenue for knowledge contributors interacting with the audience and getting rewarded for their effort.
                 p Beginning with a carousel of advertisements, Market mainly consists of entries to the knowledge services mentioned above as well as featured items belonging to each one. The user experience is more interesting in this page. First, it has diversified interactions because it has actions of horizontal swiping when scrolling from top to bottom. Second, knowledge content is categorized. It is easier for users to navigate through a hierarchical structure.
                 p However, there are still some issues to address.
                 h3 1. Onboarding design of Live is not compelling.
         .level.level--oyster-pink
             .container
-                img(src="/interaction-design-portfolio/assets/img/knowledge-market-1.png")
+                img(src="/assets/img/knowledge-market-1.png")
         .level
             .container
                 h4 PROBLEM
-                p Since Live is not free and its content is only available to those who have registered, the only way to know what Live is and how it works is through in-app instructions. The existing instructions, unfortunately, are neither sufficient nor efficient. As a result, users are not clear about the product. They either hesitate to use Live or get disappointed after the first time they use it because it doesn't meet their expectations.
+                p Since Live is not free and its content is only available to those who have registered, the only way to know what Live is and how it works is through in-app instructions. The existing instructions, unfortunately, are neither sufficient nor efficient. As a result, users are not clear about the product. They either hesitate to use or get disappointed after the first time they use it because it doesn't meet their expectations.
                 h4 SOLUTION
-                p Assisting users with basic guidance and free examples is a better practice in my opinion. For the first time users enter Live, the app teaches them how to join in a free live and how to interact with others in the live. Users would get familiar with Live by experiencing the product in person. In other words, a better onboarding motivates users, making them confident in the quality and the utility of what Live is offering them.
+                p 
+                    span.highlight Assisting users with basic guidance and free examples is a better practice in my opinion.
+                    |  For the first time users enter Live, the app teaches them how to join in a free live and how to interact with others in the live. Users would get familiar with Live by experiencing the product in person. In other words, 
+                    span.highlight a better onboarding motivates users, making them confident in the quality and the utility of what Live is offering them
+                    | .
                 h3 2. UI designs in Live, Bookstore and Pay to Ask are cluttered.
         .level.level--oyster-pink
             .container
-                img(src="/interaction-design-portfolio/assets/img/knowledge-market-2.png")
+                img(src="/assets/img/knowledge-market-2.png")
         .level
             .container
                 h4 PROBLEM
-                p Services have been added without a clear vision to how they fit into the overall design. Each one uses a different layout: from page titles, to search icons, to tabs and to navigations. For example the search function is missing in Live and the main navigation in Pay to Ask has a different height. This inconsistency not only costs users more time learning and adapting to the new UI but also prevents them from considering each service as an integral part of the whole: the knowledge market.
+                p
+                    span.highlight Services have been added without a clear vision to how they fit into the overall design.
+                    |  Each one uses a different layout: from page titles, to search icons, to tabs and to navigations. For example the search function is missing in Live and the main navigation in Pay to Ask has a different height. This inconsistency not only costs users more time learning and adapting to the new UI but also prevents them from considering each service as an integral part of the whole: the knowledge market.
                 h4 SOLUTION
-                p Zhihu needs to unify designs and interactions. Different knowledge services need to have more similarities, such as header appearance and navigating method. So they don’t feel like they are disconnected from each other. To distinguish, minor icon or color differences could be added. Finding characteristics in common would help users understand the knowledge market thoroughly so that they wouldn't feel strange when they visit a new service.
+                p 
+                    | Zhihu needs to unify designs and interactions. Different knowledge services need to have more things in common, such as header appearance and navigating method. So they don’t feel like they are disconnected from each other. To distinguish, minor icon or color differences could be added. 
+                    span.highlight Finding characteristics in common would help users understand the knowledge market thoroughly
+                    |  so that they wouldn't feel strange when they visit a new service.
         .level
             .container
                 h2 ASKING AND ANSWERING
                 .sep.taller
-                p Asking and answering are basic functions of any Q&A websites including Zhihu and Quora. Compared to Quora, however, it seems that Zhihu has deliberately overshadowed these two functions on the mobile app. It is reasonable to a certain extent in that the system is at scale and the experience of editing text and image on a mobile phone could be frustrating. Even so, I feel like users deserve a better experience.
+                p 
+                    | Asking and answering are basic functions of any Q&A websites including Zhihu and Quora. Compared to Quora, however, it seems that 
+                    span.highlight Zhihu has deliberately overshadowed these two functions
+                    |  on the mobile app. It is reasonable to a certain extent in that the system is at scale and the experience of editing text and image on a mobile phone could be frustrating. Even so, I feel like users deserve a better experience.
                 h3 1. User experience of question asking is lackluster.
         .level.level--humming-bird
             .container
-                img(src="/interaction-design-portfolio/assets/img/asking-answering-1.png")
+                img(src="/assets/img/asking-answering-1.png")
         .level
             .container
                 h4 PROBLEM
                 p Zhihu only opens up two entry points for asking questions publicly, which are either conditional to appear or unappealing to notice. Frankly speaking, it's insufficient. Also, the interfaces are oversimplified and the procedures are lacking in guidance. For example, users have no idea about how many more steps they would take until they post a question successfully.
                 h4 SOLUTION
-                p A possible solution could be adding one or two items of "What is your question?" like Quora in feed, encouraging users to ask questions while browsing. As for guidance, designers could place a title and a step bar at the top indicating the progress. Once a step is completed, the status updates, the color reminds and the progress bar advances. In this case, the user experience is much playful and fun.
+                p 
+                    | A possible solution could be adding one or two items of "What is your question?" like Quora in feed, encouraging users to ask questions while browsing. As for guidance, designers could place 
+                    span.highlight a title and a step bar at the top indicating the progress
+                    | . Once a step is completed, the status updates, the color reminds and the progress bar advances. In this case, the user experience is much playful and fun.
                 h3 2. Inappropriate action area undermines usability.
         .level.level--humming-bird
             .container
-                img(src="/interaction-design-portfolio/assets/img/asking-answering-2.png")
+                img(src="/assets/img/asking-answering-2.png")
         .level
             .container
                 h4 PROBLEM
                 p As the thumb-zone heat map suggests, the natural area that is in reachable distance of the thumb is in the lower half of the screen. Apparently, the 'Next' button is far from a reachable distance. It locates in an uncomfortable area that requires users to stretch their hands.
                 h4 SOLUTION
-                p Bringing call-to-action buttons like ‘Next’ or ‘Publish’ to the natural area can prove beneficial from an experience standpoint. Zhihu could learn from Quora by placing the buttons right next to keyboards. This would facilitate the experience of asking a question.
+                p 
+                    span.highlight Bringing call-to-action buttons like ‘Next’ or ‘Publish’ to the natural area
+                    |  can prove beneficial from an experience standpoint. Zhihu could learn from Quora by placing the buttons right next to keyboards. This would facilitate the experience of asking a question.
         .level
             .container
                 h2 OTHER DISCREPANCIES
                 .sep.taller
-                h3 1. Information pieces are accumulated with little sense of priority and hierarchy.
-                p Many pages are facing this common problem. Speaking of priority, the search page, in particular, presents search results with a confusing order----neither the answer with most upvotes nor the one with newest publishing date is necessarily top of the results. Users often scroll down to find the answer they needs. Speaking of hierarchy, the feeds, the lives, the books are all plainly added one by one. The browsing experience like tasting a hotchpotch, not awful but definitely not exciting.
-                h3 2. There are some icon misuses.
-                p For example, the bubble icon at top-right is a wrong metaphor for private messages. It is intended for initiating a dialog not for receiving a message. It would be suitable to use an inbox icon instead. Another example is that the icon for sharing indicates writing an answer not sharing knowledge. Additionally, the Ask, Answer and Share use line icons which is inconsistent with other solid icons throughout the whole app. Lastly, the cross button for deleting feed and the dropdown button in a live are easy to mis-tap.
-                h3 3. Loading patterns are inconsistent.
-                p The majority of loading animations use a spinner. However, there are three different styles of spinners. This inconsistency is likely to break the integrity of the whole app.
-                h3 4. Ads are a little bit overwhelming.
-                p Plus, I am not particularly in favour of the idea of carousel. I feel like it is a web thing rather than a component that fits into the iOS app design paradigm very well.
+                h3 1. Some icon usages are arguable.
+        .level.level--oyster-pink
+            .container
+                img(src="/assets/img/other-1.png")
         .level
             .container
-                h2 REFLECTION
+                p There are some icon misuses in the app and they can be divided into the following categories:
+                ol
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span a. Mismatch between metaphor and functionality
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span b. Inconsistency of style
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span c. Conflict among buttons with similar icons
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span d. Inappropriate size
+                p
+                    | To be specific, the most obvious example is the bubble icon sitting next to the search bar. 
+                    span.highlight The icon is intended for initiating a dialog, not for receiving a message.
+                    |  It could use an inbox icon instead. Another example is that the icon of 'Share' actually indicates writing an answer. Additionally, 'Ask', 'Answer' and 'Share' use line icons which is inconsistent with other solid icons throughout the app. Lastly, the cross button for deleting feed and the dropdown button in a live are easy to mis-tap.
+                h3 2. Loading patterns should be unified.
+        .level.level--oyster-pink
+            .container
+                img(src="/assets/img/other-2.png")
+        .level
+            .container
+                p The majority of loading animations use a spinner. However, there are three different styles as shown above. This inconsistency is likely to break the integrity of the whole app.
+                h3 3. Advertisement carousel dimishes the value of product.
+        .level.level--oyster-pink
+            .container
+                img(src="/assets/img/other-3.png")
+        .level
+            .container
+                p
+                    |Overall, advertisement and knowledge content are well-balanced throughout the app. However, I am not particularly in favour of the idea of ads carousel. I feel like it is more of a web thing rather than a component that fits into the iOS design paradigm. The 
+                    span.highlight carousel is overwhelming
+                    | , squeezing the space for knowledge content. It draws unnecessary attention in main pages and interrupts the natural UX flow.
+        .level
+            .container
+                h2 CONCLUSION AND REFLECTION
                 .sep
-                
+                p Zhihu is one of my favorite apps. In essence, it raises higher respect for knowledge and intelligence, which is rare and valuable in Chinese society. It enlightens thousands of grass-root intellectuals. And people like me can always benefit from every day's reading.
+                p
+                    | On the other hand, the app has been gradually losing its integrity and personality as it grows. 
+                    span.highlight I admit that it’s hard to design consistent and beautiful things at scale.
+                    |  However, it's important to bear in minds that Zhihu's essential responsibility to provide an ultimate experience of sharing knowledge should never change. Therefore, I have summarized three suggestions:
+                ul
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span To 
+                        span.highlight unify
+                        span  the system and do not let knowledge content drift away due to marketing
+                    li 
+                        i.icon.icon-li.ion-chevron-right
+                        span To 
+                        span.highlight simplify
+                        span  the system and do not let complexity confuse users
+                    li
+                        i.icon.icon-li.ion-chevron-right
+                        span To 
+                        span.highlight vivify
+                        span  the system and do not let stereotype hinder the wills of exploration and interaction
+                p To me, this is my first time writing an app critique. I have broaden my vision through collecting other people's ideas. And I love the process of design thinking when I tried to understand why things work and why not. I hope you enjoyed reading and I would love to hear your thoughts.                

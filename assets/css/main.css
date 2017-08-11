@@ -487,7 +487,7 @@ ol, ul {
           box-sizing: border-box;
   margin-left: 0;
   margin-bottom: 32px;
-  padding-left: 32px;
+  padding-left: 0;
   list-style: none; }
   ol li, ul li {
     position: relative;
@@ -498,6 +498,10 @@ ol, ul {
       width: 2.5em;
       text-align: center;
       color: #1035E6; }
+
+@media (min-width: 48em) {
+  ol, ul {
+    padding-left: 32px; } }
 
 img {
   width: 100%;
@@ -563,8 +567,22 @@ body {
     max-width: 360px;
     font-size: 30px; } }
 
+.highlight {
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #f3f383));
+  background-image: -webkit-linear-gradient(left, transparent 50%, #f3f383 50%);
+  background-image: -o-linear-gradient(left, transparent 50%, #f3f383 50%);
+  background-image: linear-gradient(to right, transparent 50%, #f3f383 50%);
+  -webkit-background-size: 200% 100%;
+          background-size: 200% 100%;
+  -webkit-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out; }
+  .highlight:hover {
+    background-position: -100% 0px; }
+
 .intro {
-  background-image: url(/interaction-design-portfolio/assets/img/intro-bg.jpg);
+  background-image: url(/assets/img/intro-bg.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   -webkit-background-size: cover;
@@ -585,7 +603,7 @@ body {
     max-width: 800px; } }
 
 .misc {
-  background-image: url(/interaction-design-portfolio/assets/img/about-bg.jpg);
+  background-image: url(/assets/img/about-bg.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   -webkit-background-size: cover;
@@ -614,7 +632,7 @@ body {
     margin-bottom: 5em; } }
 
 .work {
-  background-image: url(/interaction-design-portfolio/assets/img/work-bg.jpg);
+  background-image: url(/assets/img/work-bg.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   -webkit-background-size: cover;
@@ -641,7 +659,7 @@ body {
     margin-bottom: 5em; } }
 
 .branding {
-  background-image: url(/interaction-design-portfolio/assets/img/branding-bg.jpg);
+  background-image: url(/assets/img/branding-bg.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   -webkit-background-size: cover;
@@ -681,9 +699,9 @@ body {
     text-align: center; }
 
 .story .hero {
-  background-image: url(/interaction-design-portfolio/assets/img/dreamer.jpg);
+  background-image: url(/assets/img/bio-img-1.jpg);
   background-repeat: no-repeat;
-  background-position: 30% 20%;
+  background-position: center 70%;
   -webkit-background-size: cover;
           background-size: cover; }
 
@@ -698,31 +716,28 @@ body {
 .story p {
   font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
   font-size: 20px;
-  color: #333;
+  color: #000;
   line-height: 1.8; }
 
 @media (min-width: 30em) {
   .story h1 {
     font-size: 64px;
-    line-height: 1.25; } }
+    line-height: 1.375; } }
 
 @media (min-width: 48em) {
   .story h1 {
     font-size: 96px;
-    line-height: 1.15; } }
+    line-height: 1.35; } }
 
 .critique .hero {
-  background-image: url(/interaction-design-portfolio/assets/img/zhihu-showcase.jpg);
+  background-image: url(/assets/img/zhihu-showcase.jpg);
   background-repeat: no-repeat;
   background-position: center 40%;
   -webkit-background-size: cover;
           background-size: cover; }
 
-.critique img {
-  margin-bottom: 1.25em; }
-
 .critique h1 {
-  margin: 0 0 90px 0;
+  margin: 0 0 60px 0;
   font-size: 36px;
   line-height: 1.4; }
   .critique h1 img {
@@ -736,24 +751,26 @@ body {
   font-size: 30px; }
 
 .critique h3 {
-  margin-bottom: 1.25em;
+  margin-bottom: .625em;
   font-size: 24px;
-  line-height: 1.8;
+  line-height: 1.6;
   letter-spacing: .02em; }
 
 .critique h4 {
-  margin-bottom: 1em;
+  margin-bottom: .5em;
+  font-size: 20px;
   letter-spacing: .3em; }
 
 .critique p {
+  margin: 0 0 24px 0;
   font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
-  font-size: 20px;
-  color: #333;
+  font-size: 16px;
+  color: #000;
   line-height: 1.8; }
 
 .critique li {
   font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   color: #333;
   letter-spacing: .05em;
@@ -766,20 +783,370 @@ body {
 @media (min-width: 30em) {
   .critique h1 {
     font-size: 64px;
-    line-height: 1.25; }
+    line-height: 1.375; }
   .critique h2 {
     font-size: 36px; }
   .critique h3 {
-    font-size: 28px; } }
+    font-size: 28px; }
+  .critique h4 {
+    margin-bottom: .75em; }
+  .critique p {
+    font-size: 18px; }
+  .critique li {
+    font-size: 18px; } }
 
 @media (min-width: 48em) {
   .critique h1 {
-    font-size: 96px;
-    line-height: 1.15; }
+    margin: 0 0 90px 0;
+    font-size: 80px;
+    line-height: 1.35; }
   .critique h2 {
     font-size: 48px; }
   .critique h3 {
-    font-size: 32px; } }
+    margin-bottom: 1.25em;
+    font-size: 32px;
+    line-height: 1.8; }
+  .critique h4 {
+    margin-bottom: 1em; }
+  .critique p {
+    margin: 0 0 32px 0;
+    font-size: 20px; }
+  .critique li {
+    font-size: 20px; }
+  .critique img {
+    margin-bottom: 1.25em; } }
+
+@media (min-width: 64em) {
+  .critique h1 {
+    font-size: 96px; } }
+
+.startup .hero {
+  background-image: url(/assets/img/startup-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.startup h1 {
+  margin: 0 0 60px 0;
+  font-size: 36px;
+  line-height: 1.4; }
+  .startup h1 img {
+    width: 1em;
+    height: 1em;
+    vertical-align: -.2em;
+    margin-bottom: 0; }
+
+.startup h2 {
+  margin: 0;
+  font-size: 30px; }
+
+.startup h3 {
+  margin-bottom: .625em;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: .02em; }
+
+.startup h3.smaller {
+  font-size: 22px; }
+
+.startup h4 {
+  margin-bottom: .5em;
+  font-size: 20px;
+  letter-spacing: .3em; }
+
+.startup p {
+  margin: 0 0 24px 0;
+  font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.8; }
+
+.startup li {
+  font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: .05em;
+  line-height: 1.8;
+  margin-bottom: 12px; }
+
+.startup .level .container .img--title {
+  display: block;
+  margin-bottom: 0;
+  -webkit-box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1); }
+
+.startup .level .container .img--result {
+  display: block;
+  margin-bottom: 32px;
+  -webkit-box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1); }
+
+.startup .level .container .board {
+  margin: 36px 0 36px;
+  padding: 36px 36px 60px;
+  background-color: #CBE3F7; }
+  .startup .level .container .board h3 {
+    color: #333;
+    line-height: 1.2; }
+  .startup .level .container .board h4 {
+    margin-bottom: .4em;
+    color: #999;
+    letter-spacing: .08em; }
+  .startup .level .container .board p {
+    width: 100%; }
+
+.startup .level .container .flex {
+  display: block; }
+  .startup .level .container .flex ul, .startup .level .container .flex ol {
+    padding: 24px;
+    background-color: #F2EEEB; }
+  .startup .level .container .flex .illustration {
+    margin-bottom: 32px;
+    padding: 24px;
+    background-color: #FFF; }
+    .startup .level .container .flex .illustration img {
+      margin-bottom: 0; }
+
+.startup .level:first-child {
+  padding-bottom: 0; }
+
+.startup .level:nth-child(3) {
+  padding-bottom: 0; }
+  .startup .level:nth-child(3) img {
+    margin-bottom: 0; }
+
+@media (min-width: 30em) {
+  .startup h1 {
+    font-size: 64px;
+    line-height: 1.375; }
+  .startup h2 {
+    font-size: 36px; }
+  .startup h3 {
+    font-size: 28px; }
+  .startup h3.smaller {
+    font-size: 24px; }
+  .startup h4 {
+    margin-bottom: .75em; }
+  .startup p {
+    font-size: 18px; }
+  .startup li {
+    font-size: 18px; } }
+
+@media (min-width: 48em) {
+  .startup h1 {
+    margin: 0 0 90px 0;
+    font-size: 80px;
+    line-height: 1.35; }
+  .startup h2 {
+    font-size: 48px; }
+  .startup h3 {
+    font-size: 32px;
+    line-height: 1.8; }
+  .startup h3.smaller {
+    font-size: 28px;
+    line-height: 1.6; }
+  .startup h4 {
+    margin-bottom: 1em; }
+  .startup p {
+    margin: 0 0 32px 0;
+    font-size: 20px; }
+  .startup li {
+    font-size: 20px; }
+  .startup img {
+    margin-bottom: 1.25em; }
+  .startup .level .container .img--result {
+    margin-bottom: 60px; }
+  .startup .level .container .flex .illustration {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 85%; } }
+
+@media (min-width: 64em) {
+  .startup h1 {
+    font-size: 96px; } }
+
+@media (min-width: 75em) {
+  .startup .level .container .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .startup .level .container .flex ul, .startup .level .container .flex ol {
+      max-width: 50%;
+      margin-top: 0;
+      padding: 36px 32px; }
+    .startup .level .container .flex .illustration {
+      max-width: 50%;
+      margin: 0 0 32px;
+      padding: 36px 32px; }
+  .startup .level .container .flex.wider ul, .startup .level .container .flex.wider ol {
+    max-width: 66.66666666666667%; } }
+
+.denture .hero {
+  background-image: url(/assets/img/denture-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.denture h1 {
+  margin: 0 0 60px 0;
+  font-size: 36px;
+  line-height: 1.4; }
+  .denture h1 img {
+    width: 1em;
+    height: 1em;
+    vertical-align: -.2em;
+    margin-bottom: 0; }
+
+.denture h2 {
+  margin: 0;
+  font-size: 30px; }
+
+.denture h3 {
+  margin-bottom: .625em;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: .02em; }
+
+.denture h3.smaller {
+  font-size: 22px; }
+
+.denture h4 {
+  margin-bottom: .5em;
+  font-size: 20px;
+  letter-spacing: .3em; }
+
+.denture p {
+  margin: 0 0 24px 0;
+  font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.8; }
+
+.denture li {
+  font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: .05em;
+  line-height: 1.8;
+  margin-bottom: 12px; }
+
+.denture .level .container .img--title {
+  display: block;
+  margin-bottom: 0;
+  -webkit-box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1); }
+
+.denture .level .container .img--result {
+  display: block;
+  margin-bottom: 32px;
+  -webkit-box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1); }
+
+.denture .level .container .board {
+  margin: 36px 0 36px;
+  padding: 36px 36px 60px;
+  background-color: #CBE3F7; }
+  .denture .level .container .board h3 {
+    color: #333;
+    line-height: 1.2; }
+  .denture .level .container .board h4 {
+    margin-bottom: .4em;
+    color: #999;
+    letter-spacing: .08em; }
+  .denture .level .container .board p {
+    width: 100%; }
+
+.denture .level .container .flex {
+  display: block; }
+  .denture .level .container .flex ul, .denture .level .container .flex ol {
+    padding: 24px;
+    background-color: #F2EEEB; }
+  .denture .level .container .flex .illustration {
+    margin-bottom: 32px;
+    padding: 24px;
+    background-color: #FFF; }
+    .denture .level .container .flex .illustration img {
+      margin-bottom: 0; }
+
+.denture .level:first-child {
+  padding-bottom: 0; }
+
+.denture .level:nth-child(3) {
+  padding-bottom: 0; }
+  .denture .level:nth-child(3) img {
+    margin-bottom: 0; }
+
+@media (min-width: 30em) {
+  .denture h1 {
+    font-size: 64px;
+    line-height: 1.375; }
+  .denture h2 {
+    font-size: 36px; }
+  .denture h3 {
+    font-size: 28px; }
+  .denture h3.smaller {
+    font-size: 24px; }
+  .denture h4 {
+    margin-bottom: .75em; }
+  .denture p {
+    font-size: 18px; }
+  .denture li {
+    font-size: 18px; } }
+
+@media (min-width: 48em) {
+  .denture h1 {
+    margin: 0 0 90px 0;
+    font-size: 80px;
+    line-height: 1.35; }
+  .denture h2 {
+    font-size: 48px; }
+  .denture h3 {
+    font-size: 32px;
+    line-height: 1.8; }
+  .denture h3.smaller {
+    font-size: 28px;
+    line-height: 1.6; }
+  .denture h4 {
+    margin-bottom: 1em; }
+  .denture p {
+    margin: 0 0 32px 0;
+    font-size: 20px; }
+  .denture li {
+    font-size: 20px; }
+  .denture img {
+    margin-bottom: 1.25em; }
+  .denture .level .container .img--result {
+    margin-bottom: 60px; }
+  .denture .level .container .flex .illustration {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 85%; } }
+
+@media (min-width: 64em) {
+  .denture h1 {
+    font-size: 96px; } }
+
+@media (min-width: 75em) {
+  .denture .level .container .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .denture .level .container .flex ul, .denture .level .container .flex ol {
+      max-width: 50%;
+      margin-top: 0;
+      padding: 36px 32px; }
+    .denture .level .container .flex .illustration {
+      max-width: 50%;
+      margin: 0 0 32px;
+      padding: 36px 32px; }
+  .denture .level .container .flex.wider ul, .denture .level .container .flex.wider ol {
+    max-width: 66.66666666666667%; } }
 
 .wrapper {
   border: 1.2em solid #fff;
@@ -829,11 +1196,38 @@ body {
     padding-left: 90px; } }
 
 .level {
-  padding: 20px 10px; }
+  padding: 24px 20px; }
   .level:last-child {
     padding-bottom: 40px; }
   .level .container p:last-child {
     margin-bottom: 0; }
+
+@media (min-width: 48em) {
+  .level {
+    padding: 48px 80px 30px; }
+    .level:first-child {
+      padding-top: 0; }
+    .level:last-child {
+      padding-bottom: 75px; }
+    .level .container {
+      position: relative;
+      margin: 0 auto;
+      max-width: 100%;
+      width: 768px; }
+      .level .container p, .level .container ol, .level .container ul {
+        width: 85%; } }
+
+@media (min-width: 64em) {
+  .level {
+    padding: 60px 0 30px; }
+    .level:last-child {
+      padding-bottom: 90px; }
+    .level .container p, .level .container ol, .level .container ul {
+      width: 66.6666666666667%; } }
+
+@media (min-width: 75em) {
+  .level .container {
+    width: 996px; } }
 
 .level.level--oyster-pink {
   background-color: #EDD9CF; }
@@ -841,20 +1235,11 @@ body {
 .level.level--humming-bird {
   background-color: #E2F0FB; }
 
-@media (min-width: 48em) {
-  .level {
-    padding: 60px 0 30px; }
-    .level:first-child {
-      padding-top: 0; }
-    .level:last-child {
-      padding-bottom: 90px; }
-    .level .container {
-      position: relative;
-      margin: 0 auto;
-      max-width: 100%;
-      width: 996px; }
-      .level .container p, .level .container ol, .level .container ul {
-        width: 66.6666666666667%; } }
+.level.level--tropical-blue {
+  background-color: #CBE3F7; }
+
+.level.level--swans-down {
+  background-color: #DAEFE4; }
 
 .hero {
   height: 450px; }
