@@ -4,6 +4,7 @@ var pug         = require('gulp-pug');
 var prefix      = require('gulp-autoprefixer');
 var sass        = require('gulp-sass');
 var cp          = require('child_process');
+var imagemin    = require('gulp-imagemin');
 
 /**
  * Build the Jekyll Site
@@ -53,6 +54,17 @@ gulp.task('pug', function () {
     return gulp.src('_pugfiles/*.pug')
         .pipe(pug())
         .pipe(gulp.dest('_includes'));
+});
+
+gulp.task('image', function () {
+    gulp.src('_imagefiles/*')
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.svgo({plugins: [{removeViewBox: true}]})
+        ]))
+        .pipe(gulp.dest('assets/img'));
 });
 
 /**
