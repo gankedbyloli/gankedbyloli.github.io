@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
     try {
-    	var oneDistance = $("#section1").offset().top - 100;
-    	var twoDistance = $("#section2").offset().top - 100;
-    	var threeDistance = $("#section3").offset().top - 100;
-    	var fourDistance = $("#section4").offset().top - 100;
-    	var fiveDistance = $("#section5").offset().top - 100;
+    	var oneDistance    = $("#section1").offset().top - 100;
+    	var twoDistance    = $("#section2").offset().top - 100;
+    	var threeDistance  = $("#section3").offset().top - 100;
+    	var fourDistance   = $("#section4").offset().top - 100;
+    	var fiveDistance   = $("#section5").offset().top - 100;
     }
 
     catch(err) {
@@ -21,13 +21,18 @@ $(document).ready(function () {
             }
         });
 
+        if ($(this).scrollTop() > 0) {
+            $(".portfolio-nav-container").addClass("sticky");
+        } else {
+            $(".portfolio-nav-container").removeClass("sticky");
+        }
+
         if ($(this).scrollTop() > oneDistance) {
             $(".dot-nav").addClass("is-visible");
         } else {
             $(".dot-nav").removeClass("is-visible");
         }
 
-        console.log ($(this).scrollTop())
         try {
         	if ($(this).scrollTop() > oneDistance) {
         		$('#section1Nav').addClass("is-active");
@@ -65,6 +70,7 @@ $(document).ready(function () {
                 $('#section5Nav').addClass("is-active");
         	}
         }
+
         catch (err) {
             console.log("fewer sections than expected")
         }
