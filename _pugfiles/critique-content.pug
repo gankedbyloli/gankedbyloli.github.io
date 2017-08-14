@@ -7,7 +7,7 @@
                     span A Product Critique on Zhihu App 
                     img(src="/interaction-design-portfolio/assets/img/zhihu-logo.png")
                 p In this article I will give a product critique on Zhihu’s iOS app in terms of UX design. I will explore the design decisions and propose the corresponding solutions too.
-        .level
+        .level#section1
             .container
                 h2 INTRODUCTION
                 .sep
@@ -53,7 +53,7 @@
                         i.icon.icon-li.ion-chevron-right
                         span To build more reliable and intimate connections with other knowledge contributors and pursuers
                 p These external needs and internal objectives have set the goals of Zhihu’s iOS app design. Now, let’s examine some specific content and functionality in the existing app to see if the goals are well-achieved.
-        .level
+        .level#section2
             .container
                 h2 HOME AND DISCOVER FEED
                 .sep.taller
@@ -109,7 +109,7 @@
                 p The first inconsistency lies across sections. Notice that cross button at the top right corner of a feed item in Home? It does not appear in Discover. More importantly, once tapping the cross button, the replacing card uses an inconsistent design with borders and rounded corners. It provides no confirm button and would never disappear unless one of the tags is chosen.
                 h4 SOLUTION
                 p Since the delete button is too small, I doubt anyone would frequently use it. And if the app provides feeds that always understand user needs, the action of removing a feed item is considered redundant. Therefore, by removing this button, the problems of inconsistency and poor interaction design are solved.
-        .level
+        .level#section3
             .container
                 h2 KNOWLEDGE MARKET
                 .sep.taller
@@ -148,7 +148,7 @@
                     | Zhihu needs to unify designs and interactions. Different knowledge services need to have more things in common, such as header appearance and navigating method. So they don’t feel like they are disconnected from each other. To distinguish, minor icon or color differences could be added. 
                     span.highlight Finding characteristics in common would help users understand the knowledge market thoroughly
                     |  so that they wouldn't feel strange when they visit a new service.
-        .level
+        .level#section4
             .container
                 h2 ASKING AND ANSWERING
                 .sep.taller
@@ -181,7 +181,7 @@
                 p 
                     span.highlight Bringing call-to-action buttons like ‘Next’ or ‘Publish’ to the natural area
                     |  can prove beneficial from an experience standpoint. Zhihu could learn from Quora by placing the buttons right next to keyboards. This would facilitate the experience of asking a question.
-        .level
+        .level#section5
             .container
                 h2 OTHER DISCREPANCIES
                 .sep.taller
@@ -251,4 +251,22 @@
                         span To 
                         span.highlight vivify
                         span  the system and do not let stereotype hinder the wills of exploration and interaction
-                p To me, this is my first time writing an app critique. I have broaden my vision through collecting other people's ideas. And I love the process of design thinking when I tried to understand why things work and why not. I hope you enjoyed reading and I would love to hear your thoughts.                
+                p To me, this is my first time writing an app critique. I have broaden my vision through collecting other people's ideas. And I love the process of design thinking when I tried to understand why things work and why not. I hope you enjoyed reading and I would love to hear your thoughts.
+        nav.dot-nav
+            ul
+                li
+                    a.dot-nav--item#section1Nav(href="#section1")
+                li
+                    a.dot-nav--item#section2Nav(href="#section2")
+                li
+                    a.dot-nav--item#section3Nav(href="#section3")
+                li
+                    a.dot-nav--item#section4Nav(href="#section4")
+                li
+                    a.dot-nav--item#section5Nav(href="#section5")    
+        .level
+            .portfolio-nav-container
+                .container
+                    a.prev-container(href="bio.html")
+                    a.home-icon-container(href="index.html")
+                    a.next-container(href="startup.html")

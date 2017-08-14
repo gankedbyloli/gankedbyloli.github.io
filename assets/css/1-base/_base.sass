@@ -121,3 +121,12 @@ body
     font-family: 'Montserrat', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif
     -webkit-font-smoothing: antialiased
     -webkit-text-size-adjust: 100%
+    animation: fadein 600ms ease
+
+@keyframes fadein
+    from
+        opacity: 0
+        transform: translateY(15px)
+    to
+        opacity: 1
+        transform: translateY(0)

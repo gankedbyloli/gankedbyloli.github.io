@@ -517,7 +517,29 @@ body {
   line-height: 1.6;
   font-family: 'Montserrat', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  -webkit-animation: fadein 600ms ease;
+          animation: fadein 600ms ease; }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 
 .sep {
   height: 0;
@@ -580,6 +602,146 @@ body {
   transition: all 0.6s ease-out; }
   .highlight:hover {
     background-position: -100% 0px; }
+
+.dot-nav {
+  position: fixed;
+  display: none;
+  top: 50%;
+  right: 48px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s linear 300ms, opacity 300ms;
+  -o-transition: visibility 0s linear 300ms, opacity 300ms;
+  transition: visibility 0s linear 300ms, opacity 300ms; }
+  .dot-nav li {
+    margin-bottom: 24px; }
+
+.dot-nav.is-visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: visibility 0s linear 0s, opacity 300ms;
+  -o-transition: visibility 0s linear 0s, opacity 300ms;
+  transition: visibility 0s linear 0s, opacity 300ms; }
+
+.dot-nav--item {
+  position: relative;
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin-bottom: 20px;
+  border: 2px solid #999;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+  .dot-nav--item:hover {
+    cursor: pointer; }
+  .dot-nav--item.is-active {
+    background-color: #999; }
+
+@media (min-width: 64em) {
+  .dot-nav {
+    display: block; } }
+
+.portfolio-nav-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #000;
+  z-index: 200;
+  border-left: 1.2em solid #fff;
+  border-right: 1.2em solid #fff;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .portfolio-nav-container.sticky {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    visibility: visible; }
+  .portfolio-nav-container .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 20px; }
+    .portfolio-nav-container .container .prev-container {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background: url("/assets/img/icon-prev.svg") no-repeat left center;
+      -webkit-background-size: 16px 16px;
+              background-size: 16px 16px; }
+      .portfolio-nav-container .container .prev-container:after {
+        content: "Previous Article";
+        display: none;
+        position: absolute;
+        left: 40px;
+        top: 15px;
+        width: 120px;
+        font-size: 14px;
+        color: #fff;
+        text-align: left;
+        opacity: 0;
+        -webkit-transition: all .2s ease-out;
+        -o-transition: all .2s ease-out;
+        transition: all .2s ease-out; }
+      .portfolio-nav-container .container .prev-container:hover:after {
+        opacity: 1; }
+    .portfolio-nav-container .container .next-container {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background: url("/assets/img/icon-next.svg") no-repeat right center;
+      -webkit-background-size: 16px 16px;
+              background-size: 16px 16px; }
+      .portfolio-nav-container .container .next-container:before {
+        content: "Next Article";
+        display: none;
+        position: absolute;
+        right: 40px;
+        top: 15px;
+        width: 120px;
+        font-size: 14px;
+        color: #fff;
+        text-align: right;
+        opacity: 0;
+        -webkit-transition: all .2s ease-out;
+        -o-transition: all .2s ease-out;
+        transition: all .2s ease-out; }
+      .portfolio-nav-container .container .next-container:hover:before {
+        opacity: 1; }
+    .portfolio-nav-container .container .home-icon-container {
+      display: block;
+      margin: 0 auto;
+      width: 50px;
+      height: 50px;
+      background: url("/assets/img/icon-title.svg") no-repeat center center;
+      -webkit-background-size: 16px 16px;
+              background-size: 16px 16px; }
+
+@media (min-width: 64em) {
+  .portfolio-nav-container .container {
+    padding: 0; }
+    .portfolio-nav-container .container .prev-container:after {
+      display: block; }
+    .portfolio-nav-container .container .next-container:before {
+      display: block; } }
 
 .intro {
   background-image: url(/interaction-design-portfolio/assets/img/intro-bg.jpg);
@@ -1168,6 +1330,7 @@ body {
     padding: 10em 15em; } }
 
 .article-wrapper {
+  position: relative;
   padding: .625em 0; }
 
 @media (min-width: 30em) {
@@ -1196,11 +1359,14 @@ body {
     padding-left: 90px; } }
 
 .level {
+  position: relative;
   padding: 24px 20px; }
   .level:last-child {
     padding-bottom: 40px; }
-  .level .container p:last-child {
-    margin-bottom: 0; }
+  .level .container {
+    position: relative; }
+    .level .container p:last-child {
+      margin-bottom: 0; }
 
 @media (min-width: 48em) {
   .level {
@@ -1210,7 +1376,6 @@ body {
     .level:last-child {
       padding-bottom: 75px; }
     .level .container {
-      position: relative;
       margin: 0 auto;
       max-width: 100%;
       width: 768px; }
