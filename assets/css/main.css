@@ -684,7 +684,7 @@ body {
       position: relative;
       width: 50px;
       height: 50px;
-      background: url("/assets/img/icon-prev.svg") no-repeat left center;
+      background: url(/interaction-design-portfolio/assets/img/icon-prev.svg) no-repeat left center;
       -webkit-background-size: 16px 16px;
               background-size: 16px 16px; }
       .portfolio-nav-container .container .prev-container:after {
@@ -707,7 +707,7 @@ body {
       position: relative;
       width: 50px;
       height: 50px;
-      background: url("/assets/img/icon-next.svg") no-repeat right center;
+      background: url(/interaction-design-portfolio/assets/img/icon-next.svg) no-repeat right center;
       -webkit-background-size: 16px 16px;
               background-size: 16px 16px; }
       .portfolio-nav-container .container .next-container:before {
@@ -731,7 +731,7 @@ body {
       margin: 0 auto;
       width: 50px;
       height: 50px;
-      background: url("/assets/img/icon-title.svg") no-repeat center center;
+      background: url(/interaction-design-portfolio/assets/img/icon-title.svg) no-repeat center center;
       -webkit-background-size: 16px 16px;
               background-size: 16px 16px; }
 
