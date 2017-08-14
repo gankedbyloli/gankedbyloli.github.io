@@ -49,7 +49,7 @@
 
 .dot-nav
     position: fixed
-    display: block
+    display: none
     top: 50%
     right: 48px
     transform: translate(0, -50%)
@@ -79,6 +79,10 @@
     &.is-active
         background-color: $gray
 
+@media (min-width: 64em)
+    .dot-nav
+        display: block
+
 .portfolio-nav-container
     box-sizing: border-box
     position: fixed
@@ -103,6 +107,7 @@
     .container
         display: flex
         align-items: center
+        padding: 0 20px
 
         .prev-container
             position: relative
@@ -113,6 +118,7 @@
 
             &:after
                 content: "Previous Article"
+                display: none
                 position: absolute
                 left: 40px
                 top: 15px
@@ -135,6 +141,7 @@
 
             &:before
                 content: "Next Article"
+                display: none
                 position: absolute
                 right: 40px
                 top: 15px
@@ -153,5 +160,16 @@
             margin: 0 auto
             width: 50px
             height: 50px
-            background: url("/assets/img/icon-title.svg") no-repeat right center
+            background: url("/assets/img/icon-title.svg") no-repeat center center
             background-size: 16px 16px
+
+@media (min-width: 64em)
+    .portfolio-nav-container
+        .container
+            padding: 0
+            .prev-container
+                &:after
+                    display: block
+            .next-container
+                &:before
+                    display: block

@@ -605,7 +605,7 @@ body {
 
 .dot-nav {
   position: fixed;
-  display: block;
+  display: none;
   top: 50%;
   right: 48px;
   -webkit-transform: translate(0, -50%);
@@ -639,6 +639,10 @@ body {
     cursor: pointer; }
   .dot-nav--item.is-active {
     background-color: #999; }
+
+@media (min-width: 64em) {
+  .dot-nav {
+    display: block; } }
 
 .portfolio-nav-container {
   -webkit-box-sizing: border-box;
@@ -674,7 +678,8 @@ body {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    padding: 0 20px; }
     .portfolio-nav-container .container .prev-container {
       position: relative;
       width: 50px;
@@ -684,6 +689,7 @@ body {
               background-size: 16px 16px; }
       .portfolio-nav-container .container .prev-container:after {
         content: "Previous Article";
+        display: none;
         position: absolute;
         left: 40px;
         top: 15px;
@@ -706,6 +712,7 @@ body {
               background-size: 16px 16px; }
       .portfolio-nav-container .container .next-container:before {
         content: "Next Article";
+        display: none;
         position: absolute;
         right: 40px;
         top: 15px;
@@ -724,9 +731,17 @@ body {
       margin: 0 auto;
       width: 50px;
       height: 50px;
-      background: url("/assets/img/icon-title.svg") no-repeat right center;
+      background: url("/assets/img/icon-title.svg") no-repeat center center;
       -webkit-background-size: 16px 16px;
               background-size: 16px 16px; }
+
+@media (min-width: 64em) {
+  .portfolio-nav-container .container {
+    padding: 0; }
+    .portfolio-nav-container .container .prev-container:after {
+      display: block; }
+    .portfolio-nav-container .container .next-container:before {
+      display: block; } }
 
 .intro {
   background-image: url(/assets/img/intro-bg.jpg);
