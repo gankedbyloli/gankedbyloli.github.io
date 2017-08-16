@@ -1238,11 +1238,6 @@ body {
 .denture .level:first-child {
   padding-bottom: 0; }
 
-.denture .level:nth-child(3) {
-  padding-bottom: 0; }
-  .denture .level:nth-child(3) img {
-    margin-bottom: 0; }
-
 @media (min-width: 30em) {
   .denture h1 {
     font-size: 64px;
