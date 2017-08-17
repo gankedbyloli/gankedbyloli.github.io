@@ -1380,8 +1380,20 @@ body {
   background-color: #DAEFE4; }
 
 .hero {
-  height: 450px; }
+  height: 350px; }
 
 @media (min-width: 48em) {
   .hero {
+    height: 500px; } }
+
+@media (min-width: 64em) {
+  .hero {
+    height: 400px; } }
+
+@media (min-width: 75em) {
+  .hero {
     height: 550px; } }
+
+@media (min-width: 85em) {
+  .hero {
+    height: 450px; } }
