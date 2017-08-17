@@ -1,7 +1,7 @@
 .sep
     height: 0
-    margin-top: 1.5em
-    margin-bottom: 1.5em
+    margin-top: 1em
+    margin-bottom: 1em
     border-left: 0
     border-right: 0
     border-bottom: 0
@@ -9,8 +9,17 @@
     line-height: 1
     text-align: center
     width: 160px
-.sep.taller
-    margin-bottom: 3.0em
+
+    &.taller
+        margin-bottom: 2em
+
+@media (min-width: 48em)
+    .sep
+        margin-top: 1.5em
+        margin-bottom: 1.5em
+
+        &.taller
+            margin-bottom: 3em
 
 .cta
     max-width: 280px
