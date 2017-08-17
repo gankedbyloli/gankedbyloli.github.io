@@ -916,7 +916,7 @@ body {
 
 .critique h2 {
   margin: 0;
-  font-size: 30px; }
+  font-size: 28px; }
 
 .critique h3 {
   margin-bottom: .625em;
@@ -926,7 +926,7 @@ body {
 
 .critique h4 {
   margin-bottom: .5em;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: .3em; }
 
 .critique p {
@@ -957,7 +957,8 @@ body {
   .critique h3 {
     font-size: 28px; }
   .critique h4 {
-    margin-bottom: .75em; }
+    margin-bottom: .75em;
+    font-size: 18px; }
   .critique p {
     font-size: 18px; }
   .critique li {
@@ -975,7 +976,8 @@ body {
     font-size: 32px;
     line-height: 1.8; }
   .critique h4 {
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    font-size: 20px; }
   .critique p {
     margin: 0 0 32px 0;
     font-size: 20px; }
@@ -986,7 +988,13 @@ body {
 
 @media (min-width: 64em) {
   .critique h1 {
-    font-size: 96px; } }
+    font-size: 80px;
+    line-height: 1.25; } }
+
+@media (min-width: 75em) {
+  .critique h1 {
+    font-size: 96px;
+    line-height: 1.15; } }
 
 .startup .hero {
   background-image: url(/assets/img/startup-banner.jpg);
@@ -999,11 +1007,6 @@ body {
   margin: 0 0 60px 0;
   font-size: 36px;
   line-height: 1.4; }
-  .startup h1 img {
-    width: 1em;
-    height: 1em;
-    vertical-align: -.2em;
-    margin-bottom: 0; }
 
 .startup h2 {
   margin: 0;
