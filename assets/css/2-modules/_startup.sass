@@ -18,7 +18,7 @@
 
     h2
         margin: 0
-        font-size: 30px
+        font-size: 28px
 
     h3
         margin-bottom: .625em
@@ -26,12 +26,12 @@
         line-height: 1.6
         letter-spacing: .02em
 
-    h3.smaller
-        font-size: 22px
+        &.smaller
+            font-size: 22px
 
     h4
         margin-bottom: .5em
-        font-size: 20px
+        font-size: 16px
         letter-spacing: .3em
 
     p
@@ -79,9 +79,11 @@
 
             .flex
                 display: block
+
                 ul, ol
                     padding: 24px
                     background-color: #F2EEEB
+
                 .illustration
                     margin-bottom: 32px
                     padding: 24px
@@ -91,6 +93,7 @@
 
         &:first-child
             padding-bottom: 0
+
         &:nth-child(3)
             padding-bottom: 0
             img
@@ -101,16 +104,23 @@
         h1
             font-size: 64px
             line-height: 1.375
+
         h2
             font-size: 36px
+
         h3
             font-size: 28px
-        h3.smaller
-            font-size: 24px
+
+            &.smaller
+                font-size: 24px
+
         h4
             margin-bottom: .75em
+            font-size: 18px
+
         p
             font-size: 18px
+
         li
             font-size: 18px
 
@@ -118,23 +128,31 @@
     .startup
         h1
             margin: 0 0 90px 0
-            font-size: 80px
+            font-size: 72px
             line-height: 1.35
+
         h2
             font-size: 48px
+
         h3
             font-size: 32px
             line-height: 1.8
-        h3.smaller
-            font-size: 28px
-            line-height: 1.6
+
+            &.smaller
+                font-size: 28px
+                line-height: 1.6
+
         h4
             margin-bottom: 1em
+            font-size: 20px
+
         p
             margin: 0 0 32px 0
             font-size: 20px
+
         li
             font-size: 20px
+
         img
             margin-bottom: 1.25em
 
@@ -152,22 +170,36 @@
 @media (min-width: 64em)
     .startup
         h1
-            font-size: 96px
+            font-size: 80px
+            line-height: 1.25
+
+        .level
+            .container
+                .flex
+                    .illustration
+                        width: 66.666666666666666667%
 
 @media (min-width: 75em)
     .startup
+        h1
+            font-size: 96px
+            line-height: 1.15
+
         .level
             .container
                 .flex
                     display: flex
+
                     ul, ol
                         max-width: 50%
                         margin-top: 0
                         padding: 36px 32px
+
                     .illustration
                         max-width: 50%
                         margin: 0 0 32px
                         padding: 36px 32px
-                .flex.wider
-                    ul, ol
-                        max-width: 66.66666666666667%
+
+                    &.wider
+                        ul, ol
+                            max-width: 66.66666666666667%

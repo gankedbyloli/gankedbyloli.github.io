@@ -1007,20 +1007,19 @@ body {
 
 .startup h2 {
   margin: 0;
-  font-size: 30px; }
+  font-size: 28px; }
 
 .startup h3 {
   margin-bottom: .625em;
   font-size: 24px;
   line-height: 1.6;
   letter-spacing: .02em; }
-
-.startup h3.smaller {
-  font-size: 22px; }
+  .startup h3.smaller {
+    font-size: 22px; }
 
 .startup h4 {
   margin-bottom: .5em;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: .3em; }
 
 .startup p {
@@ -1093,10 +1092,11 @@ body {
     font-size: 36px; }
   .startup h3 {
     font-size: 28px; }
-  .startup h3.smaller {
-    font-size: 24px; }
+    .startup h3.smaller {
+      font-size: 24px; }
   .startup h4 {
-    margin-bottom: .75em; }
+    margin-bottom: .75em;
+    font-size: 18px; }
   .startup p {
     font-size: 18px; }
   .startup li {
@@ -1105,18 +1105,19 @@ body {
 @media (min-width: 48em) {
   .startup h1 {
     margin: 0 0 90px 0;
-    font-size: 80px;
+    font-size: 72px;
     line-height: 1.35; }
   .startup h2 {
     font-size: 48px; }
   .startup h3 {
     font-size: 32px;
     line-height: 1.8; }
-  .startup h3.smaller {
-    font-size: 28px;
-    line-height: 1.6; }
+    .startup h3.smaller {
+      font-size: 28px;
+      line-height: 1.6; }
   .startup h4 {
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    font-size: 20px; }
   .startup p {
     margin: 0 0 32px 0;
     font-size: 20px; }
@@ -1135,9 +1136,15 @@ body {
 
 @media (min-width: 64em) {
   .startup h1 {
-    font-size: 96px; } }
+    font-size: 80px;
+    line-height: 1.25; }
+  .startup .level .container .flex .illustration {
+    width: 66.666666666666666667%; } }
 
 @media (min-width: 75em) {
+  .startup h1 {
+    font-size: 96px;
+    line-height: 1.15; }
   .startup .level .container .flex {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1151,8 +1158,8 @@ body {
       max-width: 50%;
       margin: 0 0 32px;
       padding: 36px 32px; }
-  .startup .level .container .flex.wider ul, .startup .level .container .flex.wider ol {
-    max-width: 66.66666666666667%; } }
+    .startup .level .container .flex.wider ul, .startup .level .container .flex.wider ol {
+      max-width: 66.66666666666667%; } }
 
 .denture .hero {
   background-image: url(/assets/img/denture-banner.jpg);
@@ -1163,7 +1170,7 @@ body {
 
 .denture h1 {
   margin: 0;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 1.4; }
 
 .denture h2 {
