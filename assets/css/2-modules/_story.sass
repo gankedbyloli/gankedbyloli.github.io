@@ -5,8 +5,9 @@
             repeat: no-repeat
             position: center 70%
             size: cover
+
     h1
-        margin: 0
+        margin: 0 0 60px 0
         font-size: 36px
         line-height: 1.4
 
@@ -20,6 +21,10 @@
         color: $black
         line-height: 1.8
 
+    .level
+        &:first-child
+            padding-bottom: 0
+
 @media (min-width: 30em)
     .story
         h1
@@ -32,6 +37,7 @@
 @media (min-width: 48em)
     .story
         h1
+            margin: 0 0 90px 0
             font-size: 72px
             line-height: 1.35
 
