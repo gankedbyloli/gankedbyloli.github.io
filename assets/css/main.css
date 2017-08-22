@@ -883,7 +883,7 @@ body {
     text-align: center; }
 
 .story .hero {
-  background-image: url(/assets/img/bio-img-1.jpg);
+  background-image: url(http://i.imgur.com/cGMT2Mf.jpg);
   background-repeat: no-repeat;
   background-position: center 70%;
   -webkit-background-size: cover;
@@ -933,7 +933,7 @@ body {
     line-height: 1.15; } }
 
 .critique .hero {
-  background-image: url(/assets/img/zhihu-showcase.jpg);
+  background-image: url(http://i.imgur.com/iWloPpO.jpg);
   background-repeat: no-repeat;
   background-position: center 40%;
   -webkit-background-size: cover;
