@@ -3,19 +3,66 @@
     height: auto !important
 
 .section-wrapper
-    padding: 5em 2.5em
+    padding: 0 0 5em
 
-@media (min-width: 30em)
-    .section-wrapper
-        padding: 5em 5em
+    &:first-child
+        padding: 5em 0
+
+    &:last-child
+        padding: 5em 0
 
 @media (min-width: 48em)
     .section-wrapper
-        padding: 10em 8em
+        padding: 0 0 7.5em
+
+        &:first-child
+            padding: 7.5em 0
+
+        &:last-child
+            padding: 7.5em 0
 
 @media (min-width: 64em)
     .section-wrapper
-        padding: 10em 15em
+        padding: 5em 0 7.5em 0
+
+@media (min-width: 85.375em)
+    .section-wrapper
+        padding: 10em 0
+// .section-wrapper
+//     padding: 5em 2.5em
+//
+// @media (min-width: 30em)
+//     .section-wrapper
+//         padding: 5em 5em
+//
+// @media (min-width: 48em)
+//     .section-wrapper
+//         padding: 10em 8em
+//
+// @media (min-width: 64em)
+//     .section-wrapper
+//         padding: 10em 15em
+.section
+    position: relative
+    padding: 0 2em
+
+@media (min-width: 30em)
+    .section
+        padding: 0 5em
+
+@media (min-width: 48em)
+    .section
+        margin: 0 auto
+        max-width: 100%
+        width: 768px
+
+@media (min-width: 75em)
+    .section
+        width: 996px
+
+@media (min-width: 100em)
+    .section
+        width: 1200px
 
 .article-wrapper
     position: relative
