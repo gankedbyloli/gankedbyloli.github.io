@@ -823,7 +823,7 @@ body {
               order: 0;
       min-height: 480px;
       margin-bottom: 60px;
-      background-image: url(/assets/img/section-1-bg.jpg);
+      background-image: url(http://i.imgur.com/nicaHK7.jpg);
       background-repeat: no-repeat;
       background-position: center;
       -webkit-background-size: cover;
@@ -881,7 +881,7 @@ body {
     .section-2 .flex .col-1of2:first-child {
       min-height: 480px;
       margin-bottom: 60px;
-      background-image: url(/assets/img/section-2-bg.png);
+      background-image: url(http://i.imgur.com/8ukldor.png);
       background-repeat: no-repeat;
       background-position: 60% top;
       -webkit-background-size: cover;
@@ -943,7 +943,7 @@ body {
               order: 0;
       min-height: 480px;
       margin-bottom: 60px;
-      background-image: url(/assets/img/section-3-bg.jpg);
+      background-image: url(http://i.imgur.com/KVuXkHo.jpg);
       background-repeat: no-repeat;
       background-position: right center;
       -webkit-background-size: cover;
@@ -1334,7 +1334,7 @@ body {
       max-width: 66.66666666666667%; } }
 
 .denture .hero {
-  background-image: url(/assets/img/denture-banner.jpg);
+  background-image: url(http://i.imgur.com/dpnmQx0.jpg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
