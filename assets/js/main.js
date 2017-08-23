@@ -21,7 +21,7 @@ $(document).ready(function () {
             }
         });
 
-        if ($(this).scrollTop() > 0) {
+        if ($(this).scrollTop() > 550) {
             $(".portfolio-nav-container").addClass("sticky");
         } else {
             $(".portfolio-nav-container").removeClass("sticky");
