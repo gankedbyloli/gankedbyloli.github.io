@@ -777,9 +777,14 @@ body {
     color: #fff; }
   .intro h3, .intro h4 {
     color: #fff; }
+  .intro h5 {
+    color: #B98A61;
+    letter-spacing: .25em; }
+    .intro h5 a {
+      color: #B98A61;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
   .intro p {
     max-width: 700px;
-    margin-bottom: 0;
     color: #ccc; }
 
 @media (max-width: 85em) {
