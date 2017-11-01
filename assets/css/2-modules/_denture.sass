@@ -71,6 +71,13 @@
                 p
                     width: 100%
 
+            .flex
+                display: block
+
+                ul, ol
+                    padding: 24px
+                    background-color: #F2EEEB
+
         &:nth-child(6)
             margin-bottom: 30px
 
@@ -148,3 +155,17 @@
         h1
             font-size: 96px
             line-height: 1.15
+
+        .level
+            .container
+                .flex
+                    display: flex
+
+                    ul, ol
+                        max-width: 50%
+                        margin-top: 0
+                        padding: 36px 32px
+
+                    &.wider
+                        ul, ol
+                            max-width: 66.66666666666667%

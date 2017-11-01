@@ -1409,6 +1409,12 @@ body {
   .denture .level .container .board p {
     width: 100%; }
 
+.denture .level .container .flex {
+  display: block; }
+  .denture .level .container .flex ul, .denture .level .container .flex ol {
+    padding: 24px;
+    background-color: #F2EEEB; }
+
 .denture .level:nth-child(6) {
   margin-bottom: 30px; }
 
@@ -1465,7 +1471,18 @@ body {
 @media (min-width: 75em) {
   .denture h1 {
     font-size: 96px;
-    line-height: 1.15; } }
+    line-height: 1.15; }
+  .denture .level .container .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .denture .level .container .flex ul, .denture .level .container .flex ol {
+      max-width: 50%;
+      margin-top: 0;
+      padding: 36px 32px; }
+    .denture .level .container .flex.wider ul, .denture .level .container .flex.wider ol {
+      max-width: 66.66666666666667%; } }
 
 .wrapper {
   border: 1.2em solid #fff;
