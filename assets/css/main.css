@@ -609,6 +609,13 @@ body {
   .highlight:hover {
     background-position: -100% 0px; }
 
+.special-refer {
+  position: relative;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #0074D9), color-stop(5%, transparent));
+  background-image: -webkit-linear-gradient(bottom, #0074D9 5%, transparent 5%);
+  background-image: -o-linear-gradient(bottom, #0074D9 5%, transparent 5%);
+  background-image: linear-gradient(to top, #0074D9 5%, transparent 5%); }
+
 .pdf-link {
   position: relative;
   color: #000;
