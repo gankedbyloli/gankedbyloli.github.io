@@ -6,6 +6,7 @@ $(document).ready(function () {
     	var threeDistance  = $("#section3").offset().top - 100;
     	var fourDistance   = $("#section4").offset().top - 100;
     	var fiveDistance   = $("#section5").offset().top - 100;
+        var sixDistance   = $("#section6").offset().top - 100;
     }
 
     catch(err) {
@@ -40,6 +41,7 @@ $(document).ready(function () {
                 $('#section3Nav').removeClass("is-active");
                 $('#section4Nav').removeClass("is-active");
                 $('#section5Nav').removeClass("is-active");
+                $('#section6Nav').removeClass("is-active");
         	}
         	if ($(this).scrollTop() > twoDistance) {
                 $('#section1Nav').removeClass("is-active");
@@ -47,6 +49,7 @@ $(document).ready(function () {
                 $('#section3Nav').removeClass("is-active");
                 $('#section4Nav').removeClass("is-active");
                 $('#section5Nav').removeClass("is-active");
+                $('#section6Nav').removeClass("is-active");
         	}
         	if ($(this).scrollTop() > threeDistance) {
                 $('#section1Nav').removeClass("is-active");
@@ -54,6 +57,7 @@ $(document).ready(function () {
                 $('#section3Nav').addClass("is-active");
                 $('#section4Nav').removeClass("is-active");
                 $('#section5Nav').removeClass("is-active");
+                $('#section6Nav').removeClass("is-active");
         	}
         	if ($(this).scrollTop() > fourDistance) {
                 $('#section1Nav').removeClass("is-active");
@@ -61,6 +65,7 @@ $(document).ready(function () {
                 $('#section3Nav').removeClass("is-active");
                 $('#section4Nav').addClass("is-active");
                 $('#section5Nav').removeClass("is-active");
+                $('#section6Nav').removeClass("is-active");
         	}
         	if ($(this).scrollTop() > fiveDistance) {
                 $('#section1Nav').removeClass("is-active");
@@ -68,6 +73,15 @@ $(document).ready(function () {
                 $('#section3Nav').removeClass("is-active");
                 $('#section4Nav').removeClass("is-active");
                 $('#section5Nav').addClass("is-active");
+                $('#section6Nav').removeClass("is-active");
+        	}
+            if ($(this).scrollTop() > sixDistance) {
+                $('#section1Nav').removeClass("is-active");
+        		$('#section2Nav').removeClass("is-active");
+                $('#section3Nav').removeClass("is-active");
+                $('#section4Nav').removeClass("is-active");
+                $('#section5Nav').removeClass("is-active");
+                $('#section6Nav').addClass("is-active");
         	}
         }
 
