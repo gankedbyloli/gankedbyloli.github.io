@@ -3,8 +3,8 @@
     .article-wrapper
         .level
             .container
-                h1 Management Tool to Move Team Forward
-                p Below are thinking processes and initial deliverables for SAP design exercise.
+                h1 Management Tool to Move a Team Forward
+                p This article is about writing down the thinking processes and delivering final mock-ups for a team management tool. (time limit: 2 days)
         .level#section1
             .container
                 h2 RESEARCH
@@ -16,10 +16,10 @@
                     | . 
                 h3 Competitors
                 p My personal experience tells me that a team manager is often overwhelmed with members, projects, reports and other management issues, struggling to lead the team and move the work forward.
-                p So I was wondering if there exists some products in the market dealing with this problem. What are the ways in which they utilize to help people stay organized? What authorities are managers entitled with while using the products? And lastly, are there any innovative methods that facilitate team management? I listed several team/project management products as our competitors and then studied their products briefly.
+                p I was then wondering if there exist some products in the market dealing with this problem. What are the ways in which they help people stay organized? What authorities are managers entitled with while using the products? And lastly, are there any innovative methods that facilitate team management? I listed several team/project management products as our "competitors" and then studied their products briefly.
         .level.level--humming-bird
             .container
-                img(data-src="assets/img/competitors.png").lazyload
+                img(data-src="https://i.imgur.com/8AtjpXA.png").lazyload
         .level
             .container
                 p These products are teamwork-oriented applications. Some common features are:
@@ -52,19 +52,19 @@
                                 td yes
                                 td no
                             tr
-                                td Capable of assigning projects and roles to members
-                                td no
-                                td no
-                                td no
-                                td yes 
+                                td Capable of assigning projects or roles to members
+                                td proj
+                                td proj
+                                td proj
+                                td both 
                             tr
-                                td Provides inter-communicating approaches
+                                td Provides inter-communicating methods
                                 td yes
                                 td yes
                                 td yes
                                 td yes
                             tr
-                                td Builds up leadership for manager through various authorities
+                                td Builds up leadership for manager through various approaches
                                 td no
                                 td no
                                 td no
@@ -73,7 +73,7 @@
                 p 
                     | By analyzing current products, I gained a lot of inspirations. However, I also realized that those "competitors" are mainly 
                     span.highlight designed for every member on the team rather than the manager specifically
-                    | . They solve the problem of, in some sense, project/task management and the idea of leadership is weakened.
+                    | . They solve the problem of project/task management within a flattened team. The idea of leadership is weakened however.
                 p
                     | Therefore, I conducted 5 interviews (
                     span.highlight different industries
@@ -114,7 +114,7 @@
                 h2 PROBLEM SCOPING
                 .sep.taller
                 h3 Refined Scope
-                p According to research results, I narrowed down the scope of our problem in the following aspects:
+                p According to the research results, I narrowed down the scope of our problem in the following aspects:
                 .flex.wider
                     ul
                         li
@@ -122,7 +122,7 @@
                             span 
                                 | Focusing on the scenario where 
                                 span.highlight a desktop application
-                                |  is used in office rather than a mobile app being used during a business trip.
+                                |  is used in office rather than a mobile app is used during a business trip.
                         li
                             i.icon.icon-li.ion-chevron-right
                             span
@@ -175,7 +175,7 @@
                 .sep.taller
                 h3 Persona
                 p
-                    | I then considered the questions above from the lens of our main customer: Larry Roberts. The persona could be described as follow:
+                    | I then considered the questions above from the lens of our main customer: Larry Roberts. The persona is described as following:
                 .board
                     h3.smaller Manager Persona
                     h4 Brief Introduction
@@ -184,14 +184,14 @@
                     p 1. Track the status of all the projects in his team, in terms of timeline, budget, and quality, etc. 2. Understand who is doing what. 3. Build a learning organization, which facilitates knowledge sharing and collaboration. 4. Keep the morale. 5. Process the leave requests, shopping requests, and expense reports from team members.
                 h3 User Needs
                 p
-                    | According to the persona, I listed out 5 users needs and placed them within a self-made coordinating system. The x-axis represents 
+                    | I listed out 5 users needs and placed them within a coordinating system. The x-axis represents 
                     span.highlight importance or motivation
-                    |  of the need from low to high while the y-axis represents  
+                    |  of the need while the y-axis   
                     span.highlight frequency
-                    |  of need being accomplished.
+                    |  of need being accomplished by a manager.
         .level.level--humming-bird
             .container
-                img(data-src="assets/img/user-needs-sorting.png").lazyload
+                img(data-src="https://i.imgur.com/WgHB8Vc.png").lazyload
         .level
             .container
                 h3 Assumption
@@ -212,12 +212,12 @@
                             i.icon.icon-li.ion-chevron-right
                             span
                                 b Efficiency
-                                |—Tasks such as assigning projects to members or processing requests and reports should be accomplished intuitively and easily.
+                                |—Tasks such as assigning projects to members or processing requests and reports can be accomplished intuitively and easily.
                         li
                             i.icon.icon-li.ion-chevron-right
                             span
                                 b Interaction
-                                |—System should provide chances for members to interact with each other, e.g. learning organization and discussion board.
+                                |—System should provide various chances for members to interact with each other, e.g. learning organization and discussion board.
                         li
                             i.icon.icon-li.ion-chevron-right
                             span
@@ -233,7 +233,7 @@
                 p The first category includes project lists, member lists, learning organizations, statistics and team building activities. The second is mainly message system, encompassing requests, reports and other notifications.
         .level.level--tropical-blue
             .container
-                img(data-src="assets/img/tmt/data-structure.png").lazyload
+                img(data-src="https://i.imgur.com/XqheHqT.png").lazyload
         .level
             .container
                 p Note that one member can map onto multiple projects and vice versa.
@@ -243,81 +243,82 @@
                 .sep.taller
                 h3 1. Maximize Clarity
                 p
-                    | The system organizes information into modules and builds the navigation along them. In this regards, maximized clarity was achieved with system consistently following the information architecture mentioned before or in other words, 
+                    | The system organizes information into modules and builds the navigation along them. In this regards, maximized clarity was achieved with system consistently following the information architecture or in other words, 
                     span.highlight a reasonable hierarchy
                     | . 
                 h3 2. Enhance Professionalism
                 p
                     | A product speaks for itself with more 
                     span.highlight complete and reliable data
-                    | . So does this team management tool. My design was to provide as much accurate data as possible including numbers, trendings, times, etc. I put much emphasis on numbers especially because that's the effective way in which a manager would trust a system.
-                img(data-src="assets/img/tmt/tmt-sketches-1.jpg").lazyload.img--result
+                    | .My design was to provide as much accurate data as possible including numbers, timings, trends, etc. I put more emphasis on real numbers because that was an reliable way in which a manager would trust a system.
+                img(data-src="https://i.imgur.com/57eKjD6.jpg").lazyload.img--result
                 h3 3. Ensure Efficiency
                 p
-                    | Manipulations of the tools should be highly effective. I wanted to use the 
+                    | Manipulations of the tool should be highly effective. I wanted to use the 
                     span.highlight button-modal interaction
-                    |  to give a more immersive experience. Meanwhile, the way a manager 
+                    |  to give more immersive experiences. Meanwhile, the way a manager 
                     span.highlight deals with requests and reports
                     |  would be intuitive. Plus, I provided 
                     span.highlight filtering and sorting
                     |  functions for managers to compare and thus get better insights.
                 h3 4. Provide Interactions
                 p
-                    | Providing Interactions among team members is the key to a successful team. There are several ways to do so:  1. The tool contains 
+                    | Providing Interactions among team members is the key to a successful team. There are several ways to do so: 1. The tool contains 
                     span.highlight a variety of approaches
                     |  to group learning and discussions. 2. Communication through the tool is 
                     span.highlight fast
                     |  and 
                     span.highlight in-time. 
                 p
-                    | In this case, I designed multiple ways where a team could communicate—different kinds of organizations, requests and reports, and message/notifications system directly.
+                    | I therefore designed multiple ways that supported all types of communication—different organizations, requests and reports, and direct messaging and notification system.
                 h3 5. Build Your Own Leadership
                 p
-                    | A manager builds his leadership in his own manner, either in strict or loose way. Our design should be prepared for each situation. First, our dashboard should include a 
+                    | A manager builds his leadership in his own manner, either in a strict or loose way. Our design should be prepared for each situation. First, our dashboard should include a 
                     span.highlight customization functionality
                     | . Manager would easily select information that is needed for him. Second, the system should contain a 
                     span.highlight rewarding or punishment
                     |  system. Third, managers are able to control their authorities by 
                     span.highlight assigning and withdrawing roles
-                    |  to a team member. In this way, 
+                    |  to a team member. In these ways, 
                     span.highlight a flexible management
                     |  is achieved.
-                img(data-src="assets/img/tmt/tmt-sketches-2.jpg").lazyload.img--result
+                img(data-src="https://i.imgur.com/RKsXceh.jpg").lazyload.img--result
         .level#section5
             .container
                 h2 VISUAL REFINING
                 .sep.taller
-                p The following images are refinement of previous sketches. It reflects a basic navigation process of the manager.
-                img(data-src="https://i.imgur.com/mhuRfZL.png").lazyload.img--result
-                img(data-src="https://i.imgur.com/pFTsIwr.png").lazyload.img--result
-                img(data-src="https://i.imgur.com/b1jB4qH.png").lazyload.img--result
-                img(data-src="https://i.imgur.com/ALDham9.png").lazyload.img--result
-                img(data-src="https://i.imgur.com/e5jDfgG.png").lazyload.img--result
-                img(data-src="https://i.imgur.com/t2M2DyZ.png").lazyload.img--result
-                img(data-src="https://i.imgur.com/Vm8yIci.png").lazyload.img--result
-                img(data-src="https://i.imgur.com/d9Mx2uK.png").lazyload.img--result
-                img(data-src="https://i.imgur.com/UdZgk7X.png").lazyload.img--result
-                img(data-src="https://i.imgur.com/Gt6tF6O.png").lazyload.img--result
+                p The following images are refinement of previous sketches. It showcases a basic navigation process of the manager.
+                img(data-src="https://i.imgur.com/BH4kvBJ.png").lazyload.img--result
+                img(data-src="https://i.imgur.com/tIdOlIt.png").lazyload.img--result
+                img(data-src="https://i.imgur.com/9UN1efZ.png").lazyload.img--result
+                img(data-src="https://i.imgur.com/j5Kg1Ix.png").lazyload.img--result
+                img(data-src="https://i.imgur.com/DEJu4Uw.png").lazyload.img--result
+                img(data-src="https://i.imgur.com/3fvLaQY.png").lazyload.img--result
+                img(data-src="https://i.imgur.com/xY2ezZA.png").lazyload.img--result
+                img(data-src="https://i.imgur.com/hBVMaiK.png").lazyload.img--result
+                img(data-src="https://i.imgur.com/Fb5wClM.png").lazyload.img--result
+                img(data-src="https://i.imgur.com/ih09ez2.png").lazyload.img--result
         .level#section6
             .container
                 h2 ASSESSMENT
                 .sep
-                p In the end, I used heuristic evaluations to briefly judge this team management tool. I felt like the design was far from success. Apart from the strengths, it has the following weaknesses.
+                p In the end, I used heuristic evaluations to briefly judge this team management tool. I felt like the design was far from success. It has the following weaknesses.
                 .flex.wider
                     ul
                         li
                             i.icon.icon-li.ion-chevron-right
-                            span Different modules have little characteristics to distinguish themselves one from the other.
+                            span Different modules have few characteristics to distinguish themselves one from the other.
                         li
                             i.icon.icon-li.ion-chevron-right
-                            span Message system is a little bit chaotic since it exists both in main and side navigation bars.
+                            span Message system is a little bit chaotic since it exists in both main and side navigation bars.
                         li
                             i.icon.icon-li.ion-chevron-right
                             span The tool lacks error prevention and correction.
                         li
                             i.icon.icon-li.ion-chevron-right
-                            span The process of customization has not being touched.
-                p Then I would continue to iterate and refine the experience. Looking forward, I would start exploring how to integrate the experience into other contexts. For instance, I would revamp the tool towards team assistant or other team members. Also, I would help the tool get deployed to other platforms such as tablets or mobile phones so that more people within more scenarios would use it.
+                            span The process of customization has not been touched.
+                p Therefore I would continue to iterate and refine the experience. 
+                p Looking forward, I would also start exploring how to integrate the experience into other contexts. For instance, I would revamp the tool towards team assistant or other team members. Also, I would help the tool get deployed to other platforms such as tablets or mobile phones so that more people within more scenarios would use it.
         nav.dot-nav
             ul
                 li
