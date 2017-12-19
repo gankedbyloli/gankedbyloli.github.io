@@ -6,7 +6,7 @@ $(document).ready(function () {
     	var threeDistance  = $("#section3").offset().top - 100;
     	var fourDistance   = $("#section4").offset().top - 100;
     	var fiveDistance   = $("#section5").offset().top - 100;
-        var sixDistance   = $("#section6").offset().top - 100;
+        var sixDistance    = $("#section6").offset().top - 100;
     }
 
     catch(err) {
