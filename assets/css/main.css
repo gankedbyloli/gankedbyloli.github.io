@@ -803,6 +803,7 @@ body {
         border-left-width: 0; }
 
 .intro {
+  background-color: #000;
   background-image: url(http://i.imgur.com/jp2Y2Y0.jpg);
   background-repeat: no-repeat;
   background-position: center top;
