@@ -830,6 +830,7 @@ body {
     max-width: 800px; } }
 
 .section-1 {
+  background-color: #000;
   background-image: url(http://i.imgur.com/Ae0e389.jpg);
   background-repeat: no-repeat;
   background-position: center top;
@@ -897,6 +898,7 @@ body {
       background-position: 20% center; } }
 
 .section-2 {
+  background-color: #000;
   background-image: url(http://i.imgur.com/8dTFf7H.jpg);
   background-repeat: no-repeat;
   background-position: center top;
@@ -950,6 +952,7 @@ body {
       background-color: #DADADA; } }
 
 .section-3 {
+  background-color: #000;
   background-image: url(http://i.imgur.com/Ae0e389.jpg);
   background-repeat: no-repeat;
   background-position: center top;
@@ -1020,6 +1023,7 @@ body {
       margin-bottom: 0; } }
 
 .section-4 {
+  background-color: #000;
   background-image: url(http://i.imgur.com/gb6sKJw.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
