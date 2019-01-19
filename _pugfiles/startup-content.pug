@@ -126,7 +126,7 @@
                     | . In this way, a complex and tedious process was effectively decomposed into parts whose tasks were easier to understand and goals were clearer to achieve.
         .level.level--swans-down
             .container
-                img(data-src="https://i.imgur.com/NRUunI0.png").lazyload
+                img(data-src="https://i.imgur.com/cAgKRpf.png").lazyload
         .level
             .container
                 p I then played with a few key design concepts while creating mid-fidelity wireframes. Those concepts were:
@@ -173,11 +173,17 @@
                     |  to minimum so that non-expert users can understand how things work without any direct explanation. Useful images and friendly language are added throughout. It also has animations and transitions, which adds a bit of fun. I am optimistic that users will get onboard and progress through all three phases with little friction, leading to successful customizations of their 3D prints.
         .level#section3
             .container
-                h2 DISCOVER THE USER PROFILE
+                h2 DISCOVER USER PROFILES
                 .sep.taller
                 h3 The Problem
                 p 
-                    | Tran3D in essence is a 3D printing community where users design, prototype, sell and buy custom products and services. However, different users have different roles. Given a user,
+                    | Tran3D in essence is a 3D printing community where users design, prototype, sell and purchase. However, different users have different roles—
+                    span.highlight Designers
+                    |  productively transfer their concepts into printable designs; 
+                    span.highlight manufacturers
+                    |  register 3D printers and promote their products; and like 
+                    span.highlight the rest of individuals
+                    | , both can follow, collect or purchase what they are interested in. So given a user,
                 .flex.wider
                     ul
                         li
@@ -185,20 +191,17 @@
                             span How can we distinguish his roles from others'?
                         li
                             i.icon.icon-li.ion-chevron-right 
-                            span Which functions should we assign to him?
+                            span Which features should we support?
                         li
                             i.icon.icon-li.ion-chevron-right
-                            span How can we help showcase his characteristics and develop his own "brand"?
+                            span How might we help showcase his characteristics and develop his own "brand"?    
+                p
+                    |  From research, I know 3 different user categories.
+                     
                 h3 The Analysis
                 p 
-                    span.highlight Upon discovering a user, one has to identify that person's roles and characteristics intuitively and efficiently.
-                p
-                    span.highlight Designers
-                    |  productively transfer their concepts into printable designs. 
-                    span.highlight Manufacturers
-                    |  register 3D printers and promote their products. And like 
-                    span.highlight the rest of individuals
-                    | , both can follow, collect or purchase what they are interested in. According to this, I listed some keywords to guide my design.
+                    span.highlight Upon browsing a user profile, one needs to identify that person's roles and characteristics intuitively and efficiently.
+                    |  According to this, I listed some keywords to guide my design.
                 .flex.wider
                     ul
                         li
@@ -228,7 +231,7 @@
                 p 
                     | I separated users into 
                     span.highlight three categories
-                    | : common individuals, designers and manufacturers. All types shared a same template—Basic information was listed out; designs, collections, orders, followings and followers were organized into tabs. It is worth noting that designers were given an extra section to introduce their backgrounds, concepts and portfolios while manufacturers were given a shop page and a dashboard to manage printers, orders and etc.
+                    | : common individuals, designers and manufacturers. All types shared a same template—Basic information was listed out; designs, collections, orders, followings and followers were organized into tabs. It is worth noting that designers were given an extra section to introduce their backgrounds, concepts and portfolios while manufacturers were given a shop page and a dashboard to manage printers, orders, etc.
         .level.level--tropical-blue
             .container
                 img(data-src="assets/img/data-structure.svg").lazyload
@@ -238,9 +241,7 @@
                 p
                     | I used 
                     span.highlight Reversed-ソ Pattern
-                    | —Our eye starts scanning from top left, then diagonally down, stopping at the bottom right. Within a short break, information on the top right might draw some attention. The diagonal line guides us to read the main content and the dot serves as a little weight for equilibrium. For example, the reading flow of user profile starts with avatar and username. It is followed by content categories, and a list of specific items. Finally, some user statistics that are less important are located on the top right. (A special thank to 
-                    a(href="https://www.linkedin.com/in/junjie-jeff-zhu-1190674/").special-refer Jeff Zhu
-                    |  for correction.)
+                    | —Our eye starts scanning from top left, then diagonally down, stopping at the bottom right. Within a short break, information on the top right might draw some attention. The diagonal line guides us to read the main content and the dot serves as little weight for equilibrium.
         .level.level--tropical-blue
             .container
                 img(data-src="https://i.imgur.com/GSHcC4k.png").lazyload.img--result
@@ -249,7 +250,7 @@
                 h3.smaller 3. Color Scheme
                 p
                     | I chose the color palettes similar to 
-                    span.highlight flat design
+                    span.highlight flat UI
                     | . Complementary colors made personality bold and stand out. Analogous colors kept our page clean and calm.
         .level.level--tropical-blue
             .container
@@ -263,6 +264,11 @@
                     | . Also, behaviors such as creating and collecting would be included in followers' home feed, which 
                     span.highlight kept the character active
                     |  in social network.
+                h3 The Highlight
+                p
+                    | I borrowed concepts from material design and flat design to set overall experience direction. Thinking about material design, it has three-dimensional qualities that are reflected in its use of surfaces, depth, and shadows. This concept is closely relevant to 3D prints. 
+                    span.highlight Match between our visual system and real world can strengthen the connection between our customers and products.
+                    |  It also aligns with our brand image—simple, rapid and technological.
                 h3 The Result
                 p The following images indicate pages of common user's profile, designer's profile, user's home and user settings, respectively.
                 img(data-src="http://i.imgur.com/0EJxdA7.png").lazyload.img--result
