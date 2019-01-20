@@ -28,7 +28,7 @@
                 h3 My roles
                 p 
                     | Being one of the co-founders, I led the 
-                    span.highlight UI/UX design and front-end development
+                    span.highlight product, UI/UX design and front-end development
                     |  from start to finish.
                 p As a designer in particular, I worked on
                 .flex.wider
@@ -268,7 +268,7 @@
                 p
                     | I borrowed concepts from material design and flat design to set overall experience direction. Thinking about material design, it has three-dimensional qualities that are reflected in its use of surfaces, depth, and shadows. This concept is closely relevant to 3D prints. 
                     span.highlight Match between our visual system and real world can strengthen the connection between our customers and products.
-                    |  It also aligns with our brand image—simple, rapid and technological.
+                    |  It also aligns with our brand image: simple, rapid and technological.
                 h3 The Result
                 p The following images indicate pages of common user's profile, designer's profile, user's home and user settings, respectively.
                 img(data-src="https://i.imgur.com/0EJxdA7.png").lazyload.img--result
@@ -283,24 +283,24 @@
                 p 
                     | Tran3D schedules 3D printing services based on 
                     span.highlight data and facts
-                    | . It is important for manufacturers to provide authentic and intriguing data. This is non-trivial work: 
+                    | . It is important for manufacturers to provide authentic and detailed data. This is non-trivial work: 
                 .flex.wider
                     ol
                         li
                             i.icon.icon-li.ion-chevron-right
-                            span Data encompasses various facets of 3D printing—It includes printers, materials, colors and layer thicknesses, to name a few.
+                            span Data encompasses various facets—It includes printers, materials, colors, layer thicknesses and even more at lower granularity.
                         li
                             i.icon.icon-li.ion-chevron-right
-                            span Pricing strategies are extremely complex—The strategies vary from case to case and they are hard to get translated from mathematical models.
+                            span Pricing strategies are extremely complex—They vary from case to case and are hard to get translated from mathematical models.
                 p 
                     | Therefore 
-                    span.highlight how can I help them upload the data in an intuitive way
+                    span.highlight how might we help them upload the data in an intuitive way
                     |  and 
-                    span.highlight how can I organize the data for a clearer reference
+                    span.highlight how might we organize their data for clarity purpose
                     | ?
                 h3 The Analysis
                 p 
-                    | To get better insights, I interviewed 8 people who own 3D printers. Based on their thoughts about products and marketing, I made 
+                    | To get better insights, I interviewed 8 people who owned 3D printers. Based on their thoughts about the product and market, I made 
                     span.highlight three personas
                     | .
                 .board
@@ -312,9 +312,7 @@
                     h4 David
                     p David is a technology enthusiast and he is only 20. His father bought him a desktop-level 3D printer on his last birthday, and he wants to make the full use of it. David knows how to use the printer however, he has no idea about how to provide 3D print service—He can only create simple pricing strategies but he is not sure if they would work. 
                 p
-                    | Their 
-                    span.highlight user needs
-                    |  can be described as:
+                    | Their needs can be described as:
                 .flex.wider
                     ol
                         li
@@ -341,7 +339,7 @@
                             i.icon.icon-li.ion-chevron-right
                             span
                                 b Flexible
-                                |—The system allows manufacturers to manipulate, irrelevant to their backgrounds.
+                                |—The system allows manufacturers to manipulate, whichever their backgrounds.
                         li
                             i.icon.icon-li.ion-chevron-right
                             span
@@ -353,74 +351,76 @@
                                 b Reversible
                                 |—Data that is incorrect or outdated can be removed or modified.
                 h3 The Exploration
-                p During the design process, I tried to deliver the ideas above. Here, I will illustrate one by one:
+                p During the ideation and prototyping phase, I mapped out solutions one by one:
                 h3.smaller 1. Divide concepts into hierarchy.
                 p 
-                    | A manufacturer may lack motivation to publish all service data within a single upload. So I divided the whole process and organized them into levels. From the  shop to specific objects like printer and material, 
+                    | A manufacturer may lack motivation to publish all service data within one single upload. So I divided the whole process and organized them into levels. From the shop to specific objects like printer and material, 
                     span.highlight a hierarchical design
-                    |  would very much facilitate user flows.
+                    |  would very much facilitate user tasks.
         .level.level--swans-down
             .container
-                img(data-src="http://i.imgur.com/lVKSPkM.png").lazyload
+                img(data-src="https://i.imgur.com/mL6FcLJ.png").lazyload
         .level
             .container
                 h3.smaller 2. Unify layouts and interactions.
                 p
-                    | I chose to use a page component that had consistently shown up in Tran3D—
+                    | I chose a component that had consistently shown up in Tran3D—
                     span.highlight the modal
-                    | . This was because I did not want to overwhelm the user with an unfamiliar UI. A modal also made manufacturers concentrate on what they were doing. Within a modal, data uploading was splitted into steps and there was a top navigation bar indicating the progress. 
+                    | . This was because I did not want to overwhelm users with an unfamiliar UI. A modal also made them concentrate on what they were doing. Within a modal, data uploading was splitted into steps and there was a top navigation indicating the progress. 
                 h3.smaller 3. Include data that helps SEO and discoverability.
                 p
                     span.highlight Titles, descriptions, tags, photos and categories
                     |  are properties for manufacturers to better describe their services. These features can be descriptive and educational to someone outside of their niches. Complete data speaks aloud for the services.
                 h3.smaller 4. Utilize shapes and colors.
-                p Making a pricing strategy is one of the most challenging problems in respect of interaction design—Strategies in 3D print industry involve a variety of factors, not only the physical properties but also laboring influences. 
+                p Making a pricing strategy is one of the most challenging tasks when manufacturers manage their services—Strategies in 3D print industry involve a variety of factors, not only the physical properties but also laboring influences. 
                 p
-                    | A common mathematical model is 
+                    | A common practice is using 
                     span.highlight linear polynomial
-                    |  which sums up a number of terms. The quantity of terms depends and terms are flexible since they have different interpretations. 
+                    |  as the mathematical model which sums up a number of terms. The quantity of terms depends and each term is flexible due to possibly different interpolations. 
                 p
-                    | When I tried to illustrate this polynomial using simple shapes and colors, I found that 
-                    span.highlight building a one-to-one correspondence between a term and a color
-                    |  was the most intuitive solution. It turned a complex math formula into objects that can be easily cognized by human beings.
+                    | During research, I realized that there was a huge gap between the system and its users, more specifically, the complexity that a pricing strategy could go and the capability for people to understand, digest and make adjustments for that.   
+                p
+                    | Luckily, I found that 
+                    span.highlight building a one-to-one correspondence between a term and a colored shape
+                    |  was the most intuitive and efficient solution. It turned a complex math formula into objects that can be easily cognized and understood by human beings. Therefore, I illustrated this polynomial using simple shapes and colors:
         .level.level--swans-down
             .container
-                img(data-src="assets/img/formula.svg").lazyload
+                img(data-src="https://i.imgur.com/FeLkXeg.png").lazyload
         .level
             .container
                 h3.smaller 5. Add flexibility to the system.
                 p
-                    | The module must be adaptive to users with different backgrounds. Consider a user with non-expert background. He might need 
+                    | The module must be adaptive to users with different backgrounds. Consider a user with non-expert background, he might need 
                     span.highlight notes
                     |  for terminologies, 
                     span.highlight tips
                     |  for interactions and 
                     span.highlight default values
-                    |  for complicated data. On the contrary, an expert might need more specifications and details. And he wants to enable more terms in the polynomial to 
+                    |  for complicated terms. On the contrary, an expert might need more specifications and details. And he wants to enable more terms in the polynomial to 
                     span.highlight better control
                     |  his pricing strategy.
                 h3.smaller 6. Preview simulated results.
                 p
                     | Manufacturers will get a 
                     span.highlight live preview
-                    |  of what the price would be after proposing a pricing strategy. The result is calculated by applying the pricing strategy to a test case we provided. It even gives an instant feedback as the user make any adjustments to the linear polynomial. This functionality helps manufacturers find a suitable pricing strategy. It also makes them feel powerful so that they can trust our system.
+                    |  of what the price would be after proposing a pricing strategy. The result is calculated by applying the pricing strategy to a test case we provide. It even gives instant feedback as the user makes any adjustment to the linear polynomial. This feature helps manufacturers find their suitable pricing strategies. It also makes them feel empowered so that they can trust our system.
                 h3.smaller 7. Provide CRUD operations.
                 p 
-                    | Besides basic creating and reading, service data like printers, materials and even pricing strategies are 
+                    | Service data like printers, materials and even pricing strategies are 
                     span.highlight revisable
-                    |  if one made any mistakes.
+                    |  if one makes any mistake.
         .level.level--swans-down
             .container
-                img(data-src="http://i.imgur.com/4eFsbvE.png").lazyload
+                img(data-src="https://i.imgur.com/4eFsbvE.png").lazyload
         .level
             .container
                 h3 The Result
-                p From the shop's public page to a modal that creates material and pricing strategies, I am satisfied that my design goals are accomplished across different pages. The design is simple yet powerful, not only providing intuitive interfaces but also tailoring to different user needs. Meanwhile, a lot of common elements are reused, contributing to the system consistency.
-                img(data-src="http://i.imgur.com/PEdSuT3.png").lazyload.img--title
-                img(data-src="http://i.imgur.com/oYlZBYa.gif").lazyload.img--result
-                img(data-src="http://i.imgur.com/AzNhndR.png").lazyload.img--result
-                img(data-src="http://i.imgur.com/tjILlM2.png").lazyload.img--result
-                img(data-src="http://i.imgur.com/LkGbNOG.png").lazyload.img--result
+                p From the shop's main page to a modal that creates material and pricing strategies, I am satisfied that my design goals are accomplished across the site. The design is simple yet powerful, not only providing intuitive interfaces but also tailoring to different user needs. Meanwhile, a lot of UI elements are reused, contributing to the system consistency.
+                img(data-src="https://i.imgur.com/PEdSuT3.png").lazyload.img--title
+                img(data-src="https://i.imgur.com/oYlZBYa.gif").lazyload.img--result
+                img(data-src="https://i.imgur.com/AzNhndR.png").lazyload.img--result
+                img(data-src="https://i.imgur.com/tjILlM2.png").lazyload.img--result
+                img(data-src="https://i.imgur.com/LkGbNOG.png").lazyload.img--result
         .level
             .container
                 h2 CONCLUSION AND REFLECTION
@@ -428,7 +428,7 @@
                 p
                     | At the early stage of a startup company, I wanted to deliver a 
                     span.highlight minimum viable product
-                    |  and provide a flexible structure that could scale naturally as the website grows. Looking back, the project has included all necessary functionalities and built upon a scalable framework. It has successfully leveraged the design language to promote a high-end technology, decoding the secret of 3D printing into context that people can comprehend and make use of.
+                    |  and provide a flexible structure that could scale naturally as the platform grows. Looking back, the project has included all necessary functionalities and built upon a scalable framework. It has successfully leveraged the design language to promote a high-end technology, decoding the secret of 3D printing into context that people can comprehend and make use of.
                 p As a designer and a developer, the project also made me appreciate the importance of coordinating different perspectives and collaborating with different roles. It became one of the most precious experiences in my career.
         nav.dot-nav
             ul
