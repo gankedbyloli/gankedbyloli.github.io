@@ -1282,6 +1282,75 @@ body {
     letter-spacing: .08em; }
   .startup .level .container .board p {
     width: 100%; }
+  .startup .level .container .board .subtitle {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .startup .level .container .board .subtitle .marker {
+      width: 14px;
+      height: 14px;
+      margin-bottom: .4em;
+      margin-left: .4em;
+      -webkit-border-radius: 100%;
+              border-radius: 100%; }
+      .startup .level .container .board .subtitle .marker.persona-1 {
+        background-color: #39CCCC; }
+      .startup .level .container .board .subtitle .marker.persona-2 {
+        background-color: #F012BE; }
+      .startup .level .container .board .subtitle .marker.persona-3 {
+        background-color: #FF851B; }
+
+.startup .level .container .report {
+  margin: 36px 0 36px;
+  padding: 36px 36px 60px;
+  background-color: #CBE3F7; }
+  .startup .level .container .report h3 {
+    color: #333;
+    line-height: 1.2; }
+  .startup .level .container .report h4 {
+    margin-bottom: .4em;
+    color: #999;
+    letter-spacing: .08em; }
+  .startup .level .container .report ul, .startup .level .container .report ol {
+    max-width: 100%;
+    padding-left: 0; }
+    .startup .level .container .report ul li, .startup .level .container .report ol li {
+      margin-left: 0; }
+      .startup .level .container .report ul li .marker, .startup .level .container .report ol li .marker {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-left: .4em;
+        -webkit-border-radius: 100%;
+                border-radius: 100%; }
+        .startup .level .container .report ul li .marker.persona-1, .startup .level .container .report ol li .marker.persona-1 {
+          background-color: #39CCCC; }
+        .startup .level .container .report ul li .marker.persona-2, .startup .level .container .report ol li .marker.persona-2 {
+          background-color: #F012BE; }
+        .startup .level .container .report ul li .marker.persona-3, .startup .level .container .report ol li .marker.persona-3 {
+          background-color: #FF851B; }
+      .startup .level .container .report ul li:last-child, .startup .level .container .report ol li:last-child {
+        margin-bottom: 0; }
+    .startup .level .container .report ul.notes, .startup .level .container .report ol.notes {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      .startup .level .container .report ul.notes li, .startup .level .container .report ol.notes li {
+        margin-right: 36px;
+        margin-bottom: 0; }
+      .startup .level .container .report ul.notes:last-child, .startup .level .container .report ol.notes:last-child {
+        margin-right: 0; }
+    .startup .level .container .report ul:last-child, .startup .level .container .report ol:last-child {
+      margin-bottom: 0; }
 
 .startup .level .container .flex {
   display: block; }
@@ -1351,14 +1420,18 @@ body {
   .startup .level .container .flex .illustration {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 85%; } }
+    width: 85%; }
+  .startup .level .container .report ul, .startup .level .container .report ol {
+    width: 100%; } }
 
 @media (min-width: 64em) {
   .startup h1 {
     font-size: 80px;
     line-height: 1.25; }
   .startup .level .container .flex .illustration {
-    width: 66.666666666666666667%; } }
+    width: 66.666666666666666667%; }
+  .startup .level .container .report ul, .startup .level .container .report ol {
+    width: 100%; } }
 
 @media (min-width: 75em) {
   .startup h1 {
@@ -1378,7 +1451,9 @@ body {
       margin: 0 0 32px;
       padding: 36px 32px; }
     .startup .level .container .flex.wider ul, .startup .level .container .flex.wider ol {
-      max-width: 66.66666666666667%; } }
+      max-width: 66.66666666666667%; }
+  .startup .level .container .report ul, .startup .level .container .report ol {
+    width: 100%; } }
 
 .denture .hero {
   background-image: url(http://i.imgur.com/dpnmQx0.jpg);

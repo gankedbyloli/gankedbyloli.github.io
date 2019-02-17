@@ -72,6 +72,72 @@
                 p
                     width: 100%
 
+                .subtitle
+                    display: inline-flex
+                    align-items: center
+                    .marker
+                        width: 14px
+                        height: 14px
+                        margin-bottom: .4em
+                        margin-left: .4em
+                        border-radius: 100%
+                        &.persona-1
+                            background-color: $teal
+                        &.persona-2
+                            background-color: $fuchsia
+                        &.persona-3
+                            background-color: $orange
+
+            .report
+                margin: 36px 0 36px
+                padding: 36px 36px 60px
+                background-color: #CBE3F7
+
+                h3
+                    color: $mine
+                    line-height: 1.2
+
+                h4
+                    margin-bottom: .4em
+                    color: $gray
+                    letter-spacing: .08em
+
+                ul, ol
+                    max-width: 100%
+                    padding-left: 0
+
+                    li
+                        margin-left: 0
+
+                        .marker
+                            display: inline-block
+                            width: 14px
+                            height: 14px
+                            margin-left: .4em
+                            border-radius: 100%
+                            &.persona-1
+                                background-color: $teal
+                            &.persona-2
+                                background-color: $fuchsia
+                            &.persona-3
+                                background-color: $orange
+
+                        &:last-child
+                            margin-bottom: 0
+
+                    &.notes
+                        display: flex
+                        flex-wrap: wrap
+
+                        li
+                            margin-right: 36px
+                            margin-bottom: 0
+                        &:last-child
+                            margin-right: 0
+
+                    &:last-child
+                        margin-bottom: 0
+
             .flex
                 display: block
 
@@ -161,6 +227,10 @@
                     .illustration
                         box-sizing: border-box
                         width: 85%
+                .report
+                    ul, ol
+                        width: 100%
+
 
 @media (min-width: 64em)
     .startup
@@ -173,6 +243,9 @@
                 .flex
                     .illustration
                         width: 66.666666666666666667%
+                .report
+                    ul, ol
+                        width: 100%
 
 @media (min-width: 75em)
     .startup
@@ -198,3 +271,7 @@
                     &.wider
                         ul, ol
                             max-width: 66.66666666666667%
+
+                .report
+                    ul, ol
+                        width: 100%
