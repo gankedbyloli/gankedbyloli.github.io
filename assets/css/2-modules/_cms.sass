@@ -1,0 +1,201 @@
+.cms
+    .hero
+        background: url("/assets/img/undraw_mobile_marketing_iqbr.svg")
+        background:
+            repeat: no-repeat
+            position: center
+            size: auto 90%
+            color: #E2F0FB
+
+    h1
+        margin: 0 0 60px 0
+        font-size: 36px
+        line-height: 1.4
+
+    h2
+        margin: 0
+        font-size: 28px
+
+    h3
+        margin-bottom: .625em
+        font-size: 24px
+        line-height: 1.6
+        letter-spacing: .02em
+
+        &.smaller
+            font-size: 22px
+
+    h4
+        margin-bottom: .5em
+        font-size: 16px
+        letter-spacing: .3em
+
+    p
+        margin: 0 0 24px 0
+        font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif
+        font-size: 16px
+        color: $black
+        line-height: 1.8
+
+    li
+        font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif
+        font-size: 16px
+        font-weight: 400
+        color: #333
+        letter-spacing: .05em
+        line-height: 1.8
+        margin-bottom: 12px
+
+    .level
+        .container
+
+            .img--title
+                display: block
+                margin-bottom: 0
+                box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1)
+
+            .img--result
+                display: block
+                margin-bottom: 32px
+                box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1)
+
+            .board
+                margin: 36px 0 36px
+                padding: 36px 36px 60px
+                background-color: #CBE3F7
+                h3
+                    color: $mine
+                    line-height: 1.2
+                h4
+                    margin-bottom: .4em
+                    color: $gray
+                    letter-spacing: .08em
+                p
+                    width: 100%
+
+            .flex
+                display: block
+
+                ul, ol
+                    padding: 24px
+                    background-color: #F2EEEB
+
+                .illustration
+                    margin-bottom: 32px
+                    padding: 24px
+                    background-color: #FFF
+                    img
+                        margin-bottom: 0
+
+        &:first-child
+            padding-bottom: 0
+        //
+        // &:nth-child(3)
+        //     padding-bottom: 0
+        //     img
+        //         margin-bottom: 0
+
+@media (min-width: 30em)
+    .cms
+        h1
+            font-size: 64px
+            line-height: 1.375
+
+        h2
+            font-size: 36px
+
+        h3
+            font-size: 28px
+
+            &.smaller
+                font-size: 24px
+
+        h4
+            margin-bottom: .75em
+            font-size: 18px
+
+        p
+            font-size: 18px
+
+        li
+            font-size: 18px
+
+@media (min-width: 48em)
+    .cms
+        h1
+            margin: 0 0 90px 0
+            font-size: 72px
+            line-height: 1.35
+
+        h2
+            font-size: 48px
+
+        h3
+            font-size: 32px
+            line-height: 1.8
+
+            &.smaller
+                font-size: 28px
+                line-height: 1.6
+
+        h4
+            margin-bottom: 1em
+            font-size: 20px
+
+        p
+            margin: 0 0 32px 0
+            font-size: 20px
+
+        li
+            font-size: 20px
+
+        img
+            margin-bottom: 1.25em
+
+        .level
+            .container
+                .img--result
+                    margin-bottom: 60px
+                    &:last-child
+                        margin-bottom: 30px
+                .flex
+                    .illustration
+                        box-sizing: border-box
+                        width: 85%
+
+@media (min-width: 64em)
+    .cms
+        h1
+            font-size: 80px
+            line-height: 1.25
+
+        .level
+            .container
+                .flex
+                    .illustration
+                        width: 66.666666666666666667%
+
+@media (min-width: 75em)
+    .cms
+        h1
+            font-size: 96px
+            line-height: 1.15
+
+        .level
+            .container
+                .flex
+                    display: flex
+
+                    ul, ol
+                        max-width: 50%
+                        margin-top: 0
+                        padding: 36px 32px
+
+                    .illustration
+                        max-width: 50%
+                        margin: 0 0 32px
+                        padding: 36px 32px
+
+                    &.wider
+                        ul, ol
+                            max-width: 66.66666666666667%
