@@ -829,66 +829,15 @@ body {
   .intro h1 {
     max-width: 800px; } }
 
-.section-0 {
+.section-1 {
   background-color: #000;
   background-image: url(http://pic.yupoo.com/cherrychoochoo/9f424600/e0678e22.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   -webkit-background-size: cover;
           background-size: cover; }
-  .section-0 h2 {
+  .section-1 h2 {
     color: #fff; }
-  .section-0 .flex {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .section-0 .flex .col-1of2 p {
-      color: #ccc; }
-    .section-0 .flex .col-1of2 h4 {
-      margin-bottom: 3.5em;
-      color: #ccc;
-      font-weight: 500;
-      letter-spacing: .2em; }
-    .section-0 .flex .col-1of2:first-child {
-      min-height: 480px;
-      margin-bottom: 60px;
-      background-image: url(http://pic.yupoo.com/cherrychoochoo/b1d62fa9/d28edf7b.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      -webkit-background-size: cover;
-              background-size: cover;
-      background-color: #DEDEDE; }
-
-@media (min-width: 85.375em) {
-  .section-0 .flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .section-0 .flex .col-1of2 h4 {
-      margin-bottom: 5em; }
-    .section-0 .flex .col-1of2:first-child {
-      height: auto;
-      margin-top: 24px;
-      margin-bottom: 0;
-      background-position: 60% center;
-      -webkit-background-size: cover;
-              background-size: cover; } }
-
-.section-1 {
-  background-color: #000;
-  background-image: url(http://pic.yupoo.com/cherrychoochoo/735203ef/f6953fad.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  -webkit-background-size: cover;
-          background-size: cover; }
   .section-1 .flex {
     display: -webkit-box;
     display: -webkit-flex;
@@ -899,21 +848,72 @@ body {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .section-1 .flex .col-1of2 h2 {
-      color: #fff; }
+    .section-1 .flex .col-1of2 p {
+      color: #ccc; }
     .section-1 .flex .col-1of2 h4 {
       margin-bottom: 3.5em;
       color: #ccc;
       font-weight: 500;
       letter-spacing: .2em; }
-    .section-1 .flex .col-1of2 p {
-      color: #ccc; }
     .section-1 .flex .col-1of2:first-child {
+      min-height: 480px;
+      margin-bottom: 60px;
+      background-image: url(http://pic.yupoo.com/cherrychoochoo/b1d62fa9/d28edf7b.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-background-size: cover;
+              background-size: cover;
+      background-color: #DEDEDE; }
+
+@media (min-width: 85.375em) {
+  .section-1 .flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .section-1 .flex .col-1of2 h4 {
+      margin-bottom: 5em; }
+    .section-1 .flex .col-1of2:first-child {
+      height: auto;
+      margin-top: 24px;
+      margin-bottom: 0;
+      background-position: 60% center;
+      -webkit-background-size: cover;
+              background-size: cover; } }
+
+.section-2 {
+  background-color: #000;
+  background-image: url(http://pic.yupoo.com/cherrychoochoo/735203ef/f6953fad.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .section-2 .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .section-2 .flex .col-1of2 h2 {
+      color: #fff; }
+    .section-2 .flex .col-1of2 h4 {
+      margin-bottom: 3.5em;
+      color: #ccc;
+      font-weight: 500;
+      letter-spacing: .2em; }
+    .section-2 .flex .col-1of2 p {
+      color: #ccc; }
+    .section-2 .flex .col-1of2:first-child {
       -webkit-box-ordinal-group: 2;
       -webkit-order: 1;
           -ms-flex-order: 1;
               order: 1; }
-    .section-1 .flex .col-1of2:last-child {
+    .section-2 .flex .col-1of2:last-child {
       -webkit-box-ordinal-group: 1;
       -webkit-order: 0;
           -ms-flex-order: 0;
@@ -927,20 +927,20 @@ body {
               background-size: cover; }
 
 @media (min-width: 85.375em) {
-  .section-1 .flex {
+  .section-2 .flex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row; }
-    .section-1 .flex .col-1of2 h4 {
+    .section-2 .flex .col-1of2 h4 {
       margin-bottom: 5em; }
-    .section-1 .flex .col-1of2:first-child {
+    .section-2 .flex .col-1of2:first-child {
       -webkit-box-ordinal-group: 1;
       -webkit-order: 0;
           -ms-flex-order: 0;
               order: 0; }
-    .section-1 .flex .col-1of2:last-child {
+    .section-2 .flex .col-1of2:last-child {
       -webkit-box-ordinal-group: 2;
       -webkit-order: 1;
           -ms-flex-order: 1;
@@ -950,67 +950,15 @@ body {
       margin-bottom: 0;
       background-position: 20% center; } }
 
-.section-2 {
+.section-3 {
   background-color: #000;
   background-image: url(http://pic.yupoo.com/cherrychoochoo/22434025/5073dba2.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   -webkit-background-size: cover;
           background-size: cover; }
-  .section-2 h2 {
+  .section-3 h2 {
     color: #fff; }
-  .section-2 .flex {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .section-2 .flex .col-1of2 p {
-      color: #ccc; }
-    .section-2 .flex .col-1of2 h4 {
-      margin-bottom: 3.5em;
-      color: #ccc;
-      font-weight: 500;
-      letter-spacing: .2em; }
-    .section-2 .flex .col-1of2:first-child {
-      min-height: 480px;
-      margin-bottom: 60px;
-      background-image: url(http://pic.yupoo.com/cherrychoochoo/b81d64c9/9c7226b2.png);
-      background-repeat: no-repeat;
-      background-position: 60% top;
-      -webkit-background-size: cover;
-              background-size: cover;
-      background-color: #DADADA; }
-
-@media (min-width: 85.375em) {
-  .section-2 .flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .section-2 .flex .col-1of2 h4 {
-      margin-bottom: 5em; }
-    .section-2 .flex .col-1of2:first-child {
-      height: auto;
-      margin-top: 24px;
-      margin-bottom: 0;
-      background-position: center;
-      -webkit-background-size: contain;
-              background-size: contain;
-      background-color: #DADADA; } }
-
-.section-3 {
-  background-color: #000;
-  background-image: url(http://pic.yupoo.com/cherrychoochoo/9f424600/e0678e22.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  -webkit-background-size: cover;
-          background-size: cover; }
   .section-3 .flex {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1021,21 +969,68 @@ body {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .section-3 .flex .col-1of2 h2 {
-      color: #fff; }
+    .section-3 .flex .col-1of2 p {
+      color: #ccc; }
     .section-3 .flex .col-1of2 h4 {
       margin-bottom: 3.5em;
       color: #ccc;
       font-weight: 500;
       letter-spacing: .2em; }
-    .section-3 .flex .col-1of2 p {
-      color: #ccc; }
     .section-3 .flex .col-1of2:first-child {
+      min-height: 480px;
+      margin-bottom: 60px;
+      background-image: url(http://pic.yupoo.com/cherrychoochoo/b81d64c9/9c7226b2.png);
+      background-repeat: no-repeat;
+      background-position: 60% top;
+      -webkit-background-size: cover;
+              background-size: cover;
+      background-color: #DADADA; }
+
+@media (min-width: 85.375em) {
+  .section-3 .flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .section-3 .flex .col-1of2 h4 {
+      margin-bottom: 5em; }
+    .section-3 .flex .col-1of2:first-child {
+      height: auto;
+      margin-top: 24px;
+      margin-bottom: 0;
+      background-position: center;
+      -webkit-background-size: contain;
+              background-size: contain;
+      background-color: #DADADA; } }
+
+.section-4 {
+  background-color: #000; }
+  .section-4 .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .section-4 .flex .col-1of2 h2 {
+      color: #fff; }
+    .section-4 .flex .col-1of2 h4 {
+      margin-bottom: 3.5em;
+      color: #ccc;
+      font-weight: 500;
+      letter-spacing: .2em; }
+    .section-4 .flex .col-1of2 p {
+      color: #ccc; }
+    .section-4 .flex .col-1of2:first-child {
       -webkit-box-ordinal-group: 2;
       -webkit-order: 1;
           -ms-flex-order: 1;
               order: 1; }
-    .section-3 .flex .col-1of2:last-child {
+    .section-4 .flex .col-1of2:last-child {
       -webkit-box-ordinal-group: 1;
       -webkit-order: 0;
           -ms-flex-order: 0;
@@ -1049,24 +1044,24 @@ body {
               background-size: cover; }
 
 @media (min-width: 48em) {
-  .section-3 .flex .col-1of2:last-child {
+  .section-4 .flex .col-1of2:last-child {
     background-position: right top; } }
 
 @media (min-width: 85.375em) {
-  .section-3 .flex {
+  .section-4 .flex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row; }
-    .section-3 .flex .col-1of2 h4 {
+    .section-4 .flex .col-1of2 h4 {
       margin-bottom: 5em; }
-    .section-3 .flex .col-1of2:first-child {
+    .section-4 .flex .col-1of2:first-child {
       -webkit-box-ordinal-group: 1;
       -webkit-order: 0;
           -ms-flex-order: 0;
               order: 0; }
-    .section-3 .flex .col-1of2:last-child {
+    .section-4 .flex .col-1of2:last-child {
       -webkit-box-ordinal-group: 2;
       -webkit-order: 1;
           -ms-flex-order: 1;
@@ -1075,35 +1070,95 @@ body {
       margin-top: 24px;
       margin-bottom: 0; } }
 
-.section-4 {
+.section-5 {
+  background-color: #000;
+  background-image: url(http://pic.yupoo.com/cherrychoochoo/9f424600/e0678e22.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .section-5 h2 {
+    color: #fff; }
+  .section-5 .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .section-5 .flex .col-1of2 p {
+      color: #ccc; }
+    .section-5 .flex .col-1of2 h4 {
+      margin-bottom: 3.5em;
+      color: #ccc;
+      font-weight: 500;
+      letter-spacing: .2em; }
+    .section-5 .flex .col-1of2:first-child {
+      min-height: 480px;
+      margin-bottom: 60px;
+      background-image: url(/assets/img/undraw_team_page_pgpr.svg);
+      background-repeat: no-repeat;
+      background-position: -5% 33.3333%;
+      -webkit-background-size: 200% 200%;
+              background-size: 200%;
+      background-color: #DADADA; }
+
+@media (min-width: 48em) {
+  .section-5 .flex .col-1of2:first-child {
+    background-position: center 30%;
+    -webkit-background-size: 90% 90%;
+            background-size: 90%; } }
+
+@media (min-width: 85.375em) {
+  .section-5 .flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .section-5 .flex .col-1of2 h4 {
+      margin-bottom: 5em; }
+    .section-5 .flex .col-1of2:first-child {
+      height: auto;
+      margin-top: 24px;
+      margin-bottom: 0;
+      background-position: center;
+      -webkit-background-size: contain;
+              background-size: contain;
+      background-color: #DADADA; } }
+
+.section-6 {
   background-color: #000;
   background-image: url(http://pic.yupoo.com/cherrychoochoo/735203ef/f6953fad.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   -webkit-background-size: cover;
           background-size: cover; }
-  .section-4 h2 {
+  .section-6 h2 {
     margin-bottom: 0;
     color: #fff; }
-  .section-4 .sep {
+  .section-6 .sep {
     margin-bottom: 5em; }
-  .section-4 .flex {
+  .section-6 .flex {
     display: block; }
-    .section-4 .flex .col-1of2 p {
+    .section-6 .flex .col-1of2 p {
       color: #ccc; }
-    .section-4 .flex .col-1of2 h4 {
+    .section-6 .flex .col-1of2 h4 {
       margin-bottom: 3.5em;
       color: #ccc;
       font-weight: 500;
       letter-spacing: .2em; }
 
 @media (min-width: 85.375em) {
-  .section-4 .flex {
+  .section-6 .flex {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-    .section-4 .flex .col-1of2 h4 {
+    .section-6 .flex .col-1of2 h4 {
       margin-bottom: 5em; } }
 
 .outro {

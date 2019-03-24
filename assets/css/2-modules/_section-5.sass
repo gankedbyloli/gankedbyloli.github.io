@@ -1,4 +1,4 @@
-.section-0
+.section-5
     background:
         color: $black
         image: url(http://pic.yupoo.com/cherrychoochoo/9f424600/e0678e22.jpg)
@@ -26,14 +26,22 @@
                 min-height: 480px
                 margin-bottom: 60px
                 background:
-                    image: url(http://pic.yupoo.com/cherrychoochoo/b1d62fa9/d28edf7b.png)
+                    image: url(/assets/img/undraw_team_page_pgpr.svg)
                     repeat: no-repeat
-                    position: center
-                    size: cover
-                    color: #DEDEDE
+                    position: -5% 33.3333%
+                    size: 200%
+                    color: #DADADA
+@media (min-width: 48em)
+    .section-5
+        .flex
+            .col-1of2
+                &:first-child
+                    background:
+                        position: center 30%
+                        size: 90%
 
 @media (min-width: 85.375em)
-    .section-0
+    .section-5
         .flex
             flex-direction: row
 
@@ -46,5 +54,6 @@
                     margin-top: 24px
                     margin-bottom: 0
                     background:
-                        position: 60% center
-                        size: cover
+                        position: center
+                        size: contain
+                        color: #DADADA

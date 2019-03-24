@@ -1,48 +1,36 @@
 .section-3
     background:
         color: $black
-        image: url(http://pic.yupoo.com/cherrychoochoo/9f424600/e0678e22.jpg)
+        image: url(http://pic.yupoo.com/cherrychoochoo/22434025/5073dba2.jpg)
         repeat: no-repeat
         position: center top
         size: cover
+
+    h2
+        color: $white
 
     .flex
         display: flex
         flex-direction: column
 
         .col-1of2
-            h2
-                color: $white
-
+            p
+                color: $silver
             h4
                 margin-bottom: 3.5em
                 color: $silver
                 font-weight: 500
                 letter-spacing: .2em
 
-            p
-                color: $silver
-
             &:first-child
-                order: 1
-
-            &:last-child
-                order: 0
                 min-height: 480px
                 margin-bottom: 60px
                 background:
-                    image: url(http://pic.yupoo.com/cherrychoochoo/0a60fbf1/17c06e0c.jpg)
+                    image: url(http://pic.yupoo.com/cherrychoochoo/b81d64c9/9c7226b2.png)
                     repeat: no-repeat
-                    position: right center
+                    position: 60% top
                     size: cover
-
-@media (min-width: 48em)
-    .section-3
-        .flex
-            .col-1of2
-                &:last-child
-                    background:
-                        position: right top
+                    color: #DADADA
 
 @media (min-width: 85.375em)
     .section-3
@@ -54,10 +42,10 @@
                     margin-bottom: 5em
 
                 &:first-child
-                    order: 0
-
-                &:last-child
-                    order: 1
                     height: auto
                     margin-top: 24px
                     margin-bottom: 0
+                    background:
+                        position: center
+                        size: contain
+                        color: #DADADA
