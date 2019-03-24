@@ -883,12 +883,7 @@ body {
               background-size: cover; } }
 
 .section-2 {
-  background-color: #000;
-  background-image: url(http://pic.yupoo.com/cherrychoochoo/735203ef/f6953fad.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  -webkit-background-size: cover;
-          background-size: cover; }
+  background-color: #000; }
   .section-2 .flex {
     display: -webkit-box;
     display: -webkit-flex;
