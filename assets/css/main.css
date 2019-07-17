@@ -2031,6 +2031,249 @@ body {
     .cms .level .container .flex.wider ul, .cms .level .container .flex.wider ol {
       max-width: 66.66666666666667%; } }
 
+.booking .hero {
+  background-image: url(http://pic.yupoo.com/cherrychoochoo/893dec6a/6ef0c1ab.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.booking h1 {
+  margin: 0 0 60px 0;
+  font-size: 36px;
+  line-height: 1.4; }
+
+.booking h2 {
+  margin: 0;
+  font-size: 28px; }
+
+.booking h3 {
+  margin-bottom: .625em;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: .02em; }
+  .booking h3.smaller {
+    font-size: 22px; }
+
+.booking h4 {
+  margin-bottom: .5em;
+  font-size: 16px;
+  letter-spacing: .3em; }
+
+.booking p {
+  margin: 0 0 24px 0;
+  font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.8; }
+
+.booking li {
+  font-family: Raleway, 'Open Sans', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: .05em;
+  line-height: 1.8;
+  margin-bottom: 12px; }
+
+.booking .level .container .img--title {
+  display: block;
+  margin-bottom: 0;
+  -webkit-box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1); }
+
+.booking .level .container .img--result {
+  display: block;
+  margin-bottom: 32px;
+  -webkit-box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.02), 0px 22px 36px 0px rgba(0, 0, 0, 0.1); }
+
+.booking .level .container .board {
+  margin: 36px 0 36px;
+  padding: 36px 36px 60px;
+  background-color: #CBE3F7; }
+  .booking .level .container .board h3 {
+    color: #333;
+    line-height: 1.2; }
+  .booking .level .container .board h4 {
+    margin-bottom: .4em;
+    color: #999;
+    letter-spacing: .08em; }
+  .booking .level .container .board p {
+    width: 100%; }
+  .booking .level .container .board .subtitle {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .booking .level .container .board .subtitle .marker {
+      width: 14px;
+      height: 14px;
+      margin-bottom: .4em;
+      margin-left: .4em;
+      -webkit-border-radius: 100%;
+              border-radius: 100%; }
+      .booking .level .container .board .subtitle .marker.persona-1 {
+        background-color: #39CCCC; }
+      .booking .level .container .board .subtitle .marker.persona-2 {
+        background-color: #F012BE; }
+      .booking .level .container .board .subtitle .marker.persona-3 {
+        background-color: #FF851B; }
+
+.booking .level .container .report {
+  margin: 36px 0 36px;
+  padding: 36px 36px 60px;
+  background-color: #CBE3F7; }
+  .booking .level .container .report h3 {
+    color: #333;
+    line-height: 1.2; }
+  .booking .level .container .report h4 {
+    margin-bottom: .4em;
+    color: #999;
+    letter-spacing: .08em; }
+  .booking .level .container .report ul, .booking .level .container .report ol {
+    max-width: 100%;
+    padding-left: 0; }
+    .booking .level .container .report ul li, .booking .level .container .report ol li {
+      margin-left: 0; }
+      .booking .level .container .report ul li .marker, .booking .level .container .report ol li .marker {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-left: .4em;
+        -webkit-border-radius: 100%;
+                border-radius: 100%; }
+        .booking .level .container .report ul li .marker.persona-1, .booking .level .container .report ol li .marker.persona-1 {
+          background-color: #39CCCC; }
+        .booking .level .container .report ul li .marker.persona-2, .booking .level .container .report ol li .marker.persona-2 {
+          background-color: #F012BE; }
+        .booking .level .container .report ul li .marker.persona-3, .booking .level .container .report ol li .marker.persona-3 {
+          background-color: #FF851B; }
+      .booking .level .container .report ul li:last-child, .booking .level .container .report ol li:last-child {
+        margin-bottom: 0; }
+    .booking .level .container .report ul.notes, .booking .level .container .report ol.notes {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      .booking .level .container .report ul.notes li, .booking .level .container .report ol.notes li {
+        margin-right: 36px;
+        margin-bottom: 0; }
+      .booking .level .container .report ul.notes:last-child, .booking .level .container .report ol.notes:last-child {
+        margin-right: 0; }
+    .booking .level .container .report ul:last-child, .booking .level .container .report ol:last-child {
+      margin-bottom: 0; }
+
+.booking .level .container .flex {
+  display: block; }
+  .booking .level .container .flex ul, .booking .level .container .flex ol {
+    padding: 24px;
+    background-color: #F2EEEB; }
+  .booking .level .container .flex .illustration {
+    margin-bottom: 32px;
+    padding: 24px;
+    background-color: #FFF; }
+    .booking .level .container .flex .illustration img {
+      margin-bottom: 0; }
+
+.booking .level:first-child {
+  padding-bottom: 0; }
+
+.booking .level:nth-child(3) {
+  padding-bottom: 0; }
+  .booking .level:nth-child(3) img {
+    margin-bottom: 0; }
+
+@media (min-width: 30em) {
+  .booking h1 {
+    font-size: 64px;
+    line-height: 1.375; }
+  .booking h2 {
+    font-size: 36px; }
+  .booking h3 {
+    font-size: 28px; }
+    .booking h3.smaller {
+      font-size: 24px; }
+  .booking h4 {
+    margin-bottom: .75em;
+    font-size: 18px; }
+  .booking p {
+    font-size: 18px; }
+  .booking li {
+    font-size: 18px; } }
+
+@media (min-width: 48em) {
+  .booking h1 {
+    margin: 0 0 90px 0;
+    font-size: 72px;
+    line-height: 1.35; }
+  .booking h2 {
+    font-size: 48px; }
+  .booking h3 {
+    font-size: 32px;
+    line-height: 1.8; }
+    .booking h3.smaller {
+      font-size: 28px;
+      line-height: 1.6; }
+  .booking h4 {
+    margin-bottom: 1em;
+    font-size: 20px; }
+  .booking p {
+    margin: 0 0 32px 0;
+    font-size: 20px; }
+  .booking li {
+    font-size: 20px; }
+  .booking img {
+    margin-bottom: 1.25em; }
+  .booking .level .container .img--result {
+    margin-bottom: 60px; }
+    .booking .level .container .img--result:last-child {
+      margin-bottom: 30px; }
+  .booking .level .container .flex .illustration {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 85%; }
+  .booking .level .container .report ul, .booking .level .container .report ol {
+    width: 100%; } }
+
+@media (min-width: 64em) {
+  .booking h1 {
+    font-size: 80px;
+    line-height: 1.25; }
+  .booking .level .container .flex .illustration {
+    width: 66.666666666666666667%; }
+  .booking .level .container .report ul, .booking .level .container .report ol {
+    width: 100%; } }
+
+@media (min-width: 75em) {
+  .booking h1 {
+    font-size: 96px;
+    line-height: 1.15; }
+  .booking .level .container .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .booking .level .container .flex ul, .booking .level .container .flex ol {
+      max-width: 50%;
+      margin-top: 0;
+      padding: 36px 32px; }
+    .booking .level .container .flex .illustration {
+      max-width: 50%;
+      margin: 0 0 32px;
+      padding: 36px 32px; }
+    .booking .level .container .flex.wider ul, .booking .level .container .flex.wider ol {
+      max-width: 66.66666666666667%; }
+  .booking .level .container .report ul, .booking .level .container .report ol {
+    width: 100%; } }
+
 .wrapper {
   border: 1.2em solid #fff;
   height: auto !important; }

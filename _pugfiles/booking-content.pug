@@ -1,0 +1,350 @@
+.booking
+    .hero
+    .article-wrapper
+        .level
+            .container
+                h1 Designing Filters in a Scientific Way
+                p In this article, I will initiate an in-depth discussion about filter design on mobile devices, from research, to design, and to scale. It is based on my experience designing the core customer journey for local users at Booking.com.
+        .level#section1
+            .container
+                h2 PROBLEM SCOPINGs
+                .sep
+        .level.level--oyster-pink
+            .container
+        .level
+            .container
+                p
+                    | 
+                    span.highlight Hick's law
+                    |  presents a challenge between the time it takes to make a decision and the number and complexity of choices. Filters, when applied, not only mitigate overload by reducing thousands of products to a manageable amount but also surface choices tailored to users' interests and needs in a straightforward way.
+                p
+                    | Therefore, a sound filtering experience is key to 
+                    span.highlight simplifying or moving the decision-making process
+                    | . It allows users to find what they are looking for 
+                    span.highlight effectively and efficiently
+                    | .
+                p
+                    | Given the importance, I started researching our current solution to understand the main customer pain points and size our business opportunities.
+        .level
+            .container
+                h2 RESEARCH
+                .sep.taller
+                p 
+                    | The research aimed to translate 
+                    span.highlight quantitative and qualitative evidence
+                    |  into 
+                    span.highlight strategic and tactical insights
+                    |  regarding
+                .flex.wider
+                    ul
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Core value of filters, relevant users' needs and habits
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Findability and usability of the existing solution
+                h3 1. Quantitative - Correlation with Business
+                p 
+                    | My first step was 
+                    span.highlight justifying business impact
+                    |  by investigating the correlation between converted users and their filtering behaviors.
+                p
+                    | As the graphs indicated, filtering behaviors from non-converted and converted users were not the same. On the one hand, users with stronger motivations were prone to interact with filters. On the other hand, for the group that applied any filter, the conversion rate was x% higher.
+                p
+                    | It showed the business value of filters as 
+                    span.highlight they kept high intent users in the converting funnel
+                    | .
+                h3 2. Quantitative - Usability Indicators
+                p I moved on to creating indicators that measured filters performance.
+                p 
+                    | Two fundamental indicators were sr_filter_shown and sr_filter_usage. One recorded how many users opened up the filters page while the other recorded how many users ended up applying filters. Additionally, I considered the difference between the two as 
+                    span.highlight a signal that captured friction users experienced during the filtering process
+                    | . The larger the difference, the worse the usability.
+                p By comparing with the benchmark on mobile web, I found that filters were less frequently used and the cost was relatively high on apps.
+                h3 3. Quantitative - Frequency of Use
+                p I checked the applied frequency of various filter options. Undoubtedly the data was influenced by users segment and design solution, but it still inferred a general preference for prices, ratings, property types, and unique selling points from our existing users.
+                h3 4. Qualitative - Guerrila Testing
+                p
+                    | On the qualitative side, I ran a 
+                    span.highlight street testing
+                    |  on a sample of 10, asking the participants to choose a stay for the forthcoming trip. 
+                    span.highlight Merely interrupting, I was able to observe the most authentic user behaviors and evaluate usability closest to real situations.
+                h3 5. Qualitative - Lab Study
+                p
+                    | As a next step, I conducted a 
+                    span.highlight lab study
+                    |  where participants performed filter-related tasks, compare with competitors, and finally give their thoughts about the overall experience. 
+                    span.highlight Users were encouraged to think aloud and provide the most meticulous feedback. 
+                p Here is an excerpt of comments:
+                h3 6. Qualitative - Survey
+                p
+                    | I also carried out a simple survey that asked people to rank the most popular filter criteria according to their preferences. For each one of them, I calculated its average and standard deviation from the ranking scores. Therefore, by picking ones with higher mean and lower standard deviation, I identified the most important and convincing decision factors—location, budget, ratings, and reviews.
+                p 
+                    | One noticeable gap coming into place was location filters, comparing the need and the actual usage. It could 
+                    span.highlight imply the poor information validity
+                    |  as the readiness of geographic data was dubious.
+        .level#section2
+            .container
+                h2 IDEATION
+                .sep.taller
+                h3 Research Insights
+                p After a comprehensive analysis of research data, I extracted the insights at different levels.
+                p At a strategic level, 
+                .flex.wider
+                    ul
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Filters are commonly needed.
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Interaction with filters positively correlates with user intention.
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span First interaction happens without filters or with favorite filters only, to get an overall taste. Narrowing down comes as a next step.
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Some users prefer exploring and refining their search along the way. Some users prefer selecting multiple filters at once and seeing the updated results.
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Users appreciate a smooth experience such that they can easily find, understand, and use filters. An ideal filtering experience is seamlessly embedded in the decision-making process.
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Price, distance/location, and ratings do not depend. They are always important.
+                p At a tactical level,
+                .flex.wider
+                    ul
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span The feature is visible and accessible to all users.
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span It is hard for users to find what they want or what they have selected because they don't understand the logic behind information grouping and prioritization.
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Navigating within our filters page takes time, requiring clicking and navigating back and forth.
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Filters page refreshes and filters get lost as users select. The abrupt change leads to confusion and misclicks.
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Location filters are not helpful for those who are unfamiliar with the destination.
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span Price slider has usability issue.                 
+                h3 Pain Points
+                p Combining all the research outcomes, I was able to uncover the top three pain points.
+                .flex.wider
+                    ul
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span 
+                                b Navigation and discovery
+                                | —For users that have the intent to use filters, it is exhausting to navigate and find what they want.
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span 
+                                b Interaction
+                                | —For users that have the intent to apply more than one filter, it is painful and confusing because options get lost and positions get shifted as they select.
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span 
+                                b Information
+                                | —For users that have certain preferences, it is difficult to find the content usable or useful.         
+                p
+                    | The pain points mainly covered areas of improvement in terms of   
+                    span.highlight ease of filter discovery
+                    | , 
+                    span.highlight ease of filter selection
+                    | , and 
+                    span.highlight validity of filter information
+                    | .
+                h3 Design Concepts
+                p Therefore, I mapped our pain points to correspondent design concepts or expected outcomes.
+                .flex.wider
+                    ul
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span 
+                                b Minimize
+                                |  the effort of discovering and navigating filters options that users want
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span 
+                                b Minimize
+                                |  the effort of selecting and applying multiple filter
+                        li
+                            i.icon.icon-li.ion-chevron-right
+                            span 
+                                b Reduce
+                                |  cognitive gaps introduced by information, compared with competitors, and customer expectations in China
+                p The concepts were carefully defined to make sure that 1) they were well-aligned with the nature of filters; 2) they shared the same vision to enable an effective and efficient look-to-book experience for local users.
+        .level#section3
+            .container
+                h2 DESIGN SOLUTIONS
+                .sep.taller
+                p
+                    | Booking.com uses 
+                    span.highlight hypothesis-based A/B testing and its statistical outcomes
+                    |  to measure the effect of an improved design. Therefore, for the sake of 
+                    span.highlight data validity and credibility
+                    | , I created a list of design optimization stories based on the design concepts, with each one of them 
+                    span.highlight solving a relatively focused problem and measuring with specific metrics
+                    | .
+                h3 1. Quick Filters
+            .level.level--oyster-pink
+                .container
+            .level
+                .container
+                    h4 DESCRIPTION
+                    p 
+                        | I wanted to 
+                        span.highlight identify and surface
+                        |  the most used filters directly as quick filters. The quick filters were grouped into a new sticky section under sort/filter bar. Users could perform selecting, deselecting, and multi-selecting actions. Meanwhile, the section was horizontally scrollable to accommodate more options.
+                    h4 METRICS
+                    p metric1 metric2 metric3
+                    h3 2. Split Modules
+            .level.level--oyster-pink
+                .container
+            .level
+                .container
+                    h4 DESCRIPTION
+                    p 
+                        | Given the general preferences and the contribution to filter usage, I 
+                        span.highlight separated
+                        |  the filter options of price and ratings from the rest and 
+                        span.highlight grouped
+                        |  them into a new module. Users could quickly access to this module via its entry point. Besides, it helped release space for the original module to ensure more efficiency and scalability.
+                    h4 METRICS
+                    p metric1 metric2 metric3
+                    h3 3. Flat View and Dropdown
+            .level.level--oyster-pink
+                .container
+            .level
+                .container
+                    h4 DESCRIPTION
+                    p 
+                        | I wanted to 
+                        span.highlight simplify page hierarchy and information structure
+                        |  using a simple and straightforward user interface. The exquisiteness of Chinese characters, luckily, allowed me to organize filter information into a flat view. I placed filter categories on the left and filter values on the right. With enough white space and little overflow, this view helped users browse, navigate, understand, select, and apply filters effortlessly.
+                    p
+                        | I also used dropdown and overlay to 
+                        span.highlight keep users in the context
+                        |  of the search results list.
+                    h4 METRICS
+                    p metric1 metric2 metric3
+                    h3 4. Disable Dynamic Filters and Let Users Know When to Stop
+            .level.level--oyster-pink
+                .container
+            .level
+                .container
+                    h4 DESCRIPTION
+                    p
+                        | While users selected their preferable options one by one, our current filters, either their existence or counts, get automatically updated according to the inventory availability. In short, they were dynamic filters. From user research, I knew that this feature led to a lot of 
+                        span.highlight confusion and misclicks
+                        | . Therefore, I wanted to switch to a static mechanism such that filter options would 
+                        span.highlight not abruptly change
+                        |  on the fly as users select.
+                    p
+                        | However, for users who preferred seeing the results change, I provided a number indicator to 
+                        span.highlight let them know when they were done selecting
+                        | . And to 
+                        span.highlight ease the anxiety
+                        |  during the loading time, I introduced an animated spinner in the transitional state.
+                    h4 METRICS
+                    p metric1 metric2 metric3
+                    h3 5. Regroup and Re-prioritize Information
+            .level.level--oyster-pink
+                .container
+            .level
+                .container
+                    h4 DESCRIPTION
+                    p
+                        | A truly usable filtering experience provided filter categories and filter values that were 
+                        span.highlight appropriate
+                        | , 
+                        span.highlight predictable
+                        | , 
+                        span.highlight free of jargon
+                        | , and 
+                        span.highlight prioritized
+                        | . However, it was never one-stop to achieve information validity. Instead, I 
+                        span.highlight refactored
+                        |  the information step by step and mainly examined in four dimensions along the way: 1) Common sense, 2) Users’ preferences, 3) Data readiness in terms of completeness, accuracy and granularity, 4) Business needs.
+                    h4 METRICS
+                    p metric1 metric2 metric3
+                    h3 6. Add Descriptions to Locations
+            .level.level--oyster-pink
+                .container
+            .level
+                .container
+                    h4 DESCRIPTION
+                    p
+                        | We learned that users want to find a nice location. When they started searching for accommodations, they do not have enough knowledge to choose based on the district name only. Therefore, I offered them additional descriptions in the forms of two: 1. 
+                        span.highlight Inventory facts
+                        | ; 2. X% of users’ choice in terms of 
+                        span.highlight social proof
+                        | .
+                    h4 METRICS
+                    p metric1 metric2 metric3
+            .level#section4
+                .container
+                    h2 HIGHLIGHTS
+                    .sep.taller
+                    p There are three topics worth highlighting during the course of designing filters.
+                    h3 1. Batch Filters vs. Interactive Filters
+                    p While filters may look similar in many products, their behaviors vary widely. Can users adjust multiple filters before the results of the compound query are returned, or are the results returned after each filter value is specified? Answers to the question indicate two different filtering mechanism: batch filters and interactive filters. Choosing between a batch and an interactive filter implementation will depend on user intent and site speed. 
+                    p Exploratory users who do not have a clear search goal still need to learn about the structure of the search space and the possible options. These users will benefit most from interactive filtering. Alternatively, determined users who already have multiple criteria in mind will benefit from batch filtering. However, it is difficult to accurately predict users’ mindset while they are filtering. In this case, one solution is letting users tell you when they’re done selecting filters. This essentially means to include an apply button in the filter design. Users can click on that button once they’ve indicated all the filter values that they are interested in. This method gives flexibility to both exploratory and determined users.
+                    p Site speed is a much more obvious factor. If you expect the queries to be instantaneous then interactive filtering will be less offensive. If however your product is likely to be slow, then the batch filtering can save users some wait time.
+                    p To conclude, knowing when to stop and apply filters is key to allowing users smoothly progress towards their goals while maintaining a sense of UI stability and user mastery.
+                    h3 2. Powerful Equals Optimal?
+                    p Usually powerful features increase users’ capability and flexibility. However, this rule does not apply everywhere. A more powerful filtering feature does not necessarily guarantee an optimal user experience. 
+                    p The first example is about dynamic filtering mechanism, which is popular among e-commerce giants, e.g. Taobao, and JD.com. The reasons why they stick to this pattern are because 1) they have countless commodities; 2) commodities are mainly physical; 3) servers are robust and reliable. Compared with them, 1) Booking.com has relatively small inventory in domestic market; 2) commodities are heavily influenced by seasons; 3) servers are remote and slow. In this case, if I apply the same solution, users are more likely to see drastic page refreshes or filter shifts, which severely disrupt their filtering process.
+                    p Another example is about separating the location filters. Due to the immaturity of current geographical information and the misplacement of map feature, I proposed to postpone this separation.
+                    p To summarize, the design for filters was heavily influenced by
+                    .flex.wider
+                        ul
+                            li
+                                i.icon.icon-li.ion-chevron-right
+                                span Nature of commodity
+                            li
+                                i.icon.icon-li.ion-chevron-right
+                                span Inventory and availability
+                            li
+                                i.icon.icon-li.ion-chevron-right
+                                span Maturity of data
+                    h3 3. Overfiltering
+                    p I found that the more I encouraged customers to use filter in an effective and efficient way, the more they would encounter zero-result situations, where the empty state of search results kicked in.
+                    p We believe that instead of preventing overfiltering, a better solution is to build an informative, robust and scalable empty state as it ensures more flexibility and better guidance to customers. When users are getting 0 matching properties,
+                    .flex.wider
+                        ul
+                            li
+                                i.icon.icon-li.ion-chevron-right
+                                span 
+                                    b Informative
+                                    | —Remind them that this is an overfiltering result, and lead them to change filter choices
+                            li
+                                i.icon.icon-li.ion-chevron-right
+                                span 
+                                    b Robust
+                                    | —List the filters they applied, make it flexible and easier to deselect one of the filters
+                            li
+                                i.icon.icon-li.ion-chevron-right
+                                span 
+                                    b Scalable
+                                    | —Recommend similar properties and persuade them to keep searching
+        nav.dot-nav
+            ul
+                li
+                    a.dot-nav--item#section1Nav(href="#section1")
+                li
+                    a.dot-nav--item#section2Nav(href="#section2")
+                li
+                    a.dot-nav--item#section3Nav(href="#section3")
+                li
+                    a.dot-nav--item#section4Nav(href="#section4")
+        .level
+            .portfolio-nav-container
+                .container
+                    a.prev-container(href="index.html")
+                    a.home-icon-container(href="index.html")
+                    a.next-container(href="index.html")
