@@ -185,35 +185,35 @@
                 p
                     | Booking.com uses 
                     span.highlight hypothesis-based A/B testing and its statistical outcomes
-                    |  to measure the effect of an improved design. Therefore, for the sake of 
-                    span.highlight data validity and credibility
-                    | , I created a list of design optimization stories based on the design concepts, with each one of them 
-                    span.highlight solving a relatively focused problem and measuring with specific metrics
+                    |  to measure the effectiveness of the design. Therefore, for the sake of 
+                    span.highlight data credibility
+                    | , I decomposed the revamp into a list of optimization stories based on the design concepts, with each one of them 
+                    span.highlight tackling a focused problem and measuring with specific metrics
                     | .
                 h3 1. Quick Filters
             .level.level--humming-bird
                 .container
-                    img(data-src="http://pic.yupoo.com/cherrychoochoo/dcc2df59/082b681e.png").lazyload
+                    img(data-src="http://pic.yupoo.com/cherrychoochoo/02af73df/36ca6460.png").lazyload
             .level
                 .container
                     h4 DESCRIPTION
                     p 
                         | I wanted to 
                         span.highlight identify and surface
-                        |  the most used filters directly as quick filters. The quick filters were grouped into a new sticky section under sort/filter bar. Users could perform selecting, deselecting, and multi-selecting actions. Meanwhile, the section was horizontally scrollable to accommodate more options.
+                        |  the most valuable filters directly as quick filters. The quick filters were grouped into a new sticky section under sort/filter bar. Users could perform selecting, deselecting, and multi-selecting actions. Meanwhile, the section was horizontally scrollable to accommodate more options.
                     h4 METRICS
-                    p ① sr_filter_usage ② net_conversion
+                    p ① sr_filter_usage ② sr_booked_after_filtering ③ net_conversion
                     h3 2. Split Modules
             .level.level--oyster-pink
                 .container
-                    img(data-src="http://pic.yupoo.com/cherrychoochoo/d44fef42/0eab4a6a.png").lazyload
+                    img(data-src="http://pic.yupoo.com/cherrychoochoo/c93ba9d8/6e475187.png").lazyload
             .level
                 .container
                     h4 DESCRIPTION
                     p 
-                        | Given the general preferences and the contribution to filter usage, I 
+                        | Given the general preference and the contribution to filter usage, I 
                         span.highlight separated
-                        |  the filter options of price and ratings from the rest and 
+                        |  filter options of price and ratings from the rest and 
                         span.highlight grouped
                         |  them into a new module. Users could quickly access to this module via its entry point. Besides, it helped release space for the original module to ensure more efficiency and scalability.
                     h4 METRICS
@@ -221,24 +221,24 @@
                     h3 3. Flat View and Dropdown
             .level.level--humming-bird
                 .container
-                    img(data-src="http://pic.yupoo.com/cherrychoochoo/2d65a922/80a5bd7e.png").lazyload
+                    img(data-src="http://pic.yupoo.com/cherrychoochoo/4d7297c2/d9044859.png").lazyload
             .level
                 .container
                     h4 DESCRIPTION
                     p 
                         | I wanted to 
                         span.highlight simplify page hierarchy and information structure
-                        |  using a simple and straightforward user interface. The exquisiteness of Chinese characters, luckily, allowed me to organize filter information into a flat view. I placed filter categories on the left and filter values on the right. With enough white space and little overflow, this view helped users browse, navigate, understand, select, and apply filters effortlessly.
+                        |  using a simple and straightforward user interface. The exquisiteness of Chinese characters, luckily, allowed me to organize filter information into a flat view. I placed filter categories on the left and filter values on the right. With sufficient white space and little overflow, this view helped users browse, navigate, understand, select, and apply filters effortlessly.
                     p
-                        | I also used dropdown and overlay to 
+                        | I also used the dropdown and overlay to 
                         span.highlight keep users in the context
                         |  of the search results list.
                     h4 METRICS
                     p ① sr_filter_shown ② sr_filter_usage ③ sr_clicked_after_filtering ④ sr_booked_after_filtering ⑤ sr_no_results ⑥ net_conversion
-                    h3 4. Disable Dynamic Filters and Let Users Know When to Stop
+                    h3 4. Static Filters and Let Users Know When to Stop
             .level.level--oyster-pink
                 .container
-                    img(data-src="http://pic.yupoo.com/cherrychoochoo/9abb9e8a/d1b08045.png").lazyload
+                    img(data-src="http://pic.yupoo.com/cherrychoochoo/85bc75d8/f0555b1f.png").lazyload
             .level
                 .container
                     h4 DESCRIPTION
@@ -247,19 +247,19 @@
                         span.highlight confusion and misclicks
                         | . Therefore, I wanted to switch to a static mechanism such that filter options would 
                         span.highlight not abruptly change
-                        |  on the fly as users select.
+                        |  on the fly as users selected.
                     p
-                        | However, for users who preferred seeing the results change, I provided a number indicator to 
+                        | For users who preferred seeing the results change, I provided a number indicator to 
                         span.highlight let them know when they were done selecting
                         | . And to 
                         span.highlight ease the anxiety
-                        |  during the loading time, I introduced an animated spinner in the transitional state.
+                        |  during the loading, I introduced an animated spinner in the transitional state.
                     h4 METRICS
                     p ① sr_filter_shown ② sr_filter_usage ③ sr_clicked_after_filtering ④ sr_booked_after_filtering ⑤ sr_no_results
                     h3 5. Regroup and Re-prioritize Information
             .level.level--humming-bird
                 .container
-                    img(data-src="http://pic.yupoo.com/cherrychoochoo/8a317e4c/1db76684.png").lazyload
+                    img(data-src="http://pic.yupoo.com/cherrychoochoo/54636124/05902eed.png").lazyload
             .level
                 .container
                     h4 DESCRIPTION
@@ -274,13 +274,13 @@
                         span.highlight prioritized
                         | . However, it was never one-stop to achieve information validity. Instead, I 
                         span.highlight refactored
-                        |  the information step by step and mainly examined in four dimensions along the way: 1) Common sense, 2) Users’ preferences, 3) Data readiness in terms of completeness, accuracy and granularity, 4) Business needs.
+                        |  the information step by step and mainly examined four dimensions along the way: 1) Common sense, 2) Users’ preferences, 3) Data readiness in terms of completeness, accuracy and granularity, 4) Business needs.
                     h4 METRICS
                     p ① sr_filter_usage ② sr_used_popular_filters ③ sr_clicked_after_filtering ④ sr_booked_after_filtering
                     h3 6. Add Descriptions to Locations
             .level.level--oyster-pink
                 .container
-                    img(data-src="http://pic.yupoo.com/cherrychoochoo/5f421143/eac6a230.png").lazyload
+                    img(data-src="http://pic.yupoo.com/cherrychoochoo/496d7a30/711e5afd.png").lazyload
             .level
                 .container
                     h4 DESCRIPTION
@@ -307,6 +307,11 @@
                         | : batch filters and interactive filters. Choosing between a batch and an interactive implementation mainly depends on 
                         span.highlight user intent and site speed
                         | .
+            .level.level--humming-bird
+                .container
+                    img(data-src="http://pic.yupoo.com/cherrychoochoo/dbcf27e8/169481b2.png").lazyload
+            .level
+                .container
                     p 
                         span.highlight Exploratory users
                         |  who do not have a clear search goal need to learn about the search space and the possible options. These users will benefit most from interactive filtering. Alternatively, 
@@ -320,10 +325,15 @@
                         | To summarize, 
                         span.highlight knowing when to stop and apply filters
                         |  allows users to smoothly progress towards their goals while maintaining a sense of UI stability and user mastery.
-                    h3 2. Powerful Means Optimal?
+                    h3 2. Powerful vs. Optimal
                     p 
                         | A powerful feature usually improves capability and flexibility from users. 
                         span.highlight However, the most advanced filters do not necessarily guarantee optimal user experiences.
+            .level.level--oyster-pink
+                .container
+                    img(data-src="http://pic.yupoo.com/cherrychoochoo/4ae4f0e1/abf21021.png").lazyload
+            .level
+                .container
                     p
                         | The first example is about 
                         span.highlight dynamic filtering
@@ -353,7 +363,7 @@
                         |  of search results.
             .level.level--humming-bird
                 .container
-                    img(data-src="http://pic.yupoo.com/cherrychoochoo/26219963/795aaa3a.png").lazyload
+                    img(data-src="http://pic.yupoo.com/cherrychoochoo/a1e57723/ad5a1b8d.png").lazyload
             .level
                 .container
                     p
@@ -381,6 +391,10 @@
                                 span 
                                     b Scalable
                                     | —Recommend similar properties and encourage them to keep searching
+            .level#section5
+                .container
+                    h2 Outcomes
+                    .sep.taller
         nav.dot-nav
             ul
                 li
@@ -391,6 +405,8 @@
                     a.dot-nav--item#section3Nav(href="#section3")
                 li
                     a.dot-nav--item#section4Nav(href="#section4")
+                li
+                    a.dot-nav--item#section5Nav(href="#section5")
         .level
             .portfolio-nav-container
                 .container
