@@ -48,8 +48,14 @@
                     | My first step was 
                     span.highlight justifying business impact
                     |  by investigating the correlation between converted users and their filtering behaviors.
+        .level.level--humming-bird
+            .container
+                img(data-src="http://pic.yupoo.com/cherrychoochoo/eacf28c7/1548b930.png").lazyload
+                img(data-src="http://pic.yupoo.com/cherrychoochoo/e3bd0e62/e5bca140.png").lazyload
+        .level
+            .container
                 p
-                    | As the graphs indicated, filtering behaviors from non-converted and converted users were not the same. On the one hand, users with stronger motivations were prone to interact with filters. On the other hand, for the group that applied any filter, the conversion rate was x% higher.
+                    | As the graphs indicated, filtering behaviors from non-converted and converted users were not the same. On the one hand, users with stronger motivations were prone to interact with filters. On the other hand, for groups that applied any filter, the conversion rate was incrementally higher.
                 p
                     | It showed the business value of filters as 
                     span.highlight they kept high intent users in the converting funnel
@@ -60,15 +66,32 @@
                     | Two fundamental indicators were sr_filter_shown and sr_filter_usage. One recorded how many users opened up the filters page while the other recorded how many users ended up applying filters. Additionally, I considered the difference between the two as 
                     span.highlight a signal that captured friction users experienced during the filtering process
                     | . The larger the difference, the worse the usability.
-                p By comparing with the benchmark on mobile web, I found that filters were less frequently used and the cost was relatively high on apps.
+        .level.level--oyster-pink
+            .container
+                img(data-src="http://pic.yupoo.com/cherrychoochoo/c87f14e1/9674e39e.png").lazyload
+        .level
+            .container
+                p
+                    | Another series of metrics to look at was how many filters were applied. I expected that the average number of filters applied could reflect how easy to use the filters.
                 h3 3. Quantitative - Frequency of Use
                 p I checked the applied frequency of various filter options. Undoubtedly the data was influenced by users segment and design solution, but it still inferred a general preference for prices, ratings, property types, and unique selling points from our existing users.
+        .level.level--humming-bird
+            .container
+                img(data-src="http://pic.yupoo.com/cherrychoochoo/76f7f91a/6c9ed255.png").lazyload
+        .level
+            .container
                 h3 4. Qualitative - Guerrila Testing
                 p
                     | On the qualitative side, I ran a 
                     span.highlight street testing
-                    |  on a sample of 10, asking the participants to choose a stay for the forthcoming trip. 
-                    span.highlight Merely interrupting, I was able to observe the most authentic user behaviors and evaluate usability closest to real situations.
+                    |  on a sample of 10, asking the participants to choose a stay for the forthcoming trip. Merely interrupting, I was able to observe the most authentic user behaviors and evaluate usability closest to real situations.
+                p
+                    | Afterwards, I grouped the perceptions into three aspects, namely, 
+                    span.highlight discovery, understanding, and use
+                    | , with a particular focus on 
+                    span.highlight effectiveness and efficiency
+                    | .
+                img(data-src="http://pic.yupoo.com/cherrychoochoo/3598061b/e9b4922e.png").lazyload.img--result
                 h3 5. Qualitative - Lab Study
                 p
                     | As a next step, I conducted a 
@@ -76,9 +99,15 @@
                     |  where participants performed filter-related tasks, compare with competitors, and finally give their thoughts about the overall experience. 
                     span.highlight Users were encouraged to think aloud and provide the most meticulous feedback. 
                 p Here is an excerpt of comments:
+                img(data-src="http://pic.yupoo.com/cherrychoochoo/1eb4ba84/6b543ef5.png").lazyload.img--result
                 h3 6. Qualitative - Survey
                 p
                     | I also carried out a simple survey that asked people to rank the most popular filter criteria according to their preferences. For each one of them, I calculated its average and standard deviation from the ranking scores. Therefore, by picking ones with higher mean and lower standard deviation, I identified the most important and convincing decision factors—location, budget, ratings, and reviews.
+        .level.level--oyster-pink
+            .container
+                img(data-src="http://pic.yupoo.com/cherrychoochoo/bd7154f7/2376f540.png").lazyload
+        .level
+            .container
                 p 
                     | One noticeable gap coming into place was location filters, comparing the need and the actual usage. It could 
                     span.highlight imply the poor information validity
@@ -89,49 +118,12 @@
                 .sep.taller
                 h3 Research Insights
                 p After a comprehensive analysis of research data, I extracted the insights at different levels.
-                p At a strategic level, 
-                .flex.wider
-                    ul
-                        li
-                            i.icon.icon-li.ion-chevron-right
-                            span Filters are commonly needed.
-                        li
-                            i.icon.icon-li.ion-chevron-right
-                            span Interaction with filters positively correlates with user intention.
-                        li
-                            i.icon.icon-li.ion-chevron-right
-                            span First interaction happens without filters or with favorite filters only, to get an overall taste. Narrowing down comes as a next step.
-                        li
-                            i.icon.icon-li.ion-chevron-right
-                            span Some users prefer exploring and refining their search along the way. Some users prefer selecting multiple filters at once and seeing the updated results.
-                        li
-                            i.icon.icon-li.ion-chevron-right
-                            span Users appreciate a smooth experience such that they can easily find, understand, and use filters. An ideal filtering experience is seamlessly embedded in the decision-making process.
-                        li
-                            i.icon.icon-li.ion-chevron-right
-                            span Price, distance/location, and ratings do not depend. They are always important.
-                p At a tactical level,
-                .flex.wider
-                    ul
-                        li
-                            i.icon.icon-li.ion-chevron-right
-                            span The feature is visible and accessible to all users.
-                        li
-                            i.icon.icon-li.ion-chevron-right
-                            span It is hard for users to find what they want or what they have selected because they don't understand the logic behind information grouping and prioritization.
-                        li
-                            i.icon.icon-li.ion-chevron-right
-                            span Navigating within our filters page takes time, requiring clicking and navigating back and forth.
-                        li
-                            i.icon.icon-li.ion-chevron-right
-                            span Filters page refreshes and filters get lost as users select. The abrupt change leads to confusion and misclicks.
-                        li
-                            i.icon.icon-li.ion-chevron-right
-                            span Location filters are not helpful for those who are unfamiliar with the destination.
-                        li
-                            i.icon.icon-li.ion-chevron-right
-                            span Price slider has usability issue.                 
-                h3 Pain Points
+        .level.level--oyster-pink
+            .container
+                img(data-src="http://pic.yupoo.com/cherrychoochoo/416b6bad/51c95680.png").lazyload
+        .level
+            .container            
+                h3 User Pain Points
                 p Combining all the research outcomes, I was able to uncover the top three pain points.
                 .flex.wider
                     ul
@@ -185,10 +177,10 @@
                 p
                     | Booking.com uses 
                     span.highlight hypothesis-based A/B testing and its statistical outcomes
-                    |  to measure the effectiveness of the design. Therefore, for the sake of 
+                    |  to measure the effectiveness of any design change. For the sake of  
                     span.highlight data credibility
-                    | , I decomposed the revamp into a list of optimization stories based on the design concepts, with each one of them 
-                    span.highlight tackling a focused problem and measuring with specific metrics
+                    | , I decomposed the revamp into a list of optimization design stories, with each one of them 
+                    span.highlight tackling a focused problem and measuring by specific metrics
                     | .
                 h3 1. Quick Filters
             .level.level--humming-bird
@@ -200,7 +192,7 @@
                     p 
                         | I wanted to 
                         span.highlight identify and surface
-                        |  the most valuable filters directly as quick filters. The quick filters were grouped into a new sticky section under sort/filter bar. Users could perform selecting, deselecting, and multi-selecting actions. Meanwhile, the section was horizontally scrollable to accommodate more options.
+                        |  the most valuable filters directly as quick filters. They were grouped into a new sticky section under sort/filter bar. Users could perform selecting, deselecting, and multi-selecting actions. Meanwhile, the section was horizontally scrollable to accommodate more options.
                     h4 METRICS
                     p ① sr_filter_usage ② sr_booked_after_filtering ③ net_conversion
                     h3 2. Split Modules
@@ -211,11 +203,11 @@
                 .container
                     h4 DESCRIPTION
                     p 
-                        | Given the general preference and the contribution to filter usage, I 
+                        | Due to the general preference and the contribution to filter usage, I 
                         span.highlight separated
                         |  filter options of price and ratings from the rest and 
-                        span.highlight grouped
-                        |  them into a new module. Users could quickly access to this module via its entry point. Besides, it helped release space for the original module to ensure more efficiency and scalability.
+                        span.highlight bundled
+                        |  them into a new module. Users could quickly access to the module via its entry point in the new sort/filter bar. Besides, it helped release space for the original module to ensure more efficiency and scalability.
                     h4 METRICS
                     p ① sr_filter_shown ② sr_filter_usage ③ sr_clicked_after_filtering ④ sr_booked_after_filtering
                     h3 3. Flat View and Dropdown
@@ -391,10 +383,6 @@
                                 span 
                                     b Scalable
                                     | —Recommend similar properties and encourage them to keep searching
-            .level#section5
-                .container
-                    h2 Outcomes
-                    .sep.taller
         nav.dot-nav
             ul
                 li
@@ -405,8 +393,6 @@
                     a.dot-nav--item#section3Nav(href="#section3")
                 li
                     a.dot-nav--item#section4Nav(href="#section4")
-                li
-                    a.dot-nav--item#section5Nav(href="#section5")
         .level
             .portfolio-nav-container
                 .container
