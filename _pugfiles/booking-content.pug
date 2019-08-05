@@ -7,10 +7,11 @@
                 p In this article, I will initiate a discussion about filter design on mobile devices. It is based on my experience designing the core customer journey for Chinese users at Booking.com.
         .level#section1
             .container
-                h2 PROBLEM SCOPINGs
+                h2 PROBLEM SCOPING
                 .sep
         .level.level--oyster-pink
             .container
+                img(data-src="http://pic.yupoo.com/cherrychoochoo/9194dda5/36f7bbbf.png").lazyload
         .level
             .container
                 p
@@ -47,71 +48,75 @@
                 p 
                     | The first step was 
                     span.highlight justifying business impact
-                    |  by investigating the correlation between converted users and their filtering behaviors.
+                    |  by investigating the correlation between converted users and their filtering habits.
         .level.level--humming-bird
             .container
                 img(data-src="http://pic.yupoo.com/cherrychoochoo/266de4db/e850341e.png").lazyload
-                img(data-src="http://pic.yupoo.com/cherrychoochoo/864878fb/ebf3d45a.png").lazyload
+                img(data-src="http://pic.yupoo.com/cherrychoochoo/8e7551dc/e1c32383.png").lazyload
         .level
             .container
                 p
-                    | As the graphs indicated, filtering behaviors from non-converted and converted users were not the same. Users with stronger motivations were prone to interact with filters. On the other hand, for groups that applied any filter, the conversion rate was 20% higher.
+                    | As shown in the graphs, filtering behaviors from non-converted and converted users were not the same. Users with stronger motivations were prone to interact with filters. On the other hand, for groups where people applied any filter, the conversions were at least 20% higher.
                 p
-                    | It showed the business value of filters as 
+                    | It proved the business value of filters as 
                     span.highlight they kept high intent users in the converting funnel
                     | .
                 h3 2. Quantitative - Usability Indicators
-                p I moved on to creating indicators that measured filters performance.
+                p I moved on to creating indicators that measured filter performance.
                 p 
                     | Two fundamental indicators were sr_filter_shown and sr_filter_usage. One recorded how many users opened up the filters page while the other recorded how many users ended up applying filters. Additionally, I considered the difference between the two as 
-                    span.highlight a signal that captured friction users experienced during the filtering process
+                    span.highlight a signal that captured the friction users experienced during the filtering process
                     | . The larger the difference, the worse the usability.
         .level.level--oyster-pink
             .container
-                img(data-src="http://pic.yupoo.com/cherrychoochoo/80247231/53e6f3dc.png").lazyload
+                img(data-src="http://pic.yupoo.com/cherrychoochoo/e1995736/d55ccb99.png").lazyload
         .level
             .container
                 p
                     | Another series of metrics to look at was 
                     span.highlight how many filters were applied
-                    | . I expected that the average number of filters applied could indicate how easy it was to use the filters.
+                    | . I assumed that the average number of applied filters each person indicated how easy it was to use filters.
                 h3 3. Quantitative - Frequency of Use
-                p I checked the applied frequency of various filter options. Undoubtedly the data was influenced by users segment and design solution, but it still inferred a general preference for prices, ratings, property types, and unique selling points from our existing users.
+                p I checked the applied frequency of various filter options. Undoubtedly the data was influenced by user persona and design solution, but it still inferred a general preference for price, location, rating, and property type.
         .level.level--humming-bird
             .container
-                img(data-src="http://pic.yupoo.com/cherrychoochoo/b455b656/b14af40e.png").lazyload
+                img(data-src="http://pic.yupoo.com/cherrychoochoo/912a12ab/f1b0ecad.png").lazyload
         .level
             .container
+                p
+                    | Note that the distinction of priority regarding locations and facilities illustrated how Chinese users base differed from the global one.
                 h3 4. Qualitative - Guerrila Testing
                 p
                     | On the qualitative side, I ran a 
                     span.highlight street testing
                     |  on a sample of 10, asking the participants to choose a stay for the forthcoming trip. Merely interrupting, I was able to observe the most authentic user behaviors and evaluate usability closest to real situations.
                 p
-                    | Afterwards, I grouped the perceptions into three aspects, namely, 
+                    | I grouped the perceptions into three aspects, namely, 
                     span.highlight discovery, understanding, and use
                     | , with a particular focus on 
                     span.highlight effectiveness and efficiency
                     | .
                 img(data-src="http://pic.yupoo.com/cherrychoochoo/9ae37038/139ec35e.png").lazyload.img--result
+                p 
+                    | I saw findability and usability issues out of the notes, which diminished the effectiveness and efficiency for users to filter out a perfect stay.
                 h3 5. Qualitative - Lab Study
                 p
                     | As a next step, I conducted a 
                     span.highlight lab study
-                    |  where participants performed filter-related tasks, compare with competitors, and finally give their thoughts about the overall experience. 
+                    |  where participants performed filter-related tasks, compared with competitors, and finally gave their thoughts about the overall experience. 
                     span.highlight Users were encouraged to think aloud and provide the most meticulous feedback. 
                 p Here is an excerpt of comments:
                 img(data-src="http://pic.yupoo.com/cherrychoochoo/67165fb4/58e83ce5.png").lazyload.img--result
                 h3 6. Qualitative - Survey
                 p
-                    | I also carried out a simple survey that asked people to rank the most popular filter criteria according to their preferences. For each one of them, I calculated its 
+                    | I also carried out a simple survey that asked people to rank the filter criteria according to their preferences. For each criterion, I calculated its 
                     span.highlight average
                     |  and 
                     span.highlight standard deviation
-                    |  of the ranking scores. Therefore, by picking ones with higher mean and lower standard deviation, I identified the most important and convincing decision factors—location, price, ratings, and reviews.
+                    |  of the ranking scores. Therefore, by picking ones with higher means and lower standard deviations, I identified the most popular decision-making factors, that were, location, price, rating, and review.
         .level.level--oyster-pink
             .container
-                img(data-src="http://pic.yupoo.com/cherrychoochoo/079a549c/4e3b1a9d.png").lazyload
+                img(data-src="http://pic.yupoo.com/cherrychoochoo/6ed85928/4215a834.png").lazyload
         .level#section2
             .container
                 h2 IDEATION
@@ -169,7 +174,12 @@
                             span 
                                 b Reduce
                                 |  cognitive gaps introduced by information, compared with competitors, and customer expectations in China
-                p The concepts were carefully defined to make sure that 1) they were well-aligned with the nature of filters; 2) they shared the same vision to enable an effective and efficient look-to-book experience for local users.
+                p
+                    | The concepts were carefully defined to make sure that 1) they were 
+                    span.highlight well-aligned
+                    |  with the nature of filters; 2) they 
+                    span.highlight shared the same vision
+                    |  to enable an effective and efficient look-to-book experience for local users.
         .level#section3
             .container
                 h2 DESIGN SOLUTIONS
