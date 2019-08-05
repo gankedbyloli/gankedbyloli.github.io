@@ -1,0 +1,53 @@
+.section-0
+    background:
+        color: $black
+
+    .flex
+        display: flex
+        flex-direction: column
+
+        .col-1of2
+            h2
+                color: $white
+
+            h4
+                margin-bottom: 3.5em
+                color: $silver
+                font-weight: 500
+                letter-spacing: .2em
+
+            p
+                color: $silver
+
+            &:first-child
+                order: 1
+
+            &:last-child
+                order: 0
+                min-height: 480px
+                margin-bottom: 60px
+                background:
+                    image: url(http://pic.yupoo.com/cherrychoochoo/33a2d607/19adc333.jpg)
+                    repeat: no-repeat
+                    position: center
+                    size: cover
+
+@media (min-width: 85.375em)
+    .section-0
+        .flex
+            flex-direction: row
+
+            .col-1of2
+                h4
+                    margin-bottom: 5em
+
+                &:first-child
+                    order: 0
+
+                &:last-child
+                    order: 1
+                    height: auto
+                    margin-top: 24px
+                    margin-bottom: 0
+                    background:
+                        position: 60% center

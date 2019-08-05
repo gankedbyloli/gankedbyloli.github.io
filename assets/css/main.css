@@ -829,6 +829,69 @@ body {
   .intro h1 {
     max-width: 800px; } }
 
+.section-0 {
+  background-color: #000; }
+  .section-0 .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .section-0 .flex .col-1of2 h2 {
+      color: #fff; }
+    .section-0 .flex .col-1of2 h4 {
+      margin-bottom: 3.5em;
+      color: #ccc;
+      font-weight: 500;
+      letter-spacing: .2em; }
+    .section-0 .flex .col-1of2 p {
+      color: #ccc; }
+    .section-0 .flex .col-1of2:first-child {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1; }
+    .section-0 .flex .col-1of2:last-child {
+      -webkit-box-ordinal-group: 1;
+      -webkit-order: 0;
+          -ms-flex-order: 0;
+              order: 0;
+      min-height: 480px;
+      margin-bottom: 60px;
+      background-image: url(http://pic.yupoo.com/cherrychoochoo/33a2d607/19adc333.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-background-size: cover;
+              background-size: cover; }
+
+@media (min-width: 85.375em) {
+  .section-0 .flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .section-0 .flex .col-1of2 h4 {
+      margin-bottom: 5em; }
+    .section-0 .flex .col-1of2:first-child {
+      -webkit-box-ordinal-group: 1;
+      -webkit-order: 0;
+          -ms-flex-order: 0;
+              order: 0; }
+    .section-0 .flex .col-1of2:last-child {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1;
+      height: auto;
+      margin-top: 24px;
+      margin-bottom: 0;
+      background-position: 60% center; } }
+
 .section-1 {
   background-color: #000;
   background-image: url(http://pic.yupoo.com/cherrychoochoo/9f424600/e0678e22.jpg);
