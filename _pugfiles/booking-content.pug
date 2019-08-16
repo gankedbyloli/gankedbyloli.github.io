@@ -63,7 +63,7 @@
                     | .
                 h3 2. Quantitative - Usability Indicators
                 p I moved on to creating indicators that measured filter performance.
-        .level.level--oyster-pink
+        .level.level--humming-bird
             .container
                 img(data-src="http://pic.yupoo.com/cherrychoochoo/e1995736/d55ccb99.png").lazyload
                 img(data-src="http://pic.yupoo.com/cherrychoochoo/02bcad5b/a3f7636a.png").lazyload 
@@ -85,7 +85,7 @@
         .level
             .container
                 p
-                    | Note that the distinction of priorities regarding location and facility reflected how Chinese user base differed from the global one.
+                    | Note that the distinction regarding priorities of location and facility reflected how Chinese user base differed from the global.
                 h3 4. Qualitative - Guerrila Testing
                 p
                     | On the qualitative side, I ran a 
@@ -110,12 +110,12 @@
                 img(data-src="http://pic.yupoo.com/cherrychoochoo/67165fb4/58e83ce5.png").lazyload.img--result
                 h3 6. Qualitative - Survey
                 p
-                    | I also carried out a survey that asked people to rank the filter criteria according to their preferences. For each criterion, I calculated its 
+                    | Lastly, I carried out a survey that asked people to rank the filter criteria according to their preferences. For each criterion, I calculated its 
                     span.highlight average
                     |  and 
                     span.highlight standard deviation
                     |  of the ranking scores. Therefore, by picking ones with higher means and lower standard deviations, I identified the most popular decision-making factors, that were, location, price, rating, and review.
-        .level.level--oyster-pink
+        .level.level--humming-bird
             .container
                 img(data-src="http://pic.yupoo.com/cherrychoochoo/6ed85928/4215a834.png").lazyload
         .level#section3
@@ -149,7 +149,7 @@
                                 b Information
                                 | —For users that have certain preferences, it is difficult to find the content usable or useful.         
                 p
-                    | The pain points mainly covered areas of improvement in terms of   
+                    | The pain points showed three improvement directions, that were,    
                     span.highlight ease of filter discovery
                     | , 
                     span.highlight ease of filter selection
@@ -207,7 +207,7 @@
                 h4 METRICS
                 p ① sr_filter_usage ② sr_booked_after_filtering ③ net_conversion
                 h3 2. Split Modules
-        .level.level--oyster-pink
+        .level.level--humming-bird
             .container
                 img(data-src="http://pic.yupoo.com/cherrychoochoo/c93ba9d8/6e475187.png").lazyload
         .level
@@ -239,7 +239,7 @@
                 h4 METRICS
                 p ① sr_filter_shown ② sr_filter_usage ③ sr_clicked_after_filtering ④ sr_booked_after_filtering ⑤ sr_no_results ⑥ net_conversion
                 h3 4. Static Filters and Let Users Know When to Stop
-        .level.level--oyster-pink
+        .level.level--humming-bird
             .container
                 img(data-src="http://pic.yupoo.com/cherrychoochoo/85bc75d8/f0555b1f.png").lazyload
         .level
@@ -281,7 +281,7 @@
                 h4 METRICS
                 p ① sr_filter_usage ② sr_used_popular_filters ③ sr_clicked_after_filtering ④ sr_booked_after_filtering
                 h3 6. Add Descriptions to Locations
-        .level.level--oyster-pink
+        .level.level--humming-bird
             .container
                 img(data-src="http://pic.yupoo.com/cherrychoochoo/496d7a30/711e5afd.png").lazyload
         .level
@@ -310,7 +310,7 @@
                     | : batch filters and interactive filters. Choosing between a batch and an interactive implementation mainly depends on 
                     span.highlight user intent and site speed
                     | .
-        .level.level--humming-bird
+        .level.level--oyster-pink
             .container
                 img(data-src="http://pic.yupoo.com/cherrychoochoo/dbcf27e8/169481b2.png").lazyload
         .level
@@ -364,7 +364,7 @@
                     | I found that the more I encouraged people to use filters effectively and efficiently, the more they would encounter  
                     span.highlight the empty state
                     |  of search results.
-        .level.level--humming-bird
+        .level.level--oyster-pink
             .container
                 img(data-src="http://pic.yupoo.com/cherrychoochoo/a1e57723/ad5a1b8d.png").lazyload
         .level
@@ -394,6 +394,51 @@
                             span 
                                 b Scalable
                                 | —Recommend similar properties and encourage them to keep searching
+        .level#section6
+            .container
+                h2 Outcomes
+                .sep.taller
+                p Outcomes had two parts: deliverables and relevant design validation.
+                h3 1. Interaction Deliverables
+                p
+                    | Our developers, the back-end and the mobile, need to sync up closely to build a robust and scalable system. Therefore, in the interaction document, I not only provided 
+                    span.highlight the interface specifications
+                    |  but also much emphasis on 
+                    span.highlight the interactions and their underlying logics
+                    |  .
+        .level.level--humming-bird
+            .container
+                img(data-src="http://pic.yupoo.com/cherrychoochoo/3d77e379/040e9ce8.png").lazyload
+        .level
+            .container
+                h3 2. Design Validation
+                p
+                    | Booking.com uses 
+                    span.highlight Randomized Controlled Trials (A/B Testing)
+                    |  to understand the causal inference. 
+                p
+                    | To 
+                    span.highlight confirm causation and eliminate coincidence
+                    | , we want to 
+                    span.highlight reject the null hypothesis
+                    |  that assumes any difference observed is simply by chance. We compute a 
+                    span.highlight p-value
+                    |  indicating the probability of seeing a particular result or more extreme, assuming there is no effect. Given sufficient 
+                    span.highlight power
+                    | , results under the threshold where p-value < 0.05 are called 
+                    span.highlight statistically significant
+                    |  and we are 
+                    span.highlight confident
+                    |  that the variant is better than the base.
+                p
+                    | Take the second, third and fourth design stories as examples, I found 
+                    span.highlight the conclusiveness of results
+                    |  below.
+                img(data-src="http://pic.yupoo.com/cherrychoochoo/e51a721e/1930b1c4.png").lazyload.img--result
+                p
+                    | I also tracked the 
+                    span.highlight distribution
+                    |  of average time users spent interacting with filters. It turned out the filter redesign reduced the interaction time from 7900ms to 6800ms for the representative population.
         nav.dot-nav
             ul
                 li
@@ -406,6 +451,8 @@
                     a.dot-nav--item#section4Nav(href="#section4")
                 li
                     a.dot-nav--item#section5Nav(href="#section5")
+                li
+                    a.dot-nav--item#section6Nav(href="#section6")
         .level
             .portfolio-nav-container
                 .container
